@@ -20,6 +20,7 @@
 		FC415503288171630030836E /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415502288171630030836E /* Size.swift */; };
 		FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155042881717E0030836E /* NSObject+ClassName.swift */; };
 		FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155062881717E0030836E /* UICollectionView+Generic.swift */; };
+		FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155072881717E0030836E /* UIVIew+addSubViews.swift */; };
 		FC72672E2885692100BBE712 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672D2885692100BBE712 /* RxCocoa */; };
 		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		FC415502288171630030836E /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		FC4155042881717E0030836E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		FC4155062881717E0030836E /* UICollectionView+Generic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Generic.swift"; sourceTree = "<group>"; };
+		FC4155072881717E0030836E /* UIVIew+addSubViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+addSubViews.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		FC4154B0287B29BA00300A9E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FC4155072881717E0030836E /* UIVIew+addSubViews.swift */,
 				FC4155042881717E0030836E /* NSObject+ClassName.swift */,
 				FC4155062881717E0030836E /* UICollectionView+Generic.swift */,
 			);
@@ -334,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */,
 				FC415503288171630030836E /* Size.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
