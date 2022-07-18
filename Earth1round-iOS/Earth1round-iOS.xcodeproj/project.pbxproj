@@ -19,6 +19,7 @@
 		FC4154C7287B2AC300300A9E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = FC4154C6287B2AC300300A9E /* Then */; };
 		FC415503288171630030836E /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415502288171630030836E /* Size.swift */; };
 		FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155042881717E0030836E /* NSObject+ClassName.swift */; };
+		FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155052881717E0030836E /* UINavigationController+Extensions.swift */; };
 		FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155062881717E0030836E /* UICollectionView+Generic.swift */; };
 		FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155072881717E0030836E /* UIVIew+addSubViews.swift */; };
 		FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */; };
@@ -38,6 +39,7 @@
 		FC4154BD287B2A4500300A9E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		FC415502288171630030836E /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		FC4155042881717E0030836E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		FC4155052881717E0030836E /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		FC4155062881717E0030836E /* UICollectionView+Generic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Generic.swift"; sourceTree = "<group>"; };
 		FC4155072881717E0030836E /* UIVIew+addSubViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+addSubViews.swift"; sourceTree = "<group>"; };
 		FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				FC4155072881717E0030836E /* UIVIew+addSubViews.swift */,
 				FC4155042881717E0030836E /* NSObject+ClassName.swift */,
 				FC4155062881717E0030836E /* UICollectionView+Generic.swift */,
+				FC4155052881717E0030836E /* UINavigationController+Extensions.swift */,
 				FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */,
 			);
 			path = Extensions;
@@ -343,6 +346,7 @@
 				FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */,
 				FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */,
 				FC415503288171630030836E /* Size.swift in Sources */,
+				FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
