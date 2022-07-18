@@ -19,6 +19,7 @@
 		FC4154C7287B2AC300300A9E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = FC4154C6287B2AC300300A9E /* Then */; };
 		FC415503288171630030836E /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415502288171630030836E /* Size.swift */; };
 		FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155042881717E0030836E /* NSObject+ClassName.swift */; };
+		FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155062881717E0030836E /* UICollectionView+Generic.swift */; };
 		FC72672E2885692100BBE712 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672D2885692100BBE712 /* RxCocoa */; };
 		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		FC4154BD287B2A4500300A9E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		FC415502288171630030836E /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		FC4155042881717E0030836E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		FC4155062881717E0030836E /* UICollectionView+Generic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Generic.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				FC4155042881717E0030836E /* NSObject+ClassName.swift */,
+				FC4155062881717E0030836E /* UICollectionView+Generic.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				FC415503288171630030836E /* Size.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
+				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
 			);
