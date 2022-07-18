@@ -17,6 +17,7 @@
 		FC4154C1287B2AA600300A9E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = FC4154C0287B2AA600300A9E /* Moya */; };
 		FC4154C4287B2AB600300A9E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC4154C3287B2AB600300A9E /* SnapKit */; };
 		FC4154C7287B2AC300300A9E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = FC4154C6287B2AC300300A9E /* Then */; };
+		FC415503288171630030836E /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415502288171630030836E /* Size.swift */; };
 		FC72672E2885692100BBE712 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672D2885692100BBE712 /* RxCocoa */; };
 		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		FC4154A1287B297600300A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4154A3287B297600300A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC4154BD287B2A4500300A9E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		FC415502288171630030836E /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		FC4154B1287B29BF00300A9E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				FC415502288171630030836E /* Size.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC415503288171630030836E /* Size.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
