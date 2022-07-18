@@ -23,6 +23,7 @@
 		FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155062881717E0030836E /* UICollectionView+Generic.swift */; };
 		FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155072881717E0030836E /* UIVIew+addSubViews.swift */; };
 		FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550C288171980030836E /* CharacterSelectionViewController.swift */; };
+		FC415510288171980030836E /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550D288171980030836E /* CourseViewController.swift */; };
 		FC415511288171980030836E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550E288171980030836E /* CalendarViewController.swift */; };
 		FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */; };
 		FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */; };
@@ -47,6 +48,7 @@
 		FC4155062881717E0030836E /* UICollectionView+Generic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Generic.swift"; sourceTree = "<group>"; };
 		FC4155072881717E0030836E /* UIVIew+addSubViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+addSubViews.swift"; sourceTree = "<group>"; };
 		FC41550C288171980030836E /* CharacterSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewController.swift; sourceTree = "<group>"; };
+		FC41550D288171980030836E /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		FC41550E288171980030836E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			children = (
 				FC41550E288171980030836E /* CalendarViewController.swift */,
 				FC41550C288171980030836E /* CharacterSelectionViewController.swift */,
+				FC41550D288171980030836E /* CourseViewController.swift */,
 				FC415499287B297400300A9E /* ViewController.swift */,
 			);
 			path = ViewControllers;
@@ -370,6 +373,7 @@
 				FC415511288171980030836E /* CalendarViewController.swift in Sources */,
 				FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */,
 				FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */,
+				FC415510288171980030836E /* CourseViewController.swift in Sources */,
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
