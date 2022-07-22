@@ -11,6 +11,7 @@ import SnapKit
 import Then
 
 final class CalendarViewController: BaseViewController {
+    
     // MARK: - UI Components
     
     private var stepCountLabel = UILabel().then {
@@ -28,6 +29,7 @@ final class CalendarViewController: BaseViewController {
     private var calendarView = UIView().then {
         $0.backgroundColor = .systemGray5
     }
+    
     // MARK: - View Life Cycle
     
     override func viewDidLoad() {
@@ -36,7 +38,9 @@ final class CalendarViewController: BaseViewController {
         setupViewHierarchy()
         setupConstraints()
     }
+    
     // MARK: - Default Setting Function
+    
     @objc func calendarButtonDidTap() {
         self.navigationController?.popViewController(animated: true)
     }

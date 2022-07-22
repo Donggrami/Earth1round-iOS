@@ -11,6 +11,7 @@ import SnapKit
 import Then
 
 final class CharacterSelectionViewController: BaseViewController {
+    
     // MARK: - UI Components
 
     private var character = UIImageView().then {
@@ -31,6 +32,7 @@ final class CharacterSelectionViewController: BaseViewController {
         $0.backgroundColor = .lightGray
         $0.setTitle("캐릭터 선택 tap", for: .normal)
     }
+    
 // MARK: - View Life Cycle
     
     override func viewDidLoad() {
@@ -40,6 +42,7 @@ final class CharacterSelectionViewController: BaseViewController {
         setupConstraints()
         setDelegation()
     }
+    
     // MARK: - Methods
     
     private func initNavigationBar() {
@@ -74,20 +77,29 @@ final class CharacterSelectionViewController: BaseViewController {
         characterCollectionView.dataSource = self
     }
 }
+
 // MARK: - Extensions
 
 extension CharacterSelectionViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         let length = (Size.screenWidth - (18 * 4)) / 3
         return CGSize(width: length, height: length)
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 18
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 18
     }
 }

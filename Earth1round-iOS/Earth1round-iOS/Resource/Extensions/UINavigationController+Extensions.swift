@@ -28,7 +28,6 @@ extension UINavigationController {
         appearance.setBackIndicatorImage(backButtonImage, transitionMaskImage: backButtonImage)
         appearance.backButtonAppearance = backButtonAppearance
         
-        
         navigationBar.standardAppearance = appearance
         navigationBar.scrollEdgeAppearance = appearance
         navigationBar.compactAppearance = appearance
@@ -37,7 +36,6 @@ extension UINavigationController {
         
         appearance.backgroundColor = backgorundColor
         appearance.shadowColor = backgorundColor == .clear ? .clear : .lightGray
-        
         
         self.navigationBar.standardAppearance = appearance
         self.navigationBar.scrollEdgeAppearance = appearance
@@ -69,7 +67,6 @@ extension UINavigationController {
                        isLeft: false)
         navigationItem?.hidesBackButton = true
     }
-    
     
     func makeBarButtons(navigationItem: UINavigationItem?,
                         buttonImage: UIImage?,

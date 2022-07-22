@@ -11,9 +11,11 @@ import SnapKit
 import Then
 
 class CharacterCollectionViewCell: UICollectionViewCell {
+    
     // MARK: - UI Components
 
     // MARK: - Initializer
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setView()

@@ -11,6 +11,7 @@ import SnapKit
 import Then
 
 final class CourseViewController: BaseViewController {
+    
     // MARK: - UI Components
     
     private var mapView = UIView().then {
@@ -32,6 +33,7 @@ final class CourseViewController: BaseViewController {
         $0.titleLabel?.contentMode = .left
         $0.backgroundColor = .systemGray4
     }
+    
     // MARK: - View Life Cycle
     
     override func viewDidLoad() {
@@ -40,6 +42,7 @@ final class CourseViewController: BaseViewController {
         setupViewHierarchy()
         setupConstraints()
     }
+    
     // MARK: - Methods
     
     private func initNavigatonBar() {
