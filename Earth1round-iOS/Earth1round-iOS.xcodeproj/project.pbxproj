@@ -74,6 +74,7 @@
 		FC415489287B297400300A9E = {
 			isa = PBXGroup;
 			children = (
+				FC4154BD287B2A4500300A9E /* .swiftlint.yml */,
 				FC415494287B297400300A9E /* Earth1round-iOS */,
 				FC415493287B297400300A9E /* Products */,
 			);
@@ -90,8 +91,6 @@
 		FC415494287B297400300A9E /* Earth1round-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FC4154BD287B2A4500300A9E /* .swiftlint.yml */,
-				FC4154A3287B297600300A9E /* Info.plist */,
 				FC4154AA287B298400300A9E /* Resource */,
 				FC4154A9287B297D00300A9E /* Source */,
 			);
@@ -266,6 +265,7 @@
 		FC4154BC287B2A0E00300A9E /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				FC4154A3287B297600300A9E /* Info.plist */,
 				FC415495287B297400300A9E /* AppDelegate.swift */,
 				FC415497287B297400300A9E /* SceneDelegate.swift */,
 				FC4154A0287B297600300A9E /* LaunchScreen.storyboard */,
@@ -291,6 +291,7 @@
 				FC41548E287B297400300A9E /* Sources */,
 				FC41548F287B297400300A9E /* Frameworks */,
 				FC415490287B297400300A9E /* Resources */,
+				FCD07046288AA7CF006764C4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -360,6 +361,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FCD07046288AA7CF006764C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC41548E287B297400300A9E /* Sources */ = {
@@ -527,7 +548,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earth1round-iOS/Info.plist";
+				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -554,7 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earth1round-iOS/Info.plist";
+				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
