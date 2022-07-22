@@ -100,7 +100,7 @@
 		FC4154A9287B297D00300A9E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				FC4154AD287B299400300A9E /* Network */,
+				FC4154AD287B299400300A9E /* Data */,
 				FC4154AC287B299100300A9E /* Domain */,
 				FC4154AB287B298C00300A9E /* Presentation */,
 			);
@@ -142,14 +142,14 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		FC4154AD287B299400300A9E /* Network */ = {
+		FC4154AD287B299400300A9E /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				FC4154BB287B29FE00300A9E /* Repositories */,
 				FC4154BA287B29F900300A9E /* Services */,
 				FC4154B9287B29F500300A9E /* Entity */,
 			);
-			path = Network;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		FC4154AE287B29A600300A9E /* Storyboards */ = {
