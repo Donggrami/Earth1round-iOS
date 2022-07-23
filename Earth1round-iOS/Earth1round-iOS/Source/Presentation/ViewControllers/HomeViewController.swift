@@ -9,53 +9,39 @@ import UIKit
 import Then
 
 class HomeViewController: UIViewController {
-    var hamburgerButton: UIButton = {
-        let view = UIButton()
-        view.backgroundColor = .gray
-        return view
-    }()
+    var hamburgerButton = UIButton().then{
+        $0.backgroundColor = .gray
+    }
     
-    var totalWalkText: UILabel = {
-        let view = UILabel()
-        view.text = "누적된 걸음 수"
-        return view
-    }()
+    var totalWalkText = UILabel().then {
+        $0.text = "누적된 걸음 수"
+    }
     
-    var totalWalk: UILabel = {
-        let view = UILabel()
-        view.text = "20,000 걸음"
-        view.font = .boldSystemFont(ofSize: 35)
-        return view
-    }()
+    var totalWalk = UILabel().then {
+        $0.text = "20,000 걸음"
+        $0.font = .boldSystemFont(ofSize: 35)
+    }
     
+    var characterView = UIView().then {
+        $0.backgroundColor = .gray
+    }
+    
+    var characterName = UILabel().then {
+        $0.text = "이름"
+    }
 
-    var characterView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .gray
-        return view
-    }()
-    
-    var characterName: UILabel = {
-        let view = UILabel()
-        view.text = "이름"
-        return view
-    }()
-
-    var characterLevel: UILabel = UILabel().then{
+    var characterLevel = UILabel().then{
         $0.text = " Lv.1"
     }
  
-    var chooseCourseButton: UIButton = UIButton().then {
+    var chooseCourseButton = UIButton().then {
         $0.titleLabel?.text = "코스 선택하기"
         $0.backgroundColor = .gray
     }
     
-    var homeButton: UIButton = {
-        let view = UIButton()
-        view.backgroundColor = .gray
-        return view
-    }()
-    
+    var homeButton = UIButton().then {
+        $0.backgroundColor = .gray
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +50,29 @@ class HomeViewController: UIViewController {
         
         initView()
         
+        setContraints()
+        
+        homeButton.addTarget(self, action: #selector(handleTap),for: .touchUpInside)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
+    }
+    
+    private func initView(){
+        self.view.addSubview(hamburgerButton)
+        self.view.addSubview(totalWalkText)
+        self.view.addSubview(totalWalk)
+        self.view.addSubview(characterView)
+        self.view.addSubview(characterName)
+        self.view.addSubview(characterLevel)
+        self.view.addSubview(chooseCourseButton)
+        self.view.addSubview(homeButton)
+    }
+    
+    private func initConstraint(){
         hamburgerButton.snp.makeConstraints { make in
             make.width.height.equalTo(40)
             make.top.equalToSuperview().offset(50)
@@ -109,25 +118,6 @@ class HomeViewController: UIViewController {
             make.height.equalTo(75)
             make.top.equalTo(characterName.snp.bottom).offset(19)
         }
-        
-        homeButton.addTarget(self, action: #selector(handleTap),for: .touchUpInside)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        
-    }
-    
-    func initView(){
-        self.view.addSubview(hamburgerButton)
-        self.view.addSubview(totalWalkText)
-        self.view.addSubview(totalWalk)
-        self.view.addSubview(characterView)
-        self.view.addSubview(characterName)
-        self.view.addSubview(characterLevel)
-        self.view.addSubview(chooseCourseButton)
-        self.view.addSubview(homeButton)
     }
     
     @objc func handleTap(){

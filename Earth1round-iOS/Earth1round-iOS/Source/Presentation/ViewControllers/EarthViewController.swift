@@ -10,57 +10,41 @@ import SnapKit
 
 class EarthViewController: UIViewController{
     
-    var hamburgerButton: UIButton = {
-        let view = UIButton()
-        view.backgroundColor = .gray
-        return view
-    }()
+    var hamburgerButton = UIButton().then {
+        $0.backgroundColor = .gray
+    }
     
-    var walkText: UILabel = {
-        let view = UILabel()
-        view.text = "2000 걸음"
-        view.font = .boldSystemFont(ofSize: 35)
-        return view
-    }()
+    var walkText = UILabel().then {
+        $0.text = "2000 걸음"
+        $0.font = .boldSystemFont(ofSize: 35)
+    }
     
-    var dayText: UILabel = {
-        let view = UILabel()
-        view.text = "D + day"
-        return view
-    }()
+    var dayText = UILabel().then {
+        $0.text = "D + day"
+    }
     
-    var curCourseText: UILabel = {
-        let view = UILabel()
-        view.text = "현재 선택한 코스"
-        return view
-    }()
+    var curCourseText = UILabel().then {
+        $0.text = "현재 선택한 코스"
+    }
     
-    var progressText: UILabel = {
-        let view = UILabel()
-        view.text = "30%"
-        return view
-    }()
+    var progressText = UILabel().then {
+        $0.text = "30%"
+    }
     
-    var progressBar: UIProgressView = {
-        let view = UIProgressView()
-        view.trackTintColor = .lightGray
-        view.progressTintColor = .gray
-        view.progress = 0.3
-        return view
-    }()
+    var progressBar = UIProgressView().then {
+        $0.trackTintColor = .lightGray
+        $0.progressTintColor = .gray
+        $0.progress = 0.3
+    }
     
-    var characterView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .gray
-        return view
-    }()
+    var characterView = UIView().then {
+        $0.backgroundColor = .gray
+    }
     
     
-    var homeButton: UIButton = {
-        let view = UIButton()
-        view.backgroundColor = .gray
-        return view
-    }()
+    var homeButton = UIButton().then {
+        $0.backgroundColor = .gray
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +53,24 @@ class EarthViewController: UIViewController{
         
         initView()
        
+        initContraint()
+        
+        homeButton.addTarget(self, action: #selector(handleTap),for:.touchUpInside)
+    }
+    
+    func initView(){
+        self.view.addSubview(hamburgerButton)
+        self.view.addSubview(walkText)
+        self.view.addSubview(dayText)
+        self.view.addSubview(curCourseText)
+        self.view.addSubview(progressText)
+        self.view.addSubview(progressBar)
+        self.view.addSubview(characterView)
+        self.view.addSubview(homeButton)
+        
+    }
+    
+    func initContraint(){
         hamburgerButton.snp.makeConstraints { make in
             make.width.height.equalTo(40)
             make.top.equalToSuperview().offset(50)
@@ -109,26 +111,11 @@ class EarthViewController: UIViewController{
             make.bottom.equalTo(-184)
         }
         
-        
         homeButton.snp.makeConstraints { make in
             make.width.height.equalTo(80)
             make.trailing.equalToSuperview().offset(-22)
             make.bottom.equalToSuperview().offset(-45)
         }
-        
-        homeButton.addTarget(self, action: #selector(handleTap),for:.touchUpInside)
-    }
-    
-    func initView(){
-        self.view.addSubview(hamburgerButton)
-        self.view.addSubview(walkText)
-        self.view.addSubview(dayText)
-        self.view.addSubview(curCourseText)
-        self.view.addSubview(progressText)
-        self.view.addSubview(progressBar)
-        self.view.addSubview(characterView)
-        self.view.addSubview(homeButton)
-        
     }
     
     @objc func handleTap(){
