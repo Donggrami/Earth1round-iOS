@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB3E288BF643002C5988 /* MyRecordViewController.swift */; };
 		B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB40288BF87B002C5988 /* MyRecordCell.swift */; };
+		B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F44287D64820098BB87 /* EarthViewController.swift */; };
+		B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */; };
 		FC415496287B297400300A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415495287B297400300A9E /* AppDelegate.swift */; };
 		FC415498287B297400300A9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415497287B297400300A9E /* SceneDelegate.swift */; };
 		FC41549A287B297400300A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415499287B297400300A9E /* ViewController.swift */; };
@@ -19,11 +21,26 @@
 		FC4154C1287B2AA600300A9E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = FC4154C0287B2AA600300A9E /* Moya */; };
 		FC4154C4287B2AB600300A9E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC4154C3287B2AB600300A9E /* SnapKit */; };
 		FC4154C7287B2AC300300A9E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = FC4154C6287B2AC300300A9E /* Then */; };
+		FC415503288171630030836E /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415502288171630030836E /* Size.swift */; };
+		FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155042881717E0030836E /* NSObject+ClassName.swift */; };
+		FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155052881717E0030836E /* UINavigationController+Extensions.swift */; };
+		FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155062881717E0030836E /* UICollectionView+Generic.swift */; };
+		FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155072881717E0030836E /* UIVIew+addSubViews.swift */; };
+		FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550C288171980030836E /* CharacterSelectionViewController.swift */; };
+		FC415510288171980030836E /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550D288171980030836E /* CourseViewController.swift */; };
+		FC415511288171980030836E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550E288171980030836E /* CalendarViewController.swift */; };
+		FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */; };
+		FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */; };
+		FC72672E2885692100BBE712 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672D2885692100BBE712 /* RxCocoa */; };
+		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
+		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B032AB3E288BF643002C5988 /* MyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordViewController.swift; sourceTree = "<group>"; };
 		B032AB40288BF87B002C5988 /* MyRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRecordCell.swift; path = "Earth1round-iOS/Source/Presentation/ViewControllers/MyRecordCell.swift"; sourceTree = SOURCE_ROOT; };
+		B0C71F44287D64820098BB87 /* EarthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthViewController.swift; sourceTree = "<group>"; };
+		B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FC415492287B297400300A9E /* Earth1round-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Earth1round-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC415495287B297400300A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC415497287B297400300A9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +50,17 @@
 		FC4154A1287B297600300A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4154A3287B297600300A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC4154BD287B2A4500300A9E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		FC415502288171630030836E /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		FC4155042881717E0030836E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		FC4155052881717E0030836E /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		FC4155062881717E0030836E /* UICollectionView+Generic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Generic.swift"; sourceTree = "<group>"; };
+		FC4155072881717E0030836E /* UIVIew+addSubViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+addSubViews.swift"; sourceTree = "<group>"; };
+		FC41550C288171980030836E /* CharacterSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewController.swift; sourceTree = "<group>"; };
+		FC41550D288171980030836E /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		FC41550E288171980030836E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
+		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +70,8 @@
 			files = (
 				FC4154C1287B2AA600300A9E /* Moya in Frameworks */,
 				FC4154C7287B2AC300300A9E /* Then in Frameworks */,
+				FC7267302885692100BBE712 /* RxSwift in Frameworks */,
+				FC72672E2885692100BBE712 /* RxCocoa in Frameworks */,
 				FC4154C4287B2AB600300A9E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +82,7 @@
 		FC415489287B297400300A9E = {
 			isa = PBXGroup;
 			children = (
+				FC4154BD287B2A4500300A9E /* .swiftlint.yml */,
 				FC415494287B297400300A9E /* Earth1round-iOS */,
 				FC415493287B297400300A9E /* Products */,
 			);
@@ -68,8 +99,6 @@
 		FC415494287B297400300A9E /* Earth1round-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FC4154BD287B2A4500300A9E /* .swiftlint.yml */,
-				FC4154A3287B297600300A9E /* Info.plist */,
 				FC4154AA287B298400300A9E /* Resource */,
 				FC4154A9287B297D00300A9E /* Source */,
 			);
@@ -79,7 +108,7 @@
 		FC4154A9287B297D00300A9E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				FC4154AD287B299400300A9E /* Network */,
+				FC4154AD287B299400300A9E /* Data */,
 				FC4154AC287B299100300A9E /* Domain */,
 				FC4154AB287B298C00300A9E /* Presentation */,
 			);
@@ -102,6 +131,7 @@
 		FC4154AB287B298C00300A9E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FCC2B39A2885674A00924872 /* Base */,
 				FC4154B5287B29DA00300A9E /* Cells */,
 				FC4154B4287B29D800300A9E /* ViewModels */,
 				FC4154B3287B29D400300A9E /* Views */,
@@ -120,14 +150,14 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		FC4154AD287B299400300A9E /* Network */ = {
+		FC4154AD287B299400300A9E /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				FC4154BB287B29FE00300A9E /* Repositories */,
 				FC4154BA287B29F900300A9E /* Services */,
 				FC4154B9287B29F500300A9E /* Entity */,
 			);
-			path = Network;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		FC4154AE287B29A600300A9E /* Storyboards */ = {
@@ -148,6 +178,11 @@
 		FC4154B0287B29BA00300A9E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FC4155072881717E0030836E /* UIVIew+addSubViews.swift */,
+				FC4155042881717E0030836E /* NSObject+ClassName.swift */,
+				FC4155062881717E0030836E /* UICollectionView+Generic.swift */,
+				FC4155052881717E0030836E /* UINavigationController+Extensions.swift */,
+				FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +190,7 @@
 		FC4154B1287B29BF00300A9E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				FC415502288171630030836E /* Size.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -162,8 +198,13 @@
 		FC4154B2287B29D000300A9E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC41550E288171980030836E /* CalendarViewController.swift */,
+				FC41550C288171980030836E /* CharacterSelectionViewController.swift */,
+				FC41550D288171980030836E /* CourseViewController.swift */,
 				FC415499287B297400300A9E /* ViewController.swift */,
 				B032AB3E288BF643002C5988 /* MyRecordViewController.swift */,
+				B0C71F44287D64820098BB87 /* EarthViewController.swift */,
+				B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				B032AB40288BF87B002C5988 /* MyRecordCell.swift */,
+				FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -235,11 +277,20 @@
 		FC4154BC287B2A0E00300A9E /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				FC4154A3287B297600300A9E /* Info.plist */,
 				FC415495287B297400300A9E /* AppDelegate.swift */,
 				FC415497287B297400300A9E /* SceneDelegate.swift */,
 				FC4154A0287B297600300A9E /* LaunchScreen.storyboard */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		FCC2B39A2885674A00924872 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2B39B2885676400924872 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +303,7 @@
 				FC41548E287B297400300A9E /* Sources */,
 				FC41548F287B297400300A9E /* Frameworks */,
 				FC415490287B297400300A9E /* Resources */,
+				FCD07046288AA7CF006764C4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -262,6 +314,8 @@
 				FC4154C0287B2AA600300A9E /* Moya */,
 				FC4154C3287B2AB600300A9E /* SnapKit */,
 				FC4154C6287B2AC300300A9E /* Then */,
+				FC72672D2885692100BBE712 /* RxCocoa */,
+				FC72672F2885692100BBE712 /* RxSwift */,
 			);
 			productName = "Earth1round-iOS";
 			productReference = FC415492287B297400300A9E /* Earth1round-iOS.app */;
@@ -295,6 +349,7 @@
 				FC4154BF287B2AA600300A9E /* XCRemoteSwiftPackageReference "Moya" */,
 				FC4154C2287B2AB600300A9E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				FC4154C5287B2AC300300A9E /* XCRemoteSwiftPackageReference "Then" */,
+				FC72672C2885692100BBE712 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = FC415493287B297400300A9E /* Products */;
 			projectDirPath = "";
@@ -319,16 +374,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FCD07046288AA7CF006764C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC41548E287B297400300A9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */,
+				FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */,
+				FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */,
+				FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */,
+				FC415503288171630030836E /* Size.swift in Sources */,
+				FC415511288171980030836E /* CalendarViewController.swift in Sources */,
+				FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */,
+				FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */,
+				FC415510288171980030836E /* CourseViewController.swift in Sources */,
+				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
 				B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */,
+				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
+				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
+				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
+				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
+				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earth1round-iOS/Info.plist";
+				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -504,7 +594,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earth1round-iOS/Info.plist";
+				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -572,6 +662,14 @@
 				kind = branch;
 			};
 		};
+		FC72672C2885692100BBE712 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -589,6 +687,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FC4154C5287B2AC300300A9E /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		FC72672D2885692100BBE712 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC72672C2885692100BBE712 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FC72672F2885692100BBE712 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC72672C2885692100BBE712 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

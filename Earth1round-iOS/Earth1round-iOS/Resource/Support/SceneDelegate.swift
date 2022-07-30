@@ -19,6 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         window?.rootViewController = MyRecordViewController()
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window=UIWindow(frame: UIScreen.main.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = UINavigationController(rootViewController: EarthViewController())
         window?.makeKeyAndVisible()
     }
 
