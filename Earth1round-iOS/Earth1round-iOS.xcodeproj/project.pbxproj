@@ -150,6 +150,9 @@
 				FC6EB1D828983152007946F9 /* PopUp */,
 				FC6EB1DA28983165007946F9 /* Setting */,
 				FC6EB1C82897DA6B007946F9 /* Login */,
+				FC6EB1D3289830AF007946F9 /* CharacterSelection */,
+				FC6EB1D228983094007946F9 /* Calendar */,
+				FC6EB1D4289830E9007946F9 /* Course */,
 				FC4154B2287B29D000300A9E /* ViewControllers */,
 			);
 			path = Presentation;
@@ -216,34 +219,17 @@
 		FC4154B2287B29D000300A9E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FC41550E288171980030836E /* CalendarViewController.swift */,
-				FC41550C288171980030836E /* CharacterSelectionViewController.swift */,
-				FC41550D288171980030836E /* CourseViewController.swift */,
 				FC415499287B297400300A9E /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		FC4154B3287B29D400300A9E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		FC4154B4287B29D800300A9E /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		FC4154B5287B29DA00300A9E /* Cells */ = {
+		FC4154B5287B29DA00300A9E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */,
 			);
-			path = Cells;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FC4154B6287B29E200300A9E /* Models */ = {
@@ -324,6 +310,55 @@
 				FC6EB1CD28983002007946F9 /* TermsTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FC6EB1D228983094007946F9 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1D5289830F8007946F9 /* Viewcontroller */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FC6EB1D3289830AF007946F9 /* CharacterSelection */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1D62898310A007946F9 /* ViewController */,
+				FC4154B5287B29DA00300A9E /* Cell */,
+			);
+			path = CharacterSelection;
+			sourceTree = "<group>";
+		};
+		FC6EB1D4289830E9007946F9 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1D728983118007946F9 /* ViewController */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		FC6EB1D5289830F8007946F9 /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				FC41550E288171980030836E /* CalendarViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		FC6EB1D62898310A007946F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC41550C288171980030836E /* CharacterSelectionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC6EB1D728983118007946F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC41550D288171980030836E /* CourseViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		FC6EB1D828983152007946F9 /* PopUp */ = {
