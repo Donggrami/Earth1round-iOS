@@ -30,6 +30,7 @@
 		FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */; };
 		FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */; };
 		FC6EB1C52897DA08007946F9 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C42897DA08007946F9 /* NicknameViewController.swift */; };
+		FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */; };
 		FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1CB28982F1D007946F9 /* UITextField+addLeftPadding.swift */; };
 		FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1CD28983002007946F9 /* TermsTableViewCell.swift */; };
 		FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1DD289834B1007946F9 /* TermsLiterals.swift */; };
@@ -65,6 +66,7 @@
 		FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
 		FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		FC6EB1C42897DA08007946F9 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
+		FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		FC6EB1CB28982F1D007946F9 /* UITextField+addLeftPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+addLeftPadding.swift"; sourceTree = "<group>"; };
 		FC6EB1CD28983002007946F9 /* TermsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsTableViewCell.swift; sourceTree = "<group>"; };
 		FC6EB1DD289834B1007946F9 /* TermsLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsLiterals.swift; sourceTree = "<group>"; };
@@ -145,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC2B39A2885674A00924872 /* Base */,
-				FC4154B5287B29DA00300A9E /* Cells */,
+				FC6EB1D828983152007946F9 /* PopUp */,
 				FC6EB1DA28983165007946F9 /* Setting */,
 				FC6EB1C82897DA6B007946F9 /* Login */,
 				FC4154B2287B29D000300A9E /* ViewControllers */,
@@ -324,6 +326,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FC6EB1D828983152007946F9 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1D92898315B007946F9 /* ViewController */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
+		FC6EB1D92898315B007946F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		FC6EB1DA28983165007946F9 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -488,6 +506,7 @@
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
+				FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */,
 				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
