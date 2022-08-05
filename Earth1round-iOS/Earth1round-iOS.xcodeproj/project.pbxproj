@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1AD600289542A300DBEEAD /* UIStackView+AddArrangedSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1AD5FF289542A300DBEEAD /* UIStackView+AddArrangedSubviews.swift */; };
 		B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F44287D64820098BB87 /* EarthViewController.swift */; };
 		B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */; };
 		FC415496287B297400300A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415495287B297400300A9E /* AppDelegate.swift */; };
@@ -29,12 +30,23 @@
 		FC415511288171980030836E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550E288171980030836E /* CalendarViewController.swift */; };
 		FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */; };
 		FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */; };
+		FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */; };
+		FC6EB1C52897DA08007946F9 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C42897DA08007946F9 /* NicknameViewController.swift */; };
+		FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */; };
+		FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1CB28982F1D007946F9 /* UITextField+addLeftPadding.swift */; };
+		FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1CD28983002007946F9 /* TermsTableViewCell.swift */; };
+		FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1DD289834B1007946F9 /* TermsLiterals.swift */; };
+		FC6EB1E028983F26007946F9 /* UITableView+Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1DF28983F26007946F9 /* UITableView+Generic.swift */; };
+		FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */; };
 		FC72672E2885692100BBE712 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672D2885692100BBE712 /* RxCocoa */; };
 		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
+		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
+		FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED43288F082F00495CD9 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1AD5FF289542A300DBEEAD /* UIStackView+AddArrangedSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+AddArrangedSubviews.swift"; sourceTree = "<group>"; };
 		B0C71F44287D64820098BB87 /* EarthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthViewController.swift; sourceTree = "<group>"; };
 		B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FC415492287B297400300A9E /* Earth1round-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Earth1round-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +68,17 @@
 		FC41550E288171980030836E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
+		FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		FC6EB1C42897DA08007946F9 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
+		FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		FC6EB1CB28982F1D007946F9 /* UITextField+addLeftPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+addLeftPadding.swift"; sourceTree = "<group>"; };
+		FC6EB1CD28983002007946F9 /* TermsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsTableViewCell.swift; sourceTree = "<group>"; };
+		FC6EB1DD289834B1007946F9 /* TermsLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsLiterals.swift; sourceTree = "<group>"; };
+		FC6EB1DF28983F26007946F9 /* UITableView+Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Generic.swift"; sourceTree = "<group>"; };
+		FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		FCE0ED43288F082F00495CD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +138,7 @@
 			children = (
 				FC41549E287B297600300A9E /* Assets.xcassets */,
 				FC4154B1287B29BF00300A9E /* Constants */,
+				FC6EB1DC2898348A007946F9 /* Literals */,
 				FC4154B0287B29BA00300A9E /* Extensions */,
 				FC4154AF287B29B300300A9E /* Fonts */,
 				FC4154AE287B29A600300A9E /* Storyboards */,
@@ -128,9 +151,12 @@
 			isa = PBXGroup;
 			children = (
 				FCC2B39A2885674A00924872 /* Base */,
-				FC4154B5287B29DA00300A9E /* Cells */,
-				FC4154B4287B29D800300A9E /* ViewModels */,
-				FC4154B3287B29D400300A9E /* Views */,
+				FC6EB1D828983152007946F9 /* PopUp */,
+				FC6EB1DA28983165007946F9 /* Setting */,
+				FC6EB1C82897DA6B007946F9 /* Login */,
+				FC6EB1D3289830AF007946F9 /* CharacterSelection */,
+				FC6EB1D228983094007946F9 /* Calendar */,
+				FC6EB1D4289830E9007946F9 /* Course */,
 				FC4154B2287B29D000300A9E /* ViewControllers */,
 			);
 			path = Presentation;
@@ -175,10 +201,13 @@
 			isa = PBXGroup;
 			children = (
 				FC4155072881717E0030836E /* UIVIew+addSubViews.swift */,
+				FC1AD5FF289542A300DBEEAD /* UIStackView+AddArrangedSubviews.swift */,
 				FC4155042881717E0030836E /* NSObject+ClassName.swift */,
 				FC4155062881717E0030836E /* UICollectionView+Generic.swift */,
+				FC6EB1DF28983F26007946F9 /* UITableView+Generic.swift */,
 				FC4155052881717E0030836E /* UINavigationController+Extensions.swift */,
 				FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */,
+				FC6EB1CB28982F1D007946F9 /* UITextField+addLeftPadding.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,9 +223,6 @@
 		FC4154B2287B29D000300A9E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FC41550E288171980030836E /* CalendarViewController.swift */,
-				FC41550C288171980030836E /* CharacterSelectionViewController.swift */,
-				FC41550D288171980030836E /* CourseViewController.swift */,
 				FC415499287B297400300A9E /* ViewController.swift */,
 				B0C71F44287D64820098BB87 /* EarthViewController.swift */,
 				B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */,
@@ -204,26 +230,12 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		FC4154B3287B29D400300A9E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		FC4154B4287B29D800300A9E /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		FC4154B5287B29DA00300A9E /* Cells */ = {
+		FC4154B5287B29DA00300A9E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */,
 			);
-			path = Cells;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FC4154B6287B29E200300A9E /* Models */ = {
@@ -277,6 +289,131 @@
 				FC4154A0287B297600300A9E /* LaunchScreen.storyboard */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		FC6EB1C82897DA6B007946F9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1D028983026007946F9 /* ViewController */,
+				FC6EB1D128983040007946F9 /* Cell */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FC6EB1D028983026007946F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCE0ED43288F082F00495CD9 /* LoginViewController.swift */,
+				FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */,
+				FC6EB1C42897DA08007946F9 /* NicknameViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC6EB1D128983040007946F9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1CD28983002007946F9 /* TermsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FC6EB1D228983094007946F9 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1D5289830F8007946F9 /* Viewcontroller */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FC6EB1D3289830AF007946F9 /* CharacterSelection */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1D62898310A007946F9 /* ViewController */,
+				FC4154B5287B29DA00300A9E /* Cell */,
+			);
+			path = CharacterSelection;
+			sourceTree = "<group>";
+		};
+		FC6EB1D4289830E9007946F9 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1D728983118007946F9 /* ViewController */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		FC6EB1D5289830F8007946F9 /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				FC41550E288171980030836E /* CalendarViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		FC6EB1D62898310A007946F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC41550C288171980030836E /* CharacterSelectionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC6EB1D728983118007946F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC41550D288171980030836E /* CourseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC6EB1D828983152007946F9 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1D92898315B007946F9 /* ViewController */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
+		FC6EB1D92898315B007946F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC6EB1DA28983165007946F9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1E228991E39007946F9 /* Cell */,
+				FC6EB1DB28983172007946F9 /* ViewController */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		FC6EB1DB28983172007946F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC6EB1DC2898348A007946F9 /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1DD289834B1007946F9 /* TermsLiterals.swift */,
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
+		FC6EB1E228991E39007946F9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FCC2B39A2885674A00924872 /* Base */ = {
@@ -395,19 +532,30 @@
 			files = (
 				B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */,
 				FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */,
+				FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */,
 				FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */,
 				FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */,
 				FC415503288171630030836E /* Size.swift in Sources */,
 				FC415511288171980030836E /* CalendarViewController.swift in Sources */,
+				FC6EB1E028983F26007946F9 /* UITableView+Generic.swift in Sources */,
+				FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */,
+				FC6EB1C52897DA08007946F9 /* NicknameViewController.swift in Sources */,
+				FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */,
 				FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */,
 				FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */,
 				FC415510288171980030836E /* CourseViewController.swift in Sources */,
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
+				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
+				FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */,
+				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
+				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
+				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
+				FC1AD600289542A300DBEEAD /* UIStackView+AddArrangedSubviews.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
