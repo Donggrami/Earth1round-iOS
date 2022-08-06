@@ -7,16 +7,19 @@
 
 import UIKit
 import SnapKit
+import Then
+import HealthKit
 
-class EarthViewController: UIViewController{
+class EarthViewController: BaseViewController{
     
     var hamburgerButton = UIButton().then {
         $0.backgroundColor = .gray
     }
     
     var walkText = UILabel().then {
-        $0.text = "2000 걸음"
-        $0.font = .boldSystemFont(ofSize: 35)
+        $0.text = "0 걸음"
+        $0.font = .systemFont(ofSize: 16)
+        $0.changeTextBold(changeText: "0")
     }
     
     var dayText = UILabel().then {
@@ -46,35 +49,88 @@ class EarthViewController: UIViewController{
         $0.backgroundColor = .gray
     }
     
+    var healthStore: HealthStore?
+
+    
+    //MARK - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-        
+ 
         initView()
-       
-        initContraint()
         
+        initContraint()
+    
         homeButton.addTarget(self, action: #selector(handleTap),for:.touchUpInside)
     }
     
-    func initView(){
-        self.view.addSubview(hamburgerButton)
-        self.view.addSubview(walkText)
-        self.view.addSubview(dayText)
-        self.view.addSubview(curCourseText)
-        self.view.addSubview(progressText)
-        self.view.addSubview(progressBar)
-        self.view.addSubview(characterView)
-        self.view.addSubview(homeButton)
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
         
+        initHealthKit()
+   
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    
+    //MARK - Methods
+
+    func initView(){
+        view.addSubviews(hamburgerButton,walkText,dayText,
+                         curCourseText,progressText,progressBar,
+                         characterView,homeButton)
+    }
+    
+   
+    func initHealthKit(){
+        healthStore = HealthStore()
+        
+        if let healthStore = healthStore {
+            healthStore.requestAuthorization { success in
+                print(success)
+                if success {
+                    healthStore.calculateSteps { statisticsCollection in
+                        if let statisticsCollection = statisticsCollection {
+                            self.getSteps(statisticsCollection)
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    func getSteps(_ statisticsCollection: HKStatisticsCollection) {
+        let startDate = Calendar.current.date(byAdding: .day, value: -1, to: Date())!
+        
+        let endDate = Date()
+        
+        statisticsCollection.enumerateStatistics(from: startDate, to: endDate) { statistics, stop in
+            let count = statistics.sumQuantity()?.doubleValue(for: .count())
+            
+            let steps = Int(count ?? 0)
+   
+            DispatchQueue.main.async {
+                
+                self.walkText.text = "\(steps) 걸음"
+                
+                self.walkText.changeTextBold(changeText: String(steps))
+            }
+       
+        }
+    }
+    
     
     func initContraint(){
         hamburgerButton.snp.makeConstraints { make in
-            make.width.height.equalTo(40)
-            make.top.equalToSuperview().offset(50)
-            make.leading.equalToSuperview().offset(22)
+            make.width.height.equalTo(35)
+            make.top.equalToSuperview().offset(44)
+            make.leading.equalToSuperview().offset(20)
         }
         
         walkText.snp.makeConstraints { make in
@@ -87,21 +143,23 @@ class EarthViewController: UIViewController{
             make.top.equalTo(walkText.snp.bottom).offset(3)
         }
         
-        curCourseText.snp.makeConstraints { make in
-            make.leading.equalTo(hamburgerButton)
-            make.top.equalTo(dayText.snp.bottom).offset(29)
-        }
-        
         progressText.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().offset(-22)
-            make.bottom.equalTo(curCourseText)
+            let mainWidth = UIScreen.main.bounds.width
+            let position = (Float(mainWidth)-40)*progressBar.progress
+            make.leading.equalTo(progressBar).offset(position-17)
+            make.bottom.equalTo(progressBar.snp.top).offset(-4)
         }
         
         progressBar.snp.makeConstraints { make in
             make.leading.equalTo(hamburgerButton)
-            make.trailing.equalTo(progressText)
-            make.top.equalTo(curCourseText.snp.bottom).offset(10)
-            make.height.equalTo(30)
+            make.trailing.equalToSuperview().offset(-20)
+            make.top.equalTo(dayText.snp.bottom).offset(43)
+            make.height.equalTo(15)
+        }
+        
+        curCourseText.snp.makeConstraints { make in
+            make.leading.equalTo(hamburgerButton)
+            make.top.equalTo(progressBar.snp.bottom).offset(4)
         }
         
         characterView.snp.makeConstraints{(make) in
