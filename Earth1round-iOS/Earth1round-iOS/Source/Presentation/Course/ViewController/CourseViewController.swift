@@ -7,6 +7,7 @@
 
 import UIKit
 
+import GoogleMaps
 import SnapKit
 import Then
 
@@ -14,25 +15,20 @@ final class CourseViewController: BaseViewController {
     
     // MARK: - UI Components
     
-    private var mapView = UIView().then {
-        $0.backgroundColor = .systemGray4
+    private var mapView = GMSMapView().then {
+        let camera = GMSCameraPosition.camera(withLatitude: 37.566508,
+                                              longitude: 126.977945,
+                                              zoom: 8.0)
+        $0.camera = camera
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 37.566508,
+                                                 longitude: 126.977945)
+        marker.title = "korea"
+        marker.snippet = "South Korea"
+        marker.map = $0
     }
     
-    private var exchangeButton = UIButton().then {
-        $0.backgroundColor = .lightGray
-    }
-    
-    private var startingPointButton = UIButton().then {
-        $0.setTitle("출발지 선택", for: .normal)
-        $0.titleLabel?.contentMode = .left
-        $0.backgroundColor = .systemGray4
-    }
-    
-    private var destinationButton = UIButton().then {
-        $0.setTitle("도착지 선택", for: .normal)
-        $0.titleLabel?.contentMode = .left
-        $0.backgroundColor = .systemGray4
-    }
+    private var bottomSheet = ERBottomSheet()
     
     // MARK: - View Life Cycle
     
@@ -50,30 +46,13 @@ final class CourseViewController: BaseViewController {
     }
     
     private func setupViewHierarchy() {
-        view.addSubviews(mapView, exchangeButton, startingPointButton, destinationButton)
+        view.addSubviews(mapView, bottomSheet)
     }
     
     private func setupConstraints() {
+        bottomSheet.setupBottomSheetConstraints()
         mapView.snp.makeConstraints {
-            $0.height.equalTo(500)
-            $0.top.leading.trailing.equalToSuperview()
-        }
-        exchangeButton.snp.makeConstraints {
-            $0.top.equalTo(mapView.snp.bottom).offset(45)
-            $0.width.height.equalTo(50)
-            $0.leading.equalToSuperview().inset(20)
-        }
-        startingPointButton.snp.makeConstraints {
-            $0.top.equalTo(mapView.snp.bottom).offset(20)
-            $0.leading.equalTo(exchangeButton.snp.trailing).offset(10)
-            $0.trailing.equalToSuperview().inset(20)
-            $0.height.equalTo(41)
-        }
-        destinationButton.snp.makeConstraints {
-            $0.top.equalTo(startingPointButton.snp.bottom).offset(20)
-            $0.leading.equalTo(startingPointButton)
-            $0.trailing.equalTo(startingPointButton)
-            $0.height.equalTo(startingPointButton)
+            $0.edges.equalToSuperview()
         }
     }
 }
