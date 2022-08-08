@@ -40,6 +40,7 @@
 		FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */; };
 		FC72672E2885692100BBE712 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672D2885692100BBE712 /* RxCocoa */; };
 		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
+		FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC868990289E6BF100CEE14C /* ERBottomSheet.swift */; };
 		FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
 		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
@@ -80,6 +81,7 @@
 		FC6EB1DD289834B1007946F9 /* TermsLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsLiterals.swift; sourceTree = "<group>"; };
 		FC6EB1DF28983F26007946F9 /* UITableView+Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Generic.swift"; sourceTree = "<group>"; };
 		FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		FC868990289E6BF100CEE14C /* ERBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERBottomSheet.swift; sourceTree = "<group>"; };
 		FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+makeRounded.swift"; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		FC4154AB287B298C00300A9E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FC86898E289E6BB900CEE14C /* Components */,
 				FCC2B39A2885674A00924872 /* Base */,
 				FC6EB1D828983152007946F9 /* PopUp */,
 				FC6EB1DA28983165007946F9 /* Setting */,
@@ -443,6 +446,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FC86898E289E6BB900CEE14C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FC868990289E6BF100CEE14C /* ERBottomSheet.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		FCC2B39A2885674A00924872 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,6 +624,7 @@
 				FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */,
 				FC415510288171980030836E /* CourseViewController.swift in Sources */,
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
+				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
