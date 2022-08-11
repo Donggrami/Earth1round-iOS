@@ -25,7 +25,7 @@ class ERBottomSheet: UIView {
         $0.makeRounded(radius: 3)
     }
     private var confirmButton = UIButton().then {
-        $0.backgroundColor = .systemYellow
+        $0.backgroundColor = Asset.Colors.mainYellow.color
     }
     var startButton = UIButton().then {
         $0.backgroundColor = .systemGray5
@@ -35,6 +35,7 @@ class ERBottomSheet: UIView {
     }
     var distance = UILabel().then {
         $0.text = "두 장소 까지의 거리"
+        $0.font = .erFont(type: .NTRegular16)
     }
 
     private lazy var viewPan = UIPanGestureRecognizer(target: self,

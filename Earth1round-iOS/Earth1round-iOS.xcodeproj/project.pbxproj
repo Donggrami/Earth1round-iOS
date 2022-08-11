@@ -42,6 +42,13 @@
 		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
 		FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC868990289E6BF100CEE14C /* ERBottomSheet.swift */; };
 		FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */; };
+		FC9A4D2028A4FBEB00C41DEC /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D1F28A4FBEB00C41DEC /* NotoSansKR-Bold.otf */; };
+		FC9A4D2228A4FBF400C41DEC /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2128A4FBF400C41DEC /* NotoSansKR-Regular.otf */; };
+		FC9A4D2628A4FE1B00C41DEC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2528A4FE1B00C41DEC /* Colors.xcassets */; };
+		FC9A4D2828A4FE4500C41DEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2728A4FE4500C41DEC /* Images.xcassets */; };
+		FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A4D2928A5007C00C41DEC /* Fonts.swift */; };
+		FC9A4D2D28A507E000C41DEC /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2C28A507E000C41DEC /* swiftgen.yml */; };
+		FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
 		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
 		FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED43288F082F00495CD9 /* LoginViewController.swift */; };
@@ -83,6 +90,13 @@
 		FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		FC868990289E6BF100CEE14C /* ERBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERBottomSheet.swift; sourceTree = "<group>"; };
 		FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+makeRounded.swift"; sourceTree = "<group>"; };
+		FC9A4D1F28A4FBEB00C41DEC /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		FC9A4D2128A4FBF400C41DEC /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		FC9A4D2528A4FE1B00C41DEC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FC9A4D2728A4FE4500C41DEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC9A4D2928A5007C00C41DEC /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FC9A4D2C28A507E000C41DEC /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FCE0ED43288F082F00495CD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				FC4154BD287B2A4500300A9E /* .swiftlint.yml */,
+				FC9A4D2C28A507E000C41DEC /* swiftgen.yml */,
 				FC415494287B297400300A9E /* Earth1round-iOS */,
 				FC415493287B297400300A9E /* Products */,
 				13A327FCB3C5E1B542D1990F /* Pods */,
@@ -145,7 +160,7 @@
 		FC415494287B297400300A9E /* Earth1round-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FC4154AA287B298400300A9E /* Resource */,
+				FC9A4D1D28A4FB7700C41DEC /* Global */,
 				FC4154A9287B297D00300A9E /* Source */,
 			);
 			path = "Earth1round-iOS";
@@ -164,13 +179,10 @@
 		FC4154AA287B298400300A9E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FC9A4D1E28A4FB8600C41DEC /* Fonts */,
 				FC41549E287B297600300A9E /* Assets.xcassets */,
-				FC4154B1287B29BF00300A9E /* Constants */,
-				FC6EB1DC2898348A007946F9 /* Literals */,
-				FC4154B0287B29BA00300A9E /* Extensions */,
-				FC4154AF287B29B300300A9E /* Fonts */,
-				FC4154AE287B29A600300A9E /* Storyboards */,
-				FC4154BC287B2A0E00300A9E /* Support */,
+				FC9A4D2728A4FE4500C41DEC /* Images.xcassets */,
+				FC9A4D2528A4FE1B00C41DEC /* Colors.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -219,13 +231,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		FC4154AF287B29B300300A9E /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		FC4154B0287B29BA00300A9E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +250,7 @@
 		FC4154B1287B29BF00300A9E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */,
 				FC415502288171630030836E /* Size.swift */,
 			);
 			path = Constants;
@@ -454,6 +460,29 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		FC9A4D1D28A4FB7700C41DEC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				FC4154AA287B298400300A9E /* Resource */,
+				FC4154B1287B29BF00300A9E /* Constants */,
+				FC6EB1DC2898348A007946F9 /* Literals */,
+				FC4154B0287B29BA00300A9E /* Extensions */,
+				FC4154AE287B29A600300A9E /* Storyboards */,
+				FC4154BC287B2A0E00300A9E /* Support */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		FC9A4D1E28A4FB8600C41DEC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC9A4D2128A4FBF400C41DEC /* NotoSansKR-Regular.otf */,
+				FC9A4D1F28A4FBEB00C41DEC /* NotoSansKR-Bold.otf */,
+				FC9A4D2928A5007C00C41DEC /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		FCC2B39A2885674A00924872 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,11 +499,12 @@
 			buildConfigurationList = FC4154A6287B297600300A9E /* Build configuration list for PBXNativeTarget "Earth1round-iOS" */;
 			buildPhases = (
 				A490CBC07790F45D8A92BF0C /* [CP] Check Pods Manifest.lock */,
+				366F3CA38D67C098B60DF942 /* [CP] Copy Pods Resources */,
 				FC41548E287B297400300A9E /* Sources */,
 				FC41548F287B297400300A9E /* Frameworks */,
 				FC415490287B297400300A9E /* Resources */,
-				FCD07046288AA7CF006764C4 /* ShellScript */,
-				366F3CA38D67C098B60DF942 /* [CP] Copy Pods Resources */,
+				FCD07046288AA7CF006764C4 /* SwiftLint Script */,
+				FC9A4D3028A507FA00C41DEC /* SwiftGen Script */,
 			);
 			buildRules = (
 			);
@@ -539,7 +569,12 @@
 				FC4154BE287B2A4500300A9E /* .swiftlint.yml in Resources */,
 				FC4154A2287B297600300A9E /* LaunchScreen.storyboard in Resources */,
 				FC41549F287B297600300A9E /* Assets.xcassets in Resources */,
+				FC9A4D2628A4FE1B00C41DEC /* Colors.xcassets in Resources */,
+				FC9A4D2828A4FE4500C41DEC /* Images.xcassets in Resources */,
 				FC41549D287B297400300A9E /* Main.storyboard in Resources */,
+				FC9A4D2228A4FBF400C41DEC /* NotoSansKR-Regular.otf in Resources */,
+				FC9A4D2028A4FBEB00C41DEC /* NotoSansKR-Bold.otf in Resources */,
+				FC9A4D2D28A507E000C41DEC /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +620,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCD07046288AA7CF006764C4 /* ShellScript */ = {
+		FC9A4D3028A507FA00C41DEC /* SwiftGen Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -594,6 +629,25 @@
 			);
 			inputPaths = (
 			);
+			name = "SwiftGen Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen config run\n";
+		};
+		FCD07046288AA7CF006764C4 /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -625,12 +679,14 @@
 				FC415510288171980030836E /* CourseViewController.swift in Sources */,
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
 				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
+				FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
 				FCED3F0728A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift in Sources */,
 				FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */,
 				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
+				FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */,
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
@@ -786,7 +842,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
+				INFOPLIST_FILE = "Earth1round-iOS/Global/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -815,7 +871,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
+				INFOPLIST_FILE = "Earth1round-iOS/Global/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
