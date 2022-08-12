@@ -94,6 +94,7 @@ class EarthViewController: BaseViewController{
             healthStore.requestAuthorization { success in
                 print(success)
                 if success {
+                 
                     healthStore.calculateSteps { statisticsCollection in
                         if let statisticsCollection = statisticsCollection {
                             self.getSteps(statisticsCollection)
@@ -114,8 +115,13 @@ class EarthViewController: BaseViewController{
             let count = statistics.sumQuantity()?.doubleValue(for: .count())
             
             let steps = Int(count ?? 0)
-   
+            
+            
             DispatchQueue.main.async {
+                
+                if(steps == 0){
+                    self.showPopUp()
+                }
                 
                 self.walkText.text = "\(steps) 걸음"
                 
@@ -174,6 +180,13 @@ class EarthViewController: BaseViewController{
             make.trailing.equalToSuperview().offset(-22)
             make.bottom.equalToSuperview().offset(-45)
         }
+    }
+    
+    private func showPopUp(){
+        let vc=HealthKitPopUpViewController()
+        
+        vc.modalPresentationStyle = .overCurrentContext
+        present(vc,animated: true,completion: nil)
     }
     
     @objc func handleTap(){

@@ -23,7 +23,6 @@ class HealthStore {
         let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
         
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
-        print(startDate)
         
         let anchorDate = Calendar(identifier: .iso8601).date(from: Calendar(identifier: .iso8601).dateComponents([.yearForWeekOfYear, .weekOfYear], from: Date()))!
         

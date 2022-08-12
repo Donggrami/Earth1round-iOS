@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB3E288BF643002C5988 /* MyRecordViewController.swift */; };
 		B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB40288BF87B002C5988 /* MyRecordCell.swift */; };
+		B034EAB428A3708100737467 /* HealthKitPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034EAB328A3708100737467 /* HealthKitPopUpViewController.swift */; };
 		B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD540A289E5B7D005384DF /* HealthStore.swift */; };
 		B0C47BEB289D70350098D6C0 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C47BEA289D70350098D6C0 /* UILabel+Extensions.swift */; };
 		B0C56654289522CA004EF4B6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C56653289522CA004EF4B6 /* HealthKit.framework */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		B032AB3E288BF643002C5988 /* MyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordViewController.swift; sourceTree = "<group>"; };
 		B032AB40288BF87B002C5988 /* MyRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRecordCell.swift; path = "Earth1round-iOS/Source/Presentation/ViewControllers/MyRecordCell.swift"; sourceTree = SOURCE_ROOT; };
+		B034EAB328A3708100737467 /* HealthKitPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPopUpViewController.swift; sourceTree = "<group>"; };
 		B0BD540A289E5B7D005384DF /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		B0C47BEA289D70350098D6C0 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		B0C56653289522CA004EF4B6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -233,6 +235,7 @@
 				B032AB3E288BF643002C5988 /* MyRecordViewController.swift */,
 				B0C71F44287D64820098BB87 /* EarthViewController.swift */,
 				B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */,
+				B034EAB328A3708100737467 /* HealthKitPopUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */,
+				B034EAB428A3708100737467 /* HealthKitPopUpViewController.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
 				B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */,
