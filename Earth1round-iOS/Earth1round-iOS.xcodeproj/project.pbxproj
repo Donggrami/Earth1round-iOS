@@ -11,7 +11,7 @@
 		B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB40288BF87B002C5988 /* MyRecordCell.swift */; };
 		B034EAB428A3708100737467 /* HealthKitPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034EAB328A3708100737467 /* HealthKitPopUpViewController.swift */; };
 		B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD540A289E5B7D005384DF /* HealthStore.swift */; };
-		B0C47BEB289D70350098D6C0 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C47BEA289D70350098D6C0 /* UILabel+Extensions.swift */; };
+		B0C47BEB289D70350098D6C0 /* UILabel+changeTextBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */; };
 		B0C56654289522CA004EF4B6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C56653289522CA004EF4B6 /* HealthKit.framework */; };
 		B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F44287D64820098BB87 /* EarthViewController.swift */; };
 		B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */; };
@@ -45,7 +45,7 @@
 		B032AB40288BF87B002C5988 /* MyRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRecordCell.swift; path = "Earth1round-iOS/Source/Presentation/ViewControllers/MyRecordCell.swift"; sourceTree = SOURCE_ROOT; };
 		B034EAB328A3708100737467 /* HealthKitPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPopUpViewController.swift; sourceTree = "<group>"; };
 		B0BD540A289E5B7D005384DF /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
-		B0C47BEA289D70350098D6C0 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+changeTextBold.swift"; sourceTree = "<group>"; };
 		B0C56653289522CA004EF4B6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		B0C56655289524EB004EF4B6 /* Earth1round-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Earth1round-iOS.entitlements"; sourceTree = "<group>"; };
 		B0C71F44287D64820098BB87 /* EarthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthViewController.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 				FC4155062881717E0030836E /* UICollectionView+Generic.swift */,
 				FC4155052881717E0030836E /* UINavigationController+Extensions.swift */,
 				FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */,
-				B0C47BEA289D70350098D6C0 /* UILabel+Extensions.swift */,
+				B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -432,7 +432,7 @@
 			files = (
 				B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */,
 				FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */,
-				B0C47BEB289D70350098D6C0 /* UILabel+Extensions.swift in Sources */,
+				B0C47BEB289D70350098D6C0 /* UILabel+changeTextBold.swift in Sources */,
 				FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */,
 				FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */,
 				FC415503288171630030836E /* Size.swift in Sources */,

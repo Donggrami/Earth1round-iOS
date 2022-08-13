@@ -1,19 +1,13 @@
-//
-//  UILabel+Extensions.swift
-//  Earth1round-iOS
-//
-//  Created by 황유란 on 2022/08/06.
-//
 
 import Foundation
 import UIKit
 
 extension UILabel {
-    func changeTextBold(changeText: String)  {
+    func changeTextBold(changeText: String, boldSize: CGFloat)  {
         
         guard let text = self.text else { return }
         
-        let font = UIFont.boldSystemFont(ofSize: 32)
+        let font = UIFont.boldSystemFont(ofSize: boldSize)
         
         let attributeString = NSMutableAttributedString(string: text)
         

@@ -19,7 +19,7 @@ class EarthViewController: BaseViewController{
     var walkText = UILabel().then {
         $0.text = "0 걸음"
         $0.font = .systemFont(ofSize: 16)
-        $0.changeTextBold(changeText: "0")
+        $0.changeTextBold(changeText: "0", boldSize: 32)
     }
     
     var dayText = UILabel().then {
@@ -57,7 +57,7 @@ class EarthViewController: BaseViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+
  
         initView()
         
@@ -125,7 +125,7 @@ class EarthViewController: BaseViewController{
                 
                 self.walkText.text = "\(steps) 걸음"
                 
-                self.walkText.changeTextBold(changeText: String(steps))
+                self.walkText.changeTextBold(changeText: String(steps), boldSize: 32)
             }
        
         }
@@ -150,7 +150,7 @@ class EarthViewController: BaseViewController{
         }
         
         progressText.snp.makeConstraints { make in
-            let mainWidth = UIScreen.main.bounds.width
+            let mainWidth = Size.screenWidth
             let position = (Float(mainWidth)-40)*progressBar.progress
             make.leading.equalTo(progressBar).offset(position-17)
             make.bottom.equalTo(progressBar.snp.top).offset(-4)

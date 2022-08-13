@@ -185,7 +185,7 @@ class HomeViewController: BaseViewController {
                 
                 self.totalWalk.text = "\(self.totalSteps) 걸음"
                 
-                self.totalWalk.changeTextBold(changeText: String(self.totalSteps))
+                self.totalWalk.changeTextBold(changeText: String(self.totalSteps), boldSize: 32)
             }
        
         }
