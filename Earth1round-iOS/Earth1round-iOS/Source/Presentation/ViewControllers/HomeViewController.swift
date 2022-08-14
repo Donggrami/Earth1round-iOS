@@ -7,10 +7,15 @@
 
 import UIKit
 import Then
+import HealthKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     var hamburgerButton = UIButton().then{
         $0.backgroundColor = .gray
+    }
+    
+    var totalWalkBackground = UIView().then {
+        $0.backgroundColor = .lightGray
     }
     
     var totalWalkText = UILabel().then {
@@ -19,7 +24,11 @@ class HomeViewController: UIViewController {
     
     var totalWalk = UILabel().then {
         $0.text = "20,000 걸음"
-        $0.font = .boldSystemFont(ofSize: 35)
+        $0.font = .systemFont(ofSize: 14)
+    }
+    
+    var trophyView = UIView().then {
+        $0.backgroundColor = .gray
     }
     
     var characterView = UIView().then {
@@ -43,33 +52,41 @@ class HomeViewController: UIViewController {
         $0.backgroundColor = .gray
     }
     
+    
+    var healthStore: HealthStore?
+
+    var totalSteps = 0
+    
+    //MARK - LifeCycle
+   
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .white
         
         initView()
         
-        setContraints()
+        initConstraint()
         
-        homeButton.addTarget(self, action: #selector(handleTap),for: .touchUpInside)
+        initHealthKit()
+        
+        initNavigationHandler()
+        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
     }
+    
+    //MARK - Methods
     
     private func initView(){
-        self.view.addSubview(hamburgerButton)
-        self.view.addSubview(totalWalkText)
-        self.view.addSubview(totalWalk)
-        self.view.addSubview(characterView)
-        self.view.addSubview(characterName)
-        self.view.addSubview(characterLevel)
-        self.view.addSubview(chooseCourseButton)
-        self.view.addSubview(homeButton)
+        view.addSubviews(hamburgerButton, totalWalkBackground, totalWalkText
+                         ,totalWalk,trophyView
+                         ,characterView,characterName,characterLevel
+        ,chooseCourseButton,homeButton)
     }
     
     private func initConstraint(){
@@ -79,21 +96,34 @@ class HomeViewController: UIViewController {
             make.leading.equalToSuperview().offset(22)
         }
         
+        totalWalkBackground.snp.makeConstraints { make in
+            make.height.equalTo(90)
+            make.leading.equalTo(hamburgerButton)
+            make.trailing.equalToSuperview().offset(-22)
+            make.top.equalTo(hamburgerButton.snp.bottom).offset(20)
+        }
+        
         totalWalkText.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(hamburgerButton.snp.bottom).offset(28)
+            make.top.equalTo(totalWalkBackground).offset(10)
         }
         
         totalWalk.snp.makeConstraints { make in
             make.centerX.equalTo(totalWalkText)
-            make.top.equalTo(totalWalkText.snp.bottom).offset(5)
+            make.top.equalTo(totalWalkText.snp.bottom).offset(7)
+        }
+        
+        trophyView.snp.makeConstraints { make in
+            make.width.height.equalTo(68)
+            make.leading.equalTo(hamburgerButton)
+            make.top.equalTo(totalWalkBackground.snp.bottom).offset(10)
         }
         
         characterView.snp.makeConstraints{(make) in
             make.width.equalTo(156)
             make.height.equalTo(234)
             make.centerX.equalToSuperview()
-            make.top.equalTo(totalWalk.snp.bottom).offset(62)
+            make.top.equalTo(trophyView.snp.bottom).offset(47)
         }
         
         characterName.snp.makeConstraints { make in
@@ -120,7 +150,86 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @objc func handleTap(){
+    func initHealthKit(){
+        healthStore = HealthStore()
+        
+        if let healthStore = healthStore {
+            healthStore.requestAuthorization { success in
+                print(success)
+                if success {
+                    healthStore.calculateSteps { statisticsCollection in
+                        if let statisticsCollection = statisticsCollection {
+                            self.getSteps(statisticsCollection)
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+   
+    func getSteps(_ statisticsCollection: HKStatisticsCollection) {
+        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
+        
+        let endDate = Date()
+        
+        statisticsCollection.enumerateStatistics(from: startDate, to: endDate) { statistics, stop in
+            let count = statistics.sumQuantity()?.doubleValue(for: .count())
+            
+            let steps = Int(count ?? 0)
+            
+            self.totalSteps += steps
+
+            DispatchQueue.main.async {
+                
+                self.totalWalk.text = "\(self.totalSteps) 걸음"
+                
+                self.totalWalk.changeTextBold(changeText: String(self.totalSteps), boldSize: 32)
+            }
+       
+        }
+    }
+    
+    
+    //Navigation
+    
+    @objc func goToEarth(){
         navigationController?.popViewController(animated: true)
     }
+    
+    @objc func goToMyRecord(){
+        let vc=MyRecordViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc  func goToCourseSelect(){
+        let vc=CourseViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc  func goToChangeCaracter(){
+        let vc=CharacterSelectionViewController()
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc  func goToCalendar(){
+        let vc=CalendarViewController()
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func initNavigationHandler(){
+        homeButton.addTarget(self, action: #selector(goToEarth), for: .touchUpInside)
+
+        trophyView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToMyRecord)))
+  
+        characterView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToChangeCaracter)))
+                                           
+        chooseCourseButton.addTarget(self, action: #selector(goToCourseSelect), for: .touchUpInside)
+        
+        totalWalkBackground.addGestureRecognizer(UITapGestureRecognizer(target: self, action:#selector(goToCalendar)))
+    }
+        
 }
