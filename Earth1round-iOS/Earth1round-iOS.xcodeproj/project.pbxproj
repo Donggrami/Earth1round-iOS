@@ -48,11 +48,14 @@
 		FC9D308428A6402000E7FD48 /* MultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D308328A6402000E7FD48 /* MultiMoyaProvider.swift */; };
 		FC9D308B28A8E78800E7FD48 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D308A28A8E78800E7FD48 /* KeyChainService.swift */; };
 		FC9D309128A8F54200E7FD48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309028A8F54200E7FD48 /* Config.swift */; };
+		FC9D309428A8F65800E7FD48 /* PlaceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309328A8F65800E7FD48 /* PlaceAPI.swift */; };
+		FC9D309628A8F66C00E7FD48 /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309528A8F66C00E7FD48 /* PlaceService.swift */; };
 		FC9D309D28A905B800E7FD48 /* CourseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */; };
 		FC9D30A028A9081500E7FD48 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309F28A9081500E7FD48 /* Place.swift */; };
 		FC9D30AB28AACE4900E7FD48 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */; };
 		FC9D30B628AB9FBC00E7FD48 /* PlaceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */; };
 		FC9D30B828AB9FC100E7FD48 /* PlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */; };
+		FC9D30BB28AB9FE600E7FD48 /* DefaultPlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30BA28AB9FE600E7FD48 /* DefaultPlaceRepository.swift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
 		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
 		FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED43288F082F00495CD9 /* LoginViewController.swift */; };
@@ -100,11 +103,14 @@
 		FC9D308328A6402000E7FD48 /* MultiMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiMoyaProvider.swift; sourceTree = "<group>"; };
 		FC9D308A28A8E78800E7FD48 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		FC9D309028A8F54200E7FD48 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FC9D309328A8F65800E7FD48 /* PlaceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAPI.swift; sourceTree = "<group>"; };
+		FC9D309528A8F66C00E7FD48 /* PlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
 		FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRequestModel.swift; sourceTree = "<group>"; };
 		FC9D309F28A9081500E7FD48 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceUseCase.swift; sourceTree = "<group>"; };
 		FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRepository.swift; sourceTree = "<group>"; };
+		FC9D30BA28AB9FE600E7FD48 /* DefaultPlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPlaceRepository.swift; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FCE0ED43288F082F00495CD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -463,6 +469,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		FC9D309228A8F5AF00E7FD48 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				FC9D309328A8F65800E7FD48 /* PlaceAPI.swift */,
+				FC9D309528A8F66C00E7FD48 /* PlaceService.swift */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
 		FC9D309728A9040500E7FD48 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,6 +508,14 @@
 			isa = PBXGroup;
 			children = (
 				FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FC9D30B928AB9FD800E7FD48 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FC9D30BA28AB9FE600E7FD48 /* DefaultPlaceRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -663,6 +686,7 @@
 				FC415503288171630030836E /* Size.swift in Sources */,
 				FC9D30B828AB9FC100E7FD48 /* PlaceRepository.swift in Sources */,
 				FC415511288171980030836E /* CalendarViewController.swift in Sources */,
+				FC9D30BB28AB9FE600E7FD48 /* DefaultPlaceRepository.swift in Sources */,
 				FC9D308428A6402000E7FD48 /* MultiMoyaProvider.swift in Sources */,
 				FC6EB1E028983F26007946F9 /* UITableView+Generic.swift in Sources */,
 				FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */,
@@ -685,10 +709,12 @@
 				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
+				FC9D309428A8F65800E7FD48 /* PlaceAPI.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
 				FC9D309D28A905B800E7FD48 /* CourseRequestModel.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
+				FC9D309628A8F66C00E7FD48 /* PlaceService.swift in Sources */,
 				FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */,
 				FC9D308228A63FFE00E7FD48 /* MoyaLoggingPlugin.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
