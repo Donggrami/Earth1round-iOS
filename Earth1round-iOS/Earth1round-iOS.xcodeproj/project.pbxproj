@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0287665EBE1D22F17484BB8D /* Pods_Earth1round_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5670A3D0F18256507A889B8F /* Pods_Earth1round_iOS.framework */; };
+		B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB3E288BF643002C5988 /* MyRecordViewController.swift */; };
+		B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB40288BF87B002C5988 /* MyRecordCell.swift */; };
+		B034EAB428A3708100737467 /* HealthKitPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034EAB328A3708100737467 /* HealthKitPopUpViewController.swift */; };
+		B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD540A289E5B7D005384DF /* HealthStore.swift */; };
+		B0C47BEB289D70350098D6C0 /* UILabel+changeTextBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */; };
+		B0C56654289522CA004EF4B6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C56653289522CA004EF4B6 /* HealthKit.framework */; };
 		B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F44287D64820098BB87 /* EarthViewController.swift */; };
 		B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */; };
+		D3FE608DE500AB3604AAECD9 /* Pods_Earth1round_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E384E6BCF881F15F1AE5FB /* Pods_Earth1round_iOS.framework */; };
 		FC415496287B297400300A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415495287B297400300A9E /* AppDelegate.swift */; };
 		FC415498287B297400300A9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415497287B297400300A9E /* SceneDelegate.swift */; };
 		FC41549A287B297400300A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415499287B297400300A9E /* ViewController.swift */; };
@@ -63,9 +69,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03219E3284DF365B89A799A5 /* Pods-Earth1round-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earth1round-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Earth1round-iOS/Pods-Earth1round-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		5670A3D0F18256507A889B8F /* Pods_Earth1round_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Earth1round_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F8C77D7BABF04BE636D4248 /* Pods-Earth1round-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earth1round-iOS.release.xcconfig"; path = "Target Support Files/Pods-Earth1round-iOS/Pods-Earth1round-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		0CE9B6BB12DB41CDD8891A43 /* Pods-Earth1round-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earth1round-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Earth1round-iOS/Pods-Earth1round-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		64E384E6BCF881F15F1AE5FB /* Pods_Earth1round_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Earth1round_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E56C009BC4B40A321A5D4C6 /* Pods-Earth1round-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earth1round-iOS.release.xcconfig"; path = "Target Support Files/Pods-Earth1round-iOS/Pods-Earth1round-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B032AB3E288BF643002C5988 /* MyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordViewController.swift; sourceTree = "<group>"; };
+		B032AB40288BF87B002C5988 /* MyRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRecordCell.swift; path = "Earth1round-iOS/Source/Presentation/ViewControllers/MyRecordCell.swift"; sourceTree = SOURCE_ROOT; };
+		B034EAB328A3708100737467 /* HealthKitPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPopUpViewController.swift; sourceTree = "<group>"; };
+		B0BD540A289E5B7D005384DF /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+changeTextBold.swift"; sourceTree = "<group>"; };
+		B0C56653289522CA004EF4B6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		B0C56655289524EB004EF4B6 /* Earth1round-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Earth1round-iOS.entitlements"; sourceTree = "<group>"; };
 		B0C71F44287D64820098BB87 /* EarthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthViewController.swift; sourceTree = "<group>"; };
 		B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FC415492287B297400300A9E /* Earth1round-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Earth1round-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,12 +135,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C56654289522CA004EF4B6 /* HealthKit.framework in Frameworks */,
 				FC4154C1287B2AA600300A9E /* Moya in Frameworks */,
 				FC4154C7287B2AC300300A9E /* Then in Frameworks */,
 				FC7267302885692100BBE712 /* RxSwift in Frameworks */,
 				FC72672E2885692100BBE712 /* RxCocoa in Frameworks */,
 				FC4154C4287B2AB600300A9E /* SnapKit in Frameworks */,
-				0287665EBE1D22F17484BB8D /* Pods_Earth1round_iOS.framework in Frameworks */,
+				D3FE608DE500AB3604AAECD9 /* Pods_Earth1round_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,16 +151,25 @@
 		13A327FCB3C5E1B542D1990F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03219E3284DF365B89A799A5 /* Pods-Earth1round-iOS.debug.xcconfig */,
-				6F8C77D7BABF04BE636D4248 /* Pods-Earth1round-iOS.release.xcconfig */,
+				0CE9B6BB12DB41CDD8891A43 /* Pods-Earth1round-iOS.debug.xcconfig */,
+				9E56C009BC4B40A321A5D4C6 /* Pods-Earth1round-iOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B0BD5409289E5B37005384DF /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				B0BD540A289E5B7D005384DF /* HealthStore.swift */,
+			);
+			path = Health;
 			sourceTree = "<group>";
 		};
 		CEE843E4DB48070742E1556A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5670A3D0F18256507A889B8F /* Pods_Earth1round_iOS.framework */,
+				B0C56653289522CA004EF4B6 /* HealthKit.framework */,
+				64E384E6BCF881F15F1AE5FB /* Pods_Earth1round_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,6 +196,7 @@
 		FC415494287B297400300A9E /* Earth1round-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B0C56655289524EB004EF4B6 /* Earth1round-iOS.entitlements */,
 				FC4154AA287B298400300A9E /* Resource */,
 				FC4154A9287B297D00300A9E /* Source */,
 			);
@@ -207,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				FC9D308528A6679100E7FD48 /* Utils */,
+				B0BD5409289E5B37005384DF /* Health */,
 				FC86898E289E6BB900CEE14C /* Components */,
 				FCC2B39A2885674A00924872 /* Base */,
 				FC6EB1D828983152007946F9 /* PopUp */,
@@ -245,6 +270,7 @@
 				FC6EB1DF28983F26007946F9 /* UITableView+Generic.swift */,
 				FC4155052881717E0030836E /* UINavigationController+Extensions.swift */,
 				FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */,
+				B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */,
 				FC6EB1CB28982F1D007946F9 /* UITextField+addLeftPadding.swift */,
 				FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */,
 			);
@@ -263,8 +289,10 @@
 			isa = PBXGroup;
 			children = (
 				FC415499287B297400300A9E /* ViewController.swift */,
+				B032AB3E288BF643002C5988 /* MyRecordViewController.swift */,
 				B0C71F44287D64820098BB87 /* EarthViewController.swift */,
 				B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */,
+				B034EAB328A3708100737467 /* HealthKitPopUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -272,6 +300,7 @@
 		FC4154B5287B29DA00300A9E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				B032AB40288BF87B002C5988 /* MyRecordCell.swift */,
 				FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */,
 			);
 			path = Cell;
@@ -535,12 +564,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC4154A6287B297600300A9E /* Build configuration list for PBXNativeTarget "Earth1round-iOS" */;
 			buildPhases = (
-				A490CBC07790F45D8A92BF0C /* [CP] Check Pods Manifest.lock */,
+				F610400DDA23EC4DF06D1ADE /* [CP] Check Pods Manifest.lock */,
 				FC41548E287B297400300A9E /* Sources */,
 				FC41548F287B297400300A9E /* Frameworks */,
 				FC415490287B297400300A9E /* Resources */,
 				FCD07046288AA7CF006764C4 /* ShellScript */,
-				366F3CA38D67C098B60DF942 /* [CP] Copy Pods Resources */,
+				D321FFEBD4B3620E6C344613 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -612,7 +641,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		366F3CA38D67C098B60DF942 /* [CP] Copy Pods Resources */ = {
+		D321FFEBD4B3620E6C344613 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -629,7 +658,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Earth1round-iOS/Pods-Earth1round-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A490CBC07790F45D8A92BF0C /* [CP] Check Pods Manifest.lock */ = {
+		F610400DDA23EC4DF06D1ADE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -679,6 +708,7 @@
 				FC9D30AB28AACE4900E7FD48 /* GenericResponse.swift in Sources */,
 				B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */,
 				FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */,
+				B0C47BEB289D70350098D6C0 /* UILabel+changeTextBold.swift in Sources */,
 				FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */,
 				FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */,
 				FC9D308028A63FEA00E7FD48 /* BaseTargetType.swift in Sources */,
@@ -700,6 +730,11 @@
 				FC9D30B628AB9FBC00E7FD48 /* PlaceUseCase.swift in Sources */,
 				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
+				B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */,
+				B034EAB428A3708100737467 /* HealthKitPopUpViewController.swift in Sources */,
+				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
+				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
+				B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
 				FC9D308B28A8E78800E7FD48 /* KeyChainService.swift in Sources */,
@@ -718,6 +753,7 @@
 				FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */,
 				FC9D308228A63FFE00E7FD48 /* MoyaLoggingPlugin.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
+				B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,12 +895,16 @@
 		};
 		FC4154A7287B297600300A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03219E3284DF365B89A799A5 /* Pods-Earth1round-iOS.debug.xcconfig */;
+			baseConfigurationReference = 0CE9B6BB12DB41CDD8891A43 /* Pods-Earth1round-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Earth1round-iOS/Earth1round-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -872,7 +912,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -883,17 +923,22 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
 		FC4154A8287B297600300A9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F8C77D7BABF04BE636D4248 /* Pods-Earth1round-iOS.release.xcconfig */;
+			baseConfigurationReference = 9E56C009BC4B40A321A5D4C6 /* Pods-Earth1round-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Earth1round-iOS/Earth1round-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -901,17 +946,19 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.donggrami.Earth1round-Dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
