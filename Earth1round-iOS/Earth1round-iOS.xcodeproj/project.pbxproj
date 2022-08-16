@@ -49,7 +49,10 @@
 		FC9D308B28A8E78800E7FD48 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D308A28A8E78800E7FD48 /* KeyChainService.swift */; };
 		FC9D309128A8F54200E7FD48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309028A8F54200E7FD48 /* Config.swift */; };
 		FC9D309D28A905B800E7FD48 /* CourseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */; };
+		FC9D30A028A9081500E7FD48 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309F28A9081500E7FD48 /* Place.swift */; };
 		FC9D30AB28AACE4900E7FD48 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */; };
+		FC9D30B628AB9FBC00E7FD48 /* PlaceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */; };
+		FC9D30B828AB9FC100E7FD48 /* PlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
 		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
 		FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED43288F082F00495CD9 /* LoginViewController.swift */; };
@@ -98,7 +101,10 @@
 		FC9D308A28A8E78800E7FD48 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		FC9D309028A8F54200E7FD48 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRequestModel.swift; sourceTree = "<group>"; };
+		FC9D309F28A9081500E7FD48 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceUseCase.swift; sourceTree = "<group>"; };
+		FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRepository.swift; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FCE0ED43288F082F00495CD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -170,9 +176,9 @@
 		FC4154A9287B297D00300A9E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FC4154AB287B298C00300A9E /* Presentation */,
 				FC9D309728A9040500E7FD48 /* Domain */,
 				FC9D307828A63F8600E7FD48 /* Data */,
-				FC4154AB287B298C00300A9E /* Presentation */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -412,19 +418,11 @@
 		FC9D307828A63F8600E7FD48 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				FC9D307928A63F8800E7FD48 /* Repositories */,
+				FC9D30B928AB9FD800E7FD48 /* Repositories */,
 				FC9D307B28A63F9800E7FD48 /* Models */,
 				FC9D307A28A63F9000E7FD48 /* Services */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		FC9D307928A63F8800E7FD48 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D30A528AACB7B00E7FD48 /* DefaultPlaceRepository.swift */,
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 		FC9D307A28A63F9000E7FD48 /* Services */ = {
@@ -468,14 +466,37 @@
 		FC9D309728A9040500E7FD48 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				FC9D309828A9040800E7FD48 /* Usecases */,
-				FC9D309928A9040B00E7FD48 /* Reposistories */,
+				FC9D30B328AB9F6600E7FD48 /* UseCases */,
+				FC9D30B428AB9F7200E7FD48 /* Repositories */,
 				FC9D309A28A9041200E7FD48 /* Entity */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		FC9D309A28A9041200E7FD48 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FC9D309F28A9081500E7FD48 /* Place.swift */,
 			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FC9D30B328AB9F6600E7FD48 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		FC9D30B428AB9F7200E7FD48 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		FCC2B39A2885674A00924872 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9D30A028A9081500E7FD48 /* Place.swift in Sources */,
 				FC9D30AB28AACE4900E7FD48 /* GenericResponse.swift in Sources */,
 				B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */,
 				FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */,
@@ -639,6 +661,7 @@
 				FC9D308028A63FEA00E7FD48 /* BaseTargetType.swift in Sources */,
 				FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */,
 				FC415503288171630030836E /* Size.swift in Sources */,
+				FC9D30B828AB9FC100E7FD48 /* PlaceRepository.swift in Sources */,
 				FC415511288171980030836E /* CalendarViewController.swift in Sources */,
 				FC9D308428A6402000E7FD48 /* MultiMoyaProvider.swift in Sources */,
 				FC6EB1E028983F26007946F9 /* UITableView+Generic.swift in Sources */,
@@ -650,6 +673,7 @@
 				FC415510288171980030836E /* CourseViewController.swift in Sources */,
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
 				FC9D309128A8F54200E7FD48 /* Config.swift in Sources */,
+				FC9D30B628AB9FBC00E7FD48 /* PlaceUseCase.swift in Sources */,
 				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
