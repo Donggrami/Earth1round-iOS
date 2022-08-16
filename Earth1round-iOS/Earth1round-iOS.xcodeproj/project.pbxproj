@@ -48,6 +48,7 @@
 		FC9D308428A6402000E7FD48 /* MultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D308328A6402000E7FD48 /* MultiMoyaProvider.swift */; };
 		FC9D308B28A8E78800E7FD48 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D308A28A8E78800E7FD48 /* KeyChainService.swift */; };
 		FC9D309128A8F54200E7FD48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309028A8F54200E7FD48 /* Config.swift */; };
+		FC9D309D28A905B800E7FD48 /* CourseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */; };
 		FC9D30AB28AACE4900E7FD48 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
 		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
@@ -96,6 +97,7 @@
 		FC9D308328A6402000E7FD48 /* MultiMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiMoyaProvider.swift; sourceTree = "<group>"; };
 		FC9D308A28A8E78800E7FD48 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		FC9D309028A8F54200E7FD48 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRequestModel.swift; sourceTree = "<group>"; };
 		FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */,
+				FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
+				FC9D309D28A905B800E7FD48 /* CourseRequestModel.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
 				FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */,
 				FC9D308228A63FFE00E7FD48 /* MoyaLoggingPlugin.swift in Sources */,
