@@ -50,7 +50,7 @@ class HomeViewController: UIViewController {
         
         initView()
         
-        setContraints()
+        initConstraint()
         
         homeButton.addTarget(self, action: #selector(handleTap),for: .touchUpInside)
     }
