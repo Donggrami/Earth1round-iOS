@@ -62,6 +62,13 @@
 		FC9D30B628AB9FBC00E7FD48 /* PlaceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */; };
 		FC9D30B828AB9FC100E7FD48 /* PlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */; };
 		FC9D30BB28AB9FE600E7FD48 /* DefaultPlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30BA28AB9FE600E7FD48 /* DefaultPlaceRepository.swift */; };
+		FC9A4D2028A4FBEB00C41DEC /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D1F28A4FBEB00C41DEC /* NotoSansKR-Bold.otf */; };
+		FC9A4D2228A4FBF400C41DEC /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2128A4FBF400C41DEC /* NotoSansKR-Regular.otf */; };
+		FC9A4D2628A4FE1B00C41DEC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2528A4FE1B00C41DEC /* Colors.xcassets */; };
+		FC9A4D2828A4FE4500C41DEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2728A4FE4500C41DEC /* Images.xcassets */; };
+		FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A4D2928A5007C00C41DEC /* Fonts.swift */; };
+		FC9A4D2D28A507E000C41DEC /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2C28A507E000C41DEC /* swiftgen.yml */; };
+		FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
 		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
 		FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED43288F082F00495CD9 /* LoginViewController.swift */; };
@@ -124,6 +131,13 @@
 		FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceUseCase.swift; sourceTree = "<group>"; };
 		FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRepository.swift; sourceTree = "<group>"; };
 		FC9D30BA28AB9FE600E7FD48 /* DefaultPlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPlaceRepository.swift; sourceTree = "<group>"; };
+		FC9A4D1F28A4FBEB00C41DEC /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		FC9A4D2128A4FBF400C41DEC /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		FC9A4D2528A4FE1B00C41DEC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FC9A4D2728A4FE4500C41DEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC9A4D2928A5007C00C41DEC /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FC9A4D2C28A507E000C41DEC /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FCE0ED43288F082F00495CD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				FC4154BD287B2A4500300A9E /* .swiftlint.yml */,
+				FC9A4D2C28A507E000C41DEC /* swiftgen.yml */,
 				FC415494287B297400300A9E /* Earth1round-iOS */,
 				FC415493287B297400300A9E /* Products */,
 				13A327FCB3C5E1B542D1990F /* Pods */,
@@ -197,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				B0C56655289524EB004EF4B6 /* Earth1round-iOS.entitlements */,
-				FC4154AA287B298400300A9E /* Resource */,
+				FC9A4D1D28A4FB7700C41DEC /* Global */,
 				FC4154A9287B297D00300A9E /* Source */,
 			);
 			path = "Earth1round-iOS";
@@ -216,13 +231,10 @@
 		FC4154AA287B298400300A9E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FC9A4D1E28A4FB8600C41DEC /* Fonts */,
 				FC41549E287B297600300A9E /* Assets.xcassets */,
-				FC4154B1287B29BF00300A9E /* Constants */,
-				FC6EB1DC2898348A007946F9 /* Literals */,
-				FC4154B0287B29BA00300A9E /* Extensions */,
-				FC4154AF287B29B300300A9E /* Fonts */,
-				FC4154AE287B29A600300A9E /* Storyboards */,
-				FC4154BC287B2A0E00300A9E /* Support */,
+				FC9A4D2728A4FE4500C41DEC /* Images.xcassets */,
+				FC9A4D2528A4FE1B00C41DEC /* Colors.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -253,13 +265,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		FC4154AF287B29B300300A9E /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		FC4154B0287B29BA00300A9E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +285,7 @@
 		FC4154B1287B29BF00300A9E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */,
 				FC415502288171630030836E /* Size.swift */,
 			);
 			path = Constants;
@@ -547,6 +553,27 @@
 				FC9D30BA28AB9FE600E7FD48 /* DefaultPlaceRepository.swift */,
 			);
 			path = Repositories;
+		FC9A4D1D28A4FB7700C41DEC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				FC4154AA287B298400300A9E /* Resource */,
+				FC4154B1287B29BF00300A9E /* Constants */,
+				FC6EB1DC2898348A007946F9 /* Literals */,
+				FC4154B0287B29BA00300A9E /* Extensions */,
+				FC4154AE287B29A600300A9E /* Storyboards */,
+				FC4154BC287B2A0E00300A9E /* Support */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		FC9A4D1E28A4FB8600C41DEC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC9A4D2128A4FBF400C41DEC /* NotoSansKR-Regular.otf */,
+				FC9A4D1F28A4FBEB00C41DEC /* NotoSansKR-Bold.otf */,
+				FC9A4D2928A5007C00C41DEC /* Fonts.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		FCC2B39A2885674A00924872 /* Base */ = {
@@ -564,12 +591,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC4154A6287B297600300A9E /* Build configuration list for PBXNativeTarget "Earth1round-iOS" */;
 			buildPhases = (
-				F610400DDA23EC4DF06D1ADE /* [CP] Check Pods Manifest.lock */,
 				FC41548E287B297400300A9E /* Sources */,
 				FC41548F287B297400300A9E /* Frameworks */,
 				FC415490287B297400300A9E /* Resources */,
-				FCD07046288AA7CF006764C4 /* ShellScript */,
+				F610400DDA23EC4DF06D1ADE /* [CP] Check Pods Manifest.lock */,
 				D321FFEBD4B3620E6C344613 /* [CP] Copy Pods Resources */,
+				FC9A4D3028A507FA00C41DEC /* SwiftGen Script */,
 			);
 			buildRules = (
 			);
@@ -634,7 +661,12 @@
 				FC4154BE287B2A4500300A9E /* .swiftlint.yml in Resources */,
 				FC4154A2287B297600300A9E /* LaunchScreen.storyboard in Resources */,
 				FC41549F287B297600300A9E /* Assets.xcassets in Resources */,
+				FC9A4D2628A4FE1B00C41DEC /* Colors.xcassets in Resources */,
+				FC9A4D2828A4FE4500C41DEC /* Images.xcassets in Resources */,
 				FC41549D287B297400300A9E /* Main.storyboard in Resources */,
+				FC9A4D2228A4FBF400C41DEC /* NotoSansKR-Regular.otf in Resources */,
+				FC9A4D2028A4FBEB00C41DEC /* NotoSansKR-Bold.otf in Resources */,
+				FC9A4D2D28A507E000C41DEC /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,7 +712,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCD07046288AA7CF006764C4 /* ShellScript */ = {
+		FC9A4D3028A507FA00C41DEC /* SwiftGen Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -689,13 +721,14 @@
 			);
 			inputPaths = (
 			);
+			name = "SwiftGen Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen config run\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -729,6 +762,7 @@
 				FC9D309128A8F54200E7FD48 /* Config.swift in Sources */,
 				FC9D30B628AB9FBC00E7FD48 /* PlaceUseCase.swift in Sources */,
 				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
+				FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */,
 				B034EAB428A3708100737467 /* HealthKitPopUpViewController.swift in Sources */,
@@ -742,6 +776,7 @@
 				FC9D307E28A63FDE00E7FD48 /* HTTPMethodURL.swift in Sources */,
 				FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */,
 				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
+				FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */,
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
 				FC9D309428A8F65800E7FD48 /* PlaceAPI.swift in Sources */,
@@ -750,6 +785,7 @@
 				FC9D309D28A905B800E7FD48 /* CourseRequestModel.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
 				FC9D309628A8F66C00E7FD48 /* PlaceService.swift in Sources */,
+				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
 				FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */,
 				FC9D308228A63FFE00E7FD48 /* MoyaLoggingPlugin.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
@@ -906,7 +942,7 @@
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
+				INFOPLIST_FILE = "Earth1round-iOS/Global/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -940,7 +976,7 @@
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earth1round-iOS/Resource/Support/Info.plist";
+				INFOPLIST_FILE = "Earth1round-iOS/Global/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
