@@ -46,22 +46,22 @@
 		FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */; };
 		FC72672E2885692100BBE712 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672D2885692100BBE712 /* RxCocoa */; };
 		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
+		FC85F63528AD16E4004D2184 /* DefaultPlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */; };
+		FC85F64028AD16EF004D2184 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63728AD16EF004D2184 /* BaseTargetType.swift */; };
+		FC85F64128AD16EF004D2184 /* MultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63828AD16EF004D2184 /* MultiMoyaProvider.swift */; };
+		FC85F64228AD16EF004D2184 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63928AD16EF004D2184 /* Config.swift */; };
+		FC85F64328AD16EF004D2184 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63A28AD16EF004D2184 /* KeyChainService.swift */; };
+		FC85F64428AD16EF004D2184 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63B28AD16EF004D2184 /* MoyaLoggingPlugin.swift */; };
+		FC85F64528AD16EF004D2184 /* HTTPMethodURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63C28AD16EF004D2184 /* HTTPMethodURL.swift */; };
+		FC85F64628AD16EF004D2184 /* PlaceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63E28AD16EF004D2184 /* PlaceAPI.swift */; };
+		FC85F64728AD16EF004D2184 /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63F28AD16EF004D2184 /* PlaceService.swift */; };
+		FC85F64F28AD1721004D2184 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F64D28AD1721004D2184 /* GenericResponse.swift */; };
+		FC85F65028AD1721004D2184 /* CourseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F64E28AD1721004D2184 /* CourseRequestModel.swift */; };
+		FC85F65228AD1738004D2184 /* PlaceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F65128AD1738004D2184 /* PlaceUseCase.swift */; };
+		FC85F65428AD173D004D2184 /* PlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F65328AD173C004D2184 /* PlaceRepository.swift */; };
+		FC85F65928AD17E9004D2184 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F65828AD17E9004D2184 /* Place.swift */; };
 		FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC868990289E6BF100CEE14C /* ERBottomSheet.swift */; };
 		FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */; };
-		FC9D307E28A63FDE00E7FD48 /* HTTPMethodURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D307D28A63FDE00E7FD48 /* HTTPMethodURL.swift */; };
-		FC9D308028A63FEA00E7FD48 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D307F28A63FEA00E7FD48 /* BaseTargetType.swift */; };
-		FC9D308228A63FFE00E7FD48 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D308128A63FFE00E7FD48 /* MoyaLoggingPlugin.swift */; };
-		FC9D308428A6402000E7FD48 /* MultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D308328A6402000E7FD48 /* MultiMoyaProvider.swift */; };
-		FC9D308B28A8E78800E7FD48 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D308A28A8E78800E7FD48 /* KeyChainService.swift */; };
-		FC9D309128A8F54200E7FD48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309028A8F54200E7FD48 /* Config.swift */; };
-		FC9D309428A8F65800E7FD48 /* PlaceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309328A8F65800E7FD48 /* PlaceAPI.swift */; };
-		FC9D309628A8F66C00E7FD48 /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309528A8F66C00E7FD48 /* PlaceService.swift */; };
-		FC9D309D28A905B800E7FD48 /* CourseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */; };
-		FC9D30A028A9081500E7FD48 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D309F28A9081500E7FD48 /* Place.swift */; };
-		FC9D30AB28AACE4900E7FD48 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */; };
-		FC9D30B628AB9FBC00E7FD48 /* PlaceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */; };
-		FC9D30B828AB9FC100E7FD48 /* PlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */; };
-		FC9D30BB28AB9FE600E7FD48 /* DefaultPlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D30BA28AB9FE600E7FD48 /* DefaultPlaceRepository.swift */; };
 		FC9A4D2028A4FBEB00C41DEC /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D1F28A4FBEB00C41DEC /* NotoSansKR-Bold.otf */; };
 		FC9A4D2228A4FBF400C41DEC /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2128A4FBF400C41DEC /* NotoSansKR-Regular.otf */; };
 		FC9A4D2628A4FE1B00C41DEC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2528A4FE1B00C41DEC /* Colors.xcassets */; };
@@ -115,22 +115,22 @@
 		FC6EB1DD289834B1007946F9 /* TermsLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsLiterals.swift; sourceTree = "<group>"; };
 		FC6EB1DF28983F26007946F9 /* UITableView+Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Generic.swift"; sourceTree = "<group>"; };
 		FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPlaceRepository.swift; sourceTree = "<group>"; };
+		FC85F63728AD16EF004D2184 /* BaseTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		FC85F63828AD16EF004D2184 /* MultiMoyaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMoyaProvider.swift; sourceTree = "<group>"; };
+		FC85F63928AD16EF004D2184 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FC85F63A28AD16EF004D2184 /* KeyChainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		FC85F63B28AD16EF004D2184 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		FC85F63C28AD16EF004D2184 /* HTTPMethodURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethodURL.swift; sourceTree = "<group>"; };
+		FC85F63E28AD16EF004D2184 /* PlaceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAPI.swift; sourceTree = "<group>"; };
+		FC85F63F28AD16EF004D2184 /* PlaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
+		FC85F64D28AD1721004D2184 /* GenericResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		FC85F64E28AD1721004D2184 /* CourseRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseRequestModel.swift; sourceTree = "<group>"; };
+		FC85F65128AD1738004D2184 /* PlaceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceUseCase.swift; path = "Earth1round-iOS/Source/Domain/UseCases/PlaceUseCase.swift"; sourceTree = SOURCE_ROOT; };
+		FC85F65328AD173C004D2184 /* PlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRepository.swift; sourceTree = "<group>"; };
+		FC85F65828AD17E9004D2184 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		FC868990289E6BF100CEE14C /* ERBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERBottomSheet.swift; sourceTree = "<group>"; };
 		FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+makeRounded.swift"; sourceTree = "<group>"; };
-		FC9D307D28A63FDE00E7FD48 /* HTTPMethodURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodURL.swift; sourceTree = "<group>"; };
-		FC9D307F28A63FEA00E7FD48 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
-		FC9D308128A63FFE00E7FD48 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
-		FC9D308328A6402000E7FD48 /* MultiMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiMoyaProvider.swift; sourceTree = "<group>"; };
-		FC9D308A28A8E78800E7FD48 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
-		FC9D309028A8F54200E7FD48 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		FC9D309328A8F65800E7FD48 /* PlaceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAPI.swift; sourceTree = "<group>"; };
-		FC9D309528A8F66C00E7FD48 /* PlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
-		FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRequestModel.swift; sourceTree = "<group>"; };
-		FC9D309F28A9081500E7FD48 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
-		FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceUseCase.swift; sourceTree = "<group>"; };
-		FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRepository.swift; sourceTree = "<group>"; };
-		FC9D30BA28AB9FE600E7FD48 /* DefaultPlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPlaceRepository.swift; sourceTree = "<group>"; };
 		FC9A4D1F28A4FBEB00C41DEC /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		FC9A4D2128A4FBF400C41DEC /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		FC9A4D2528A4FE1B00C41DEC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -222,8 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				FC4154AB287B298C00300A9E /* Presentation */,
-				FC9D309728A9040500E7FD48 /* Domain */,
-				FC9D307828A63F8600E7FD48 /* Data */,
+				FC4154AC287B299100300A9E /* Domain */,
+				FC4154AD287B299400300A9E /* Data */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -242,19 +242,38 @@
 		FC4154AB287B298C00300A9E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				FC9D308528A6679100E7FD48 /* Utils */,
-				B0BD5409289E5B37005384DF /* Health */,
 				FC86898E289E6BB900CEE14C /* Components */,
 				FCC2B39A2885674A00924872 /* Base */,
 				FC6EB1D828983152007946F9 /* PopUp */,
 				FC6EB1DA28983165007946F9 /* Setting */,
 				FC6EB1C82897DA6B007946F9 /* Login */,
+				B0BD5409289E5B37005384DF /* Health */,
 				FC6EB1D3289830AF007946F9 /* CharacterSelection */,
 				FC6EB1D228983094007946F9 /* Calendar */,
 				FC6EB1D4289830E9007946F9 /* Course */,
 				FC4154B2287B29D000300A9E /* ViewControllers */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FC4154AC287B299100300A9E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FC4154B8287B29EE00300A9E /* Usecases */,
+				FC4154B7287B29E600300A9E /* Repositories */,
+				FC85F65728AD1762004D2184 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FC4154AD287B299400300A9E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FC4154BB287B29FE00300A9E /* Repositories */,
+				FC4154BA287B29F900300A9E /* Services */,
+				FC85F64C28AD1721004D2184 /* Models */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		FC4154AE287B29A600300A9E /* Storyboards */ = {
@@ -310,6 +329,39 @@
 				FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FC4154B7287B29E600300A9E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FC85F65328AD173C004D2184 /* PlaceRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FC4154B8287B29EE00300A9E /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				FC85F65128AD1738004D2184 /* PlaceUseCase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		FC4154BA287B29F900300A9E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FC85F63D28AD16EF004D2184 /* Place */,
+				FC85F63628AD16EF004D2184 /* Utils */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FC4154BB287B29FE00300A9E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		FC4154BC287B2A0E00300A9E /* Support */ = {
@@ -448,6 +500,45 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FC85F63628AD16EF004D2184 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FC85F63728AD16EF004D2184 /* BaseTargetType.swift */,
+				FC85F63828AD16EF004D2184 /* MultiMoyaProvider.swift */,
+				FC85F63928AD16EF004D2184 /* Config.swift */,
+				FC85F63A28AD16EF004D2184 /* KeyChainService.swift */,
+				FC85F63B28AD16EF004D2184 /* MoyaLoggingPlugin.swift */,
+				FC85F63C28AD16EF004D2184 /* HTTPMethodURL.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FC85F63D28AD16EF004D2184 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				FC85F63E28AD16EF004D2184 /* PlaceAPI.swift */,
+				FC85F63F28AD16EF004D2184 /* PlaceService.swift */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
+		FC85F64C28AD1721004D2184 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC85F64D28AD1721004D2184 /* GenericResponse.swift */,
+				FC85F64E28AD1721004D2184 /* CourseRequestModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC85F65728AD1762004D2184 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FC85F65828AD17E9004D2184 /* Place.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		FC86898E289E6BB900CEE14C /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,103 +547,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		FC9D307828A63F8600E7FD48 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D30B928AB9FD800E7FD48 /* Repositories */,
-				FC9D307B28A63F9800E7FD48 /* Models */,
-				FC9D307A28A63F9000E7FD48 /* Services */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		FC9D307A28A63F9000E7FD48 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D307C28A63FAC00E7FD48 /* Utils */,
-				FC9D309228A8F5AF00E7FD48 /* Place */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		FC9D307B28A63F9800E7FD48 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D30AA28AACE4900E7FD48 /* GenericResponse.swift */,
-				FC9D309C28A905B800E7FD48 /* CourseRequestModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FC9D307C28A63FAC00E7FD48 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D309028A8F54200E7FD48 /* Config.swift */,
-				FC9D308128A63FFE00E7FD48 /* MoyaLoggingPlugin.swift */,
-				FC9D307D28A63FDE00E7FD48 /* HTTPMethodURL.swift */,
-				FC9D307F28A63FEA00E7FD48 /* BaseTargetType.swift */,
-				FC9D308328A6402000E7FD48 /* MultiMoyaProvider.swift */,
-				FC9D308A28A8E78800E7FD48 /* KeyChainService.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		FC9D308528A6679100E7FD48 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		FC9D309228A8F5AF00E7FD48 /* Place */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D309328A8F65800E7FD48 /* PlaceAPI.swift */,
-				FC9D309528A8F66C00E7FD48 /* PlaceService.swift */,
-			);
-			path = Place;
-			sourceTree = "<group>";
-		};
-		FC9D309728A9040500E7FD48 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D30B328AB9F6600E7FD48 /* UseCases */,
-				FC9D30B428AB9F7200E7FD48 /* Repositories */,
-				FC9D309A28A9041200E7FD48 /* Entity */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		FC9D309A28A9041200E7FD48 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D309F28A9081500E7FD48 /* Place.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		FC9D30B328AB9F6600E7FD48 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D30B528AB9FBC00E7FD48 /* PlaceUseCase.swift */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		FC9D30B428AB9F7200E7FD48 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D30B728AB9FC100E7FD48 /* PlaceRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		FC9D30B928AB9FD800E7FD48 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				FC9D30BA28AB9FE600E7FD48 /* DefaultPlaceRepository.swift */,
-			);
-			path = Repositories;
 		FC9A4D1D28A4FB7700C41DEC /* Global */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,12 +585,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC4154A6287B297600300A9E /* Build configuration list for PBXNativeTarget "Earth1round-iOS" */;
 			buildPhases = (
+				F610400DDA23EC4DF06D1ADE /* [CP] Check Pods Manifest.lock */,
 				FC41548E287B297400300A9E /* Sources */,
 				FC41548F287B297400300A9E /* Frameworks */,
 				FC415490287B297400300A9E /* Resources */,
-				F610400DDA23EC4DF06D1ADE /* [CP] Check Pods Manifest.lock */,
 				D321FFEBD4B3620E6C344613 /* [CP] Copy Pods Resources */,
 				FC9A4D3028A507FA00C41DEC /* SwiftGen Script */,
+				FC85F65A28AD1833004D2184 /* SwiftLint Script */,
 			);
 			buildRules = (
 			);
@@ -712,6 +707,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FC85F65A28AD1833004D2184 /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		FC9A4D3028A507FA00C41DEC /* SwiftGen Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -737,58 +750,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC9D30A028A9081500E7FD48 /* Place.swift in Sources */,
-				FC9D30AB28AACE4900E7FD48 /* GenericResponse.swift in Sources */,
 				B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */,
 				FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */,
+				FC85F64128AD16EF004D2184 /* MultiMoyaProvider.swift in Sources */,
 				B0C47BEB289D70350098D6C0 /* UILabel+changeTextBold.swift in Sources */,
 				FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */,
 				FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */,
-				FC9D308028A63FEA00E7FD48 /* BaseTargetType.swift in Sources */,
 				FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */,
 				FC415503288171630030836E /* Size.swift in Sources */,
-				FC9D30B828AB9FC100E7FD48 /* PlaceRepository.swift in Sources */,
 				FC415511288171980030836E /* CalendarViewController.swift in Sources */,
-				FC9D30BB28AB9FE600E7FD48 /* DefaultPlaceRepository.swift in Sources */,
-				FC9D308428A6402000E7FD48 /* MultiMoyaProvider.swift in Sources */,
 				FC6EB1E028983F26007946F9 /* UITableView+Generic.swift in Sources */,
 				FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */,
+				FC85F65228AD1738004D2184 /* PlaceUseCase.swift in Sources */,
 				FC6EB1C52897DA08007946F9 /* NicknameViewController.swift in Sources */,
+				FC85F64F28AD1721004D2184 /* GenericResponse.swift in Sources */,
+				FC85F64428AD16EF004D2184 /* MoyaLoggingPlugin.swift in Sources */,
 				FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */,
 				FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */,
 				FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */,
 				FC415510288171980030836E /* CourseViewController.swift in Sources */,
+				FC85F65928AD17E9004D2184 /* Place.swift in Sources */,
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
-				FC9D309128A8F54200E7FD48 /* Config.swift in Sources */,
-				FC9D30B628AB9FBC00E7FD48 /* PlaceUseCase.swift in Sources */,
 				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
 				FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */,
 				FC41549A287B297400300A9E /* ViewController.swift in Sources */,
 				B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */,
+				FC85F63528AD16E4004D2184 /* DefaultPlaceRepository.swift in Sources */,
 				B034EAB428A3708100737467 /* HealthKitPopUpViewController.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
 				B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */,
+				FC85F64528AD16EF004D2184 /* HTTPMethodURL.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
-				FC9D308B28A8E78800E7FD48 /* KeyChainService.swift in Sources */,
 				FCED3F0728A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift in Sources */,
-				FC9D307E28A63FDE00E7FD48 /* HTTPMethodURL.swift in Sources */,
+				FC85F64728AD16EF004D2184 /* PlaceService.swift in Sources */,
 				FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */,
 				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
+				FC85F64328AD16EF004D2184 /* KeyChainService.swift in Sources */,
+				FC85F65428AD173D004D2184 /* PlaceRepository.swift in Sources */,
 				FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */,
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
+				FC85F64628AD16EF004D2184 /* PlaceAPI.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
-				FC9D309428A8F65800E7FD48 /* PlaceAPI.swift in Sources */,
-				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
-				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
-				FC9D309D28A905B800E7FD48 /* CourseRequestModel.swift in Sources */,
-				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
-				FC9D309628A8F66C00E7FD48 /* PlaceService.swift in Sources */,
+				FC85F64028AD16EF004D2184 /* BaseTargetType.swift in Sources */,
 				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
 				FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */,
-				FC9D308228A63FFE00E7FD48 /* MoyaLoggingPlugin.swift in Sources */,
+				FC85F64228AD16EF004D2184 /* Config.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
+				FC85F65028AD1721004D2184 /* CourseRequestModel.swift in Sources */,
 				B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
