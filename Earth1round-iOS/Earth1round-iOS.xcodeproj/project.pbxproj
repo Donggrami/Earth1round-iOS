@@ -527,13 +527,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC4154A6287B297600300A9E /* Build configuration list for PBXNativeTarget "Earth1round-iOS" */;
 			buildPhases = (
-				F610400DDA23EC4DF06D1ADE /* [CP] Check Pods Manifest.lock */,
 				FC41548E287B297400300A9E /* Sources */,
 				FC41548F287B297400300A9E /* Frameworks */,
 				FC415490287B297400300A9E /* Resources */,
-				FCD07046288AA7CF006764C4 /* ShellScript */,
+				F610400DDA23EC4DF06D1ADE /* [CP] Check Pods Manifest.lock */,
 				D321FFEBD4B3620E6C344613 /* [CP] Copy Pods Resources */,
-				FCD07046288AA7CF006764C4 /* SwiftLint Script */,
 				FC9A4D3028A507FA00C41DEC /* SwiftGen Script */,
 			);
 			buildRules = (
@@ -668,24 +666,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen config run\n";
 		};
-		FCD07046288AA7CF006764C4 /* SwiftLint Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "SwiftLint Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -725,9 +705,7 @@
 				FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */,
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
-				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
-				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
 				FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
 				B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */,
