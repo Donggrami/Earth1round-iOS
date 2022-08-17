@@ -28,6 +28,7 @@ final class CharacterSelectionViewController: BaseViewController {
         $0.allowsMultipleSelection = false
         $0.register(CharacterCollectionViewCell.self)
     }
+    
     private lazy var selectButton = UIButton().then {
         $0.backgroundColor = .lightGray
         $0.setTitle("캐릭터 선택 tap", for: .normal)
