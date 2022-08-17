@@ -8,8 +8,8 @@ disabled_rules:
 included:
 excluded:
 - Pods
-- Earth1round-iOS/Resource/Support/AppDelegate.swift
-- Earth1round-iOS/Resource/Support/SceneDelegate.swift
+- Earth1round-iOS/Global/Support/AppDelegate.swift
+- Earth1round-iOS/Global/Support/SceneDelegate.swift
 
 identifier_name:
   excluded:
