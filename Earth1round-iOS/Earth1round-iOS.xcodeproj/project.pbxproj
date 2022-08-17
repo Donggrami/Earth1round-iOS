@@ -183,8 +183,8 @@
 		FC415494287B297400300A9E /* Earth1round-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FC9A4D1D28A4FB7700C41DEC /* Global */,
 				B0C56655289524EB004EF4B6 /* Earth1round-iOS.entitlements */,
+				FC9A4D1D28A4FB7700C41DEC /* Global */,
 				FC4154A9287B297D00300A9E /* Source */,
 			);
 			path = "Earth1round-iOS";
