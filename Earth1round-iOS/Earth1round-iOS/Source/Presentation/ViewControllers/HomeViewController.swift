@@ -10,8 +10,8 @@ import Then
 import HealthKit
 
 class HomeViewController: BaseViewController {
-    var hamburgerButton = UIButton().then{
-        $0.backgroundColor = .gray
+    var hamburgerButton = UIImageView().then{
+        $0.image = Asset.Images.homeButton.image
     }
     
     var totalWalkBackground = UIView().then {
@@ -185,14 +185,14 @@ class HomeViewController: BaseViewController {
                 
                 self.totalWalk.text = "\(self.totalSteps) 걸음"
                 
-                self.totalWalk.changeTextBold(changeText: String(self.totalSteps), boldSize: 32)
+                self.totalWalk.changeTextBold(changeText: String(self.totalSteps), type: TextStyles.NTBold32)
             }
        
         }
     }
     
     
-    //Navigation
+    //MARK - Navigation
     
     @objc func goToEarth(){
         navigationController?.popViewController(animated: true)

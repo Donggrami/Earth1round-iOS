@@ -8,11 +8,11 @@
 import UIKit
 
 extension UILabel {
-    func changeTextBold(changeText: String, boldSize: CGFloat) {
+    func changeTextBold(changeText: String, type: TextStyles ) {
         
         guard let text = self.text else { return }
         
-        let font = UIFont.boldSystemFont(ofSize: boldSize)
+        let font = UIFont.erFont(type: type)
         
         let attributeString = NSMutableAttributedString(string: text)
         
