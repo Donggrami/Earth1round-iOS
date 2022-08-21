@@ -17,6 +17,7 @@ class HomeViewController: BaseViewController {
     
     var hamburgerButton = UIImageView().then{
         $0.image = Asset.Images.homeButton.image
+        $0.isUserInteractionEnabled = true
     }
     
     var totalWalkBackground = UIView().then {
@@ -152,8 +153,8 @@ class HomeViewController: BaseViewController {
         }
         
         characterView.snp.makeConstraints{(make) in
-            make.width.equalTo(123)
-            make.height.equalTo(143)
+            make.width.equalTo(173)
+            make.height.equalTo(160)
             make.centerX.equalToSuperview()
             make.top.equalTo(trophyView.snp.bottom).offset(20)
         }

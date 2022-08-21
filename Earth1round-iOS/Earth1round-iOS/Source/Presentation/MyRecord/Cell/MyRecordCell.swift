@@ -94,7 +94,7 @@ class MyRecordCell: UITableViewCell {
                   
         distanceText.snp.makeConstraints { make in
             make.trailing.equalToSuperview().offset(-19)
-            make.bottom.equalToSuperview().offset(12)
+            make.bottom.equalToSuperview().offset(-12)
         }
         
     }

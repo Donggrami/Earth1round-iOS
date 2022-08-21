@@ -10,7 +10,6 @@
 		B02D661728B20ECD00066095 /* Int+withCommas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D661628B20ECD00066095 /* Int+withCommas.swift */; };
 		B02D661928B211D800066095 /* MyRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D661828B211D800066095 /* MyRecordCell.swift */; };
 		B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB3E288BF643002C5988 /* MyRecordViewController.swift */; };
-		B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB40288BF87B002C5988 /* MyRecordCell.swift */; };
 		B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD540A289E5B7D005384DF /* HealthStore.swift */; };
 		B0C47BEB289D70350098D6C0 /* UILabel+changeTextBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */; };
 		B0C56654289522CA004EF4B6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C56653289522CA004EF4B6 /* HealthKit.framework */; };
@@ -798,7 +797,6 @@
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
 				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
 				FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */,
-				B032AB41288BF87B002C5988 /* MyRecordCell.swift in Sources */,
 				FC85F63528AD16E4004D2184 /* DefaultPlaceRepository.swift in Sources */,
 				B02D661928B211D800066095 /* MyRecordCell.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,

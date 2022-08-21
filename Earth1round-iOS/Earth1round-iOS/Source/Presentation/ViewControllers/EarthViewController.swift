@@ -270,8 +270,8 @@ class EarthViewController: BaseViewController{
     
     private func initCharacterViews(){
         characterView.snp.makeConstraints{(make) in
-            make.width.equalTo(185)
-            make.height.equalTo(235)
+            make.width.equalTo(235)
+            make.height.equalTo(250)
             make.centerX.equalToSuperview()
             make.bottom.equalTo(homeButton.snp.top).offset(-27)
         }

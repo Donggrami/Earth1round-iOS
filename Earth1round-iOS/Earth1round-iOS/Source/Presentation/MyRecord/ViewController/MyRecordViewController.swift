@@ -14,22 +14,18 @@ class MyRecordViewController: BaseViewController{
     //MARK - UI
     private var tableView  = UITableView().then {
         $0.register(MyRecordCell.self, forCellReuseIdentifier: "MyRecordCell")
-        $0.backgroundColor = .lightGray
+        $0.backgroundColor = Asset.Colors.grey10.color
     }
     
     //MARK - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .lightGray
-        
         tableView.delegate = self
         tableView.dataSource = self
         
-        initNavigationBar()
-        
+        initNavigationBar()  
         initView()
-        
         initConstraint()
     }
     
@@ -62,7 +58,7 @@ extension MyRecordViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyRecordCell") as? MyRecordCell else{ return .init() }
         
-        cell.backgroundColor = .lightGray
+        cell.backgroundColor = Asset.Colors.grey10.color
         cell.selectionStyle = .none
         
         return cell
