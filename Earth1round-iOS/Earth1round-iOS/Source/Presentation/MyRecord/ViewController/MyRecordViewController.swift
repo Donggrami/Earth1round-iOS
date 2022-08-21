@@ -34,7 +34,6 @@ class MyRecordViewController: BaseViewController{
     }
     
 
-    
     //MARK - Method
     private func initNavigationBar(){
         navigationController?.initBackButtonNavigationBar()

@@ -38,16 +38,20 @@ internal enum Asset {
     internal static let white = ColorAsset(name: "White")
   }
   internal enum Images {
-    internal static let earthBackground = ImageAsset(name: "earthBackground")
     internal static let homeButton = ImageAsset(name: "homeButton")
     internal static let leftArrowButton = ImageAsset(name: "leftArrowButton")
     internal static let rightArrowButton = ImageAsset(name: "rightArrowButton")
     internal static let settingArrowButton = ImageAsset(name: "settingArrowButton")
-    internal static let progressGage = ImageAsset(name: "progressGage")
+    internal static let homePercent = ImageAsset(name: "homePercent")
     internal static let goHomeButton = ImageAsset(name: "goHomeButton")
-    internal static let characterImage = ImageAsset(name: "characterImage")
-    internal static let earthImage = ImageAsset(name: "earthImage")
-    internal static let healthInfoView = ImageAsset(name: "healthInfoView")
+    internal static let cha_01 = ImageAsset(name: "cha_01")
+    internal static let homeBack01 = ImageAsset(name: "homeBack01")
+    internal static let homeBack02 = ImageAsset(name: "homeBack02")
+    internal static let homeMsgBox = ImageAsset(name: "homeMsgBox")
+    internal static let chaHomeBadge = ImageAsset(name: "chaHomeBadge")
+    internal static let chaHomeNavi = ImageAsset(name: "chaHomeNavi")
+    internal static let chaHomeEarth = ImageAsset(name: "chaHomeEarth")
+    internal static let chaHomeBack = ImageAsset(name: "chaHomeBack")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

@@ -12,32 +12,44 @@ import SnapKit
 class MyRecordCell: UITableViewCell {
     
     private var cellTag = UIView().then {
-        $0.backgroundColor = .yellow
+        $0.backgroundColor = Asset.Colors.mainYellow.color
     }
     
     //MARK - UI
     private var yearTitle = UILabel().then {
         $0.text = "2022"
+        $0.font = .erFont(type: .NTRegular16)
+        $0.textColor = Asset.Colors.darkGrey.color
     }
     
     private var startDate = UILabel().then {
         $0.text = "May. 01"
+        $0.font = .erFont(type: .NTRegular16)
+        $0.textColor = Asset.Colors.darkGrey.color
     }
     
     private var fromToText = UILabel().then {
-        $0.text = "|"
+        $0.text = "-"
+        $0.font = .erFont(type: .NTRegular16)
+        $0.textColor = Asset.Colors.darkGrey.color
     }
     
     private var endDate = UILabel().then {
         $0.text = "May.01"
+        $0.font = .erFont(type: .NTRegular16)
+        $0.textColor = Asset.Colors.darkGrey.color
     }
     
     private var courseText = UILabel().then {
         $0.text = "코스"
+        $0.font = .erFont(type: .NTRegular16)
+        $0.textColor = Asset.Colors.darkGrey.color
     }
     
     private var distanceText = UILabel().then {
         $0.text = "거리 Km"
+        $0.font = .erFont(type: .NTRegular20)
+        $0.textColor = Asset.Colors.pointBlue .color
     }
     
     
@@ -66,14 +78,13 @@ class MyRecordCell: UITableViewCell {
         }
         
         fromToText.snp.makeConstraints { make in
-            make.top.equalTo(startDate.snp.bottom).offset(5)
-            make.bottom.equalTo(endDate.snp.top).offset(5)
-            make.centerX.equalTo(startDate)
+            make.centerY.equalTo(startDate)
+            make.leading.equalTo(startDate.snp.trailing).offset(5)
         }
        
         endDate.snp.makeConstraints{ make in
-            make.leading.equalTo(yearTitle)
-            make.top.equalTo(fromToText.snp.bottom).offset(8)
+            make.centerY.equalTo(startDate)
+            make.leading.equalTo(fromToText.snp.trailing).offset(5)
         }
         
         courseText.snp.makeConstraints { make in
@@ -83,13 +94,10 @@ class MyRecordCell: UITableViewCell {
                   
         distanceText.snp.makeConstraints { make in
             make.trailing.equalToSuperview().offset(-19)
-            make.bottom.equalTo(endDate)
+            make.bottom.equalToSuperview().offset(12)
         }
         
-
     }
-    
-   
     
     //MARK - Method
     override func layoutSubviews() {
@@ -97,6 +105,9 @@ class MyRecordCell: UITableViewCell {
 
         contentView.layer.backgroundColor = UIColor.white.cgColor
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 9, left: 18, bottom: 9, right: 18))
+        
+        contentView.layer.cornerRadius = 10
+        contentView.clipsToBounds = true
     }
     
     required init?(coder: NSCoder) {

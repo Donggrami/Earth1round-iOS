@@ -13,7 +13,7 @@ import HealthKit
 class EarthViewController: BaseViewController{
     //배경 뷰
     var universeBackground = UIImageView().then {
-        $0.image = Asset.Images.earthBackground.image
+        $0.image = Asset.Images.homeBack01.image
     }
     
     var infoBackground = UIView().then {
@@ -22,9 +22,10 @@ class EarthViewController: BaseViewController{
     }
     
     var earthBackground = UIImageView().then {
-        $0.image = Asset.Images.earthImage.image
+        $0.image = Asset.Images.homeBack02.image
         $0.clipsToBounds = true
-      
+        $0.contentMode = .scaleAspectFit
+       
     }
 
     //홈 화면 정보 뷰
@@ -39,24 +40,24 @@ class EarthViewController: BaseViewController{
         $0.changeTextBold(changeText: "0", type: TextStyles.NTBold32)
     }
     
-    var infoView = UIView().then {
+    var homeMessage = UIView().then {
         $0.backgroundColor = Asset.Colors.pointBlue.color
         $0.makeRounded(radius: 11)
     }
     
-    var infoViewText = UILabel().then {
+    var homeMessageText = UILabel().then {
         $0.text = "?"
         $0.textColor = Asset.Colors.white.color
         $0.font = .erFont(type: .NTBold12)
     }
     
-    var healthInfoView = UIImageView().then {
-        $0.image = Asset.Images.healthInfoView.image
+    var homeMsgBox = UIImageView().then {
+        $0.image = Asset.Images.homeMsgBox.image
         $0.contentMode = .scaleAspectFit
         $0.isHidden = true
     }
     
-    var healthInfoText = UILabel().then {
+    var homeMsgBoxText = UILabel().then {
         $0.text = "걸음이 안 뜬다면 '건강 > 걸음 > 데이터 소스 및 접근'에서 데이터 읽기 허용을 다시하세요."
         $0.font = .erFont(type: .NTRegular12)
         $0.numberOfLines = 0
@@ -74,7 +75,7 @@ class EarthViewController: BaseViewController{
     }
     
     var progressGage = UIImageView().then {
-        $0.image = Asset.Images.progressGage.image
+        $0.image = Asset.Images.homePercent.image
     }
     
     var progressText = UILabel().then {
@@ -94,7 +95,7 @@ class EarthViewController: BaseViewController{
     
     //캐릭터 뷰
     var characterView = UIImageView().then {
-        $0.image = Asset.Images.characterImage.image
+        $0.image = Asset.Images.cha_01.image
         $0.contentMode = .scaleAspectFit
     }
     
@@ -121,7 +122,7 @@ class EarthViewController: BaseViewController{
         
         homeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goHome)))
         
-        infoView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showInfo)))
+        homeMessage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showInfo)))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -141,7 +142,7 @@ class EarthViewController: BaseViewController{
         view.addSubviews(universeBackground,infoBackground,earthBackground,
                          hamburgerButton,walkText,dayText,
                          curCourseText,progressGage,progressText,progressBar,
-                         infoView,infoViewText,healthInfoView,healthInfoText,
+                         homeMessage,homeMessageText,homeMsgBox,homeMsgBoxText,
                          characterView,homeButton)
     }
     
@@ -175,9 +176,11 @@ class EarthViewController: BaseViewController{
             
             DispatchQueue.main.async {
                 
-                self.walkText.text = "\(steps) 걸음"
+                let formattedString = steps.withCommas()
                 
-                self.walkText.changeTextBold(changeText: String(steps), type: TextStyles.NTBold32)
+                self.walkText.text = "\(formattedString) 걸음"
+                
+                self.walkText.changeTextBold(changeText: formattedString, type: TextStyles.NTBold32)
             }
        
         }
@@ -194,11 +197,8 @@ class EarthViewController: BaseViewController{
         }
         
         earthBackground.snp.makeConstraints { make in
-            let mainWidth = Size.screenWidth + 60
-            make.width.height.equalTo(mainWidth)
-            make.leading.equalToSuperview().offset(-30)
-            make.trailing.equalToSuperview().offset(30)
-            make.top.equalTo(characterView.snp.bottom).offset(-100)
+            make.top.equalTo(characterView.snp.centerY).offset(-24)
+            make.centerX.equalToSuperview()
   
         }
     }
@@ -220,25 +220,25 @@ class EarthViewController: BaseViewController{
             make.top.equalTo(walkText.snp.bottom).offset(3)
         }
         
-        infoView.snp.makeConstraints { make in
+        homeMessage.snp.makeConstraints { make in
             make.width.height.equalTo(22)
             make.leading.equalTo(walkText.snp.trailing).offset(11)
             make.bottom.equalTo(walkText).offset(-5)
         }
         
-        infoViewText.snp.makeConstraints { make in
-            make.center.equalTo(infoView)
+        homeMessageText.snp.makeConstraints { make in
+            make.center.equalTo(homeMessage)
         }
         
-        healthInfoView.snp.makeConstraints { make in
+        homeMsgBox.snp.makeConstraints { make in
             make.width.equalTo(221)
             make.height.equalTo(90)
-            make.top.equalTo(infoView.snp.bottom).offset(6)
-            make.leading.equalTo(infoView).offset(-32)
+            make.top.equalTo(homeMessage.snp.bottom).offset(6)
+            make.leading.equalTo(homeMessage).offset(-32)
         }
         
-        healthInfoText.snp.makeConstraints { make in
-            make.leading.trailing.bottom.equalTo(healthInfoView).inset(16)
+        homeMsgBoxText.snp.makeConstraints { make in
+            make.leading.trailing.bottom.equalTo(homeMsgBox).inset(16)
         }
   
         progressGage.snp.makeConstraints { make in
@@ -270,10 +270,10 @@ class EarthViewController: BaseViewController{
     
     private func initCharacterViews(){
         characterView.snp.makeConstraints{(make) in
-            make.width.equalTo(187)
-            make.height.equalTo(234)
+            make.width.equalTo(185)
+            make.height.equalTo(235)
             make.centerX.equalToSuperview()
-            make.bottom.equalTo(-184)
+            make.bottom.equalTo(homeButton.snp.top).offset(-27)
         }
         
         homeButton.snp.makeConstraints { make in
@@ -284,13 +284,13 @@ class EarthViewController: BaseViewController{
     }
     
     @objc func showInfo(){
-        if(healthInfoView.isHidden){
-            healthInfoView.isHidden = false
-            healthInfoText.isHidden = false
+        if(homeMsgBox.isHidden){
+            homeMsgBox.isHidden = false
+            homeMsgBoxText.isHidden = false
         }
         else {
-            healthInfoView.isHidden = true
-            healthInfoText.isHidden = true
+            homeMsgBox.isHidden = true
+            homeMsgBoxText.isHidden = true
         }
     }
     

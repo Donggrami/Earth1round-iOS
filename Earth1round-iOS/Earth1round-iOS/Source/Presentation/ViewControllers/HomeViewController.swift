@@ -10,46 +10,69 @@ import Then
 import HealthKit
 
 class HomeViewController: BaseViewController {
+    
+    var backgroundView = UIImageView().then {
+        $0.image = Asset.Images.chaHomeBack.image
+    }
+    
     var hamburgerButton = UIImageView().then{
         $0.image = Asset.Images.homeButton.image
     }
     
     var totalWalkBackground = UIView().then {
-        $0.backgroundColor = .lightGray
+        $0.backgroundColor = Asset.Colors.white.color
+        $0.makeRoundedWithBorder(radius: 10,
+                                 color: Asset.Colors.mainYellow.color.cgColor, borderWith: 2)
     }
     
     var totalWalkText = UILabel().then {
         $0.text = "누적된 걸음 수"
+        $0.font = .erFont(type: .NTRegular16)
+        $0.textColor = Asset.Colors.darkGrey.color
     }
     
     var totalWalk = UILabel().then {
         $0.text = "20,000 걸음"
-        $0.font = .systemFont(ofSize: 14)
+        $0.font = .erFont(type: .NTRegular14)
     }
     
-    var trophyView = UIView().then {
-        $0.backgroundColor = .gray
+    var calendarButton = UIImageView().then {
+        $0.image = Asset.Images.rightArrowButton.image
+        $0.image = $0.image?.withRenderingMode(.alwaysTemplate)
+        $0.tintColor = Asset.Colors.mainYellow.color
     }
     
-    var characterView = UIView().then {
-        $0.backgroundColor = .gray
+    var trophyView = UIImageView().then {
+        $0.image = Asset.Images.chaHomeBadge.image
+        $0.isUserInteractionEnabled = true
+        $0.contentMode = .scaleAspectFit
+    }
+    
+    var characterView = UIImageView().then {
+        $0.image = Asset.Images.cha_01.image
+        $0.isUserInteractionEnabled = true
+        $0.contentMode = .scaleAspectFit
     }
     
     var characterName = UILabel().then {
         $0.text = "이름"
+        $0.font = .erFont(type: .NTRegular20)
     }
 
-    var characterLevel = UILabel().then{
-        $0.text = " Lv.1"
+    var characterNameBackground = UIView().then{
+        $0.backgroundColor = Asset.Colors.white.color
+        $0.makeRounded(radius: 26.5)
+        
     }
  
-    var chooseCourseButton = UIButton().then {
-        $0.titleLabel?.text = "코스 선택하기"
-        $0.backgroundColor = .gray
+    var chooseCourseButton = UIImageView().then {
+        $0.image = Asset.Images.chaHomeNavi.image
+        $0.isUserInteractionEnabled = true
     }
     
-    var homeButton = UIButton().then {
-        $0.backgroundColor = .gray
+    var homeButton = UIImageView().then {
+        $0.image = Asset.Images.chaHomeEarth.image
+        $0.isUserInteractionEnabled = true
     }
     
     
@@ -83,13 +106,15 @@ class HomeViewController: BaseViewController {
     //MARK - Methods
     
     private func initView(){
-        view.addSubviews(hamburgerButton, totalWalkBackground, totalWalkText
-                         ,totalWalk,trophyView
-                         ,characterView,characterName,characterLevel
-        ,chooseCourseButton,homeButton)
+        view.addSubviews(backgroundView,hamburgerButton, totalWalkBackground, totalWalkText,totalWalk,calendarButton, trophyView,characterView,characterNameBackground,characterName,
+        chooseCourseButton,homeButton)
     }
     
     private func initConstraint(){
+        backgroundView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
         hamburgerButton.snp.makeConstraints { make in
             make.width.height.equalTo(40)
             make.top.equalToSuperview().offset(50)
@@ -100,53 +125,60 @@ class HomeViewController: BaseViewController {
             make.height.equalTo(90)
             make.leading.equalTo(hamburgerButton)
             make.trailing.equalToSuperview().offset(-22)
-            make.top.equalTo(hamburgerButton.snp.bottom).offset(20)
+            make.top.equalTo(hamburgerButton.snp.bottom).offset(30)
         }
         
         totalWalkText.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(totalWalkBackground).offset(10)
+            make.leading.equalTo(totalWalkBackground).offset(16)
+            make.top.equalTo(totalWalkBackground).offset(13)
         }
         
         totalWalk.snp.makeConstraints { make in
-            make.centerX.equalTo(totalWalkText)
-            make.top.equalTo(totalWalkText.snp.bottom).offset(7)
+            make.leading.equalTo(totalWalkText)
+            make.top.equalTo(totalWalkText.snp.bottom)
+        }
+        
+        calendarButton.snp.makeConstraints { make in
+            make.width.equalTo(10)
+            make.height.equalTo(20)
+            make.centerY.equalTo(totalWalkBackground)
+            make.trailing.equalTo(totalWalkBackground).offset(-18)
         }
         
         trophyView.snp.makeConstraints { make in
             make.width.height.equalTo(68)
             make.leading.equalTo(hamburgerButton)
-            make.top.equalTo(totalWalkBackground.snp.bottom).offset(10)
+            make.top.equalTo(totalWalkBackground.snp.bottom).offset(24)
         }
         
         characterView.snp.makeConstraints{(make) in
-            make.width.equalTo(156)
-            make.height.equalTo(234)
+            make.width.equalTo(123)
+            make.height.equalTo(143)
             make.centerX.equalToSuperview()
-            make.top.equalTo(trophyView.snp.bottom).offset(47)
+            make.top.equalTo(trophyView.snp.bottom).offset(20)
+        }
+        
+        characterNameBackground.snp.makeConstraints { make in
+            make.height.equalTo(53)
+            make.width.equalTo(234)
+            make.centerX.equalTo(characterView)
+            make.top.equalTo(characterView.snp.bottom).offset(48)
         }
         
         characterName.snp.makeConstraints { make in
-            make.leading.equalTo(characterView)
-            make.top.equalTo(characterView.snp.bottom).offset(36)
-        }
-        
-        characterLevel.snp.makeConstraints { make in
-            make.trailing.equalTo(characterView)
-            make.bottom.equalTo(characterName)
+            make.center.equalTo(characterNameBackground)
         }
         
         homeButton.snp.makeConstraints { make in
-            make.width.height.equalTo(80)
+            make.width.height.equalTo(108)
             make.trailing.equalToSuperview().offset(-22)
-            make.bottom.equalToSuperview().offset(-45)
+            make.bottom.equalToSuperview().offset(-48)
         }
         
         chooseCourseButton.snp.makeConstraints { make in
-            make.leading.equalTo(hamburgerButton)
-            make.trailing.equalTo(homeButton)
-            make.height.equalTo(75)
-            make.top.equalTo(characterName.snp.bottom).offset(19)
+            make.width.height.equalTo(108)
+            make.centerY.equalTo(homeButton)
+            make.trailing.equalTo(homeButton.snp.leading).offset(-19)
         }
     }
     
@@ -182,10 +214,11 @@ class HomeViewController: BaseViewController {
             self.totalSteps += steps
 
             DispatchQueue.main.async {
+
+                let formattedString = self.totalSteps.withCommas()
+                self.totalWalk.text = "\(formattedString) 걸음"
                 
-                self.totalWalk.text = "\(self.totalSteps) 걸음"
-                
-                self.totalWalk.changeTextBold(changeText: String(self.totalSteps), type: TextStyles.NTBold32)
+                self.totalWalk.changeTextBold(changeText: formattedString, type: TextStyles.NTBold32)
             }
        
         }
@@ -193,6 +226,10 @@ class HomeViewController: BaseViewController {
     
     
     //MARK - Navigation
+    @objc func goToSetting(){
+        let vc=SettingViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
     @objc func goToEarth(){
         navigationController?.popViewController(animated: true)
@@ -221,15 +258,17 @@ class HomeViewController: BaseViewController {
     }
     
     private func initNavigationHandler(){
-        homeButton.addTarget(self, action: #selector(goToEarth), for: .touchUpInside)
+        hamburgerButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToSetting)))
+
+        homeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToEarth)))
 
         trophyView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToMyRecord)))
   
         characterView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToChangeCaracter)))
                                            
-        chooseCourseButton.addTarget(self, action: #selector(goToCourseSelect), for: .touchUpInside)
+        chooseCourseButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToCourseSelect)))
         
-        totalWalkBackground.addGestureRecognizer(UITapGestureRecognizer(target: self, action:#selector(goToCalendar)))
+        totalWalkBackground.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToCalendar)))
     }
         
 }
