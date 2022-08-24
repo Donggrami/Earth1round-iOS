@@ -190,7 +190,7 @@ class HomeViewController: BaseViewController {
             healthStore.requestAuthorization { success in
                 print(success)
                 if success {
-                    healthStore.calculateSteps { statisticsCollection in
+                    healthStore.calculateSteps(startDate: Date()) { statisticsCollection in
                         if let statisticsCollection = statisticsCollection {
                             self.getSteps(statisticsCollection)
     
