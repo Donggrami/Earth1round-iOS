@@ -104,7 +104,6 @@ final class CalendarViewController: BaseViewController {
             .drive(onNext: { title in
                 self.monthTitle = title
                 self.monthTitleLabel.text = title
-//                self.stepsOfMonth()
             }).disposed(by: disposeBag)
     }
     
@@ -123,7 +122,7 @@ final class CalendarViewController: BaseViewController {
         let predicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate, options: .strictStartDate)
         let query = HKStatisticsQuery(quantityType: sampleSteps,
                                       quantitySamplePredicate: predicate,
-                                      options: .cumulativeSum) { statisticsQuery, statistics, error in
+                                      options: .cumulativeSum) { _, statistics, _ in
             completion(statistics)
         }
         healthStore.healthStore?.execute(query)
