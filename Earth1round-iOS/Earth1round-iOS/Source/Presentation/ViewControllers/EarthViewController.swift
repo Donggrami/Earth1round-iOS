@@ -95,7 +95,7 @@ class EarthViewController: BaseViewController{
     
     //캐릭터 뷰
     var characterView = UIImageView().then {
-        $0.image = Asset.Images.cha_01.image
+        $0.image = Asset.Images.cha01.image
         $0.contentMode = .scaleAspectFit
     }
     
