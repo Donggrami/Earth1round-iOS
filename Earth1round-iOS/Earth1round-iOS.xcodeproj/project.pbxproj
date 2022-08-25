@@ -35,6 +35,7 @@
 		FC415511288171980030836E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550E288171980030836E /* CalendarViewController.swift */; };
 		FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */; };
 		FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */; };
+		FC6441C528B8122B00AF41D2 /* UIButton+setBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6441C428B8122B00AF41D2 /* UIButton+setBackgroundColor.swift */; };
 		FC64F8C328AF6D0F00A86483 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */; };
 		FC64F8C628AF6D9800A86483 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */; };
 		FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */; };
@@ -115,6 +116,7 @@
 		FC41550E288171980030836E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
+		FC6441C428B8122B00AF41D2 /* UIButton+setBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setBackgroundColor.swift"; sourceTree = "<group>"; };
 		FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */,
 				FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */,
 				B02D661628B20ECD00066095 /* Int+withCommas.swift */,
+				FC6441C428B8122B00AF41D2 /* UIButton+setBackgroundColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -891,6 +894,7 @@
 				FC85F64228AD16EF004D2184 /* Config.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
 				FC85F65028AD1721004D2184 /* CourseRequestModel.swift in Sources */,
+				FC6441C528B8122B00AF41D2 /* UIButton+setBackgroundColor.swift in Sources */,
 				B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
