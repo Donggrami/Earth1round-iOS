@@ -8,7 +8,6 @@
 import UIKit
 
 enum TextStyles {
-    case NTRegular12
     case NTBold12
     case NTBold16
     case NTBold32
@@ -16,15 +15,12 @@ enum TextStyles {
     case NTRegular14
     case NTRegular16
     case NTRegular20
-    case NTBold32
 }
 
 extension UIFont {
     
     static func erFont(type: TextStyles) -> UIFont {
         switch type {
-        case .NTRegular12:
-            return UIFont(name: "NotoSansKR-Regular", size: 12)!
         case .NTBold12:
             return UIFont(name: "NotoSansKR-Bold", size: 12)!
         case .NTBold16:
@@ -39,8 +35,6 @@ extension UIFont {
             return UIFont(name: "NotoSansKR-Regular", size: 16)!
         case .NTRegular20:
             return UIFont(name: "NotoSansKR-Regular", size: 20)!
-        case .NTBold32:
-            return UIFont(name: "NotoSansKR-Bold", size: 32)!
         }
     }
     
