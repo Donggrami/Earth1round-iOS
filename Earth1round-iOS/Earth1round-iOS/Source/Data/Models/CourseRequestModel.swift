@@ -8,7 +8,7 @@
 import Foundation
 
 struct CourseRequestModel {
-    let startPlaceID: Int
-    let endPlaceID: Int
-    let distance: Float
+    var startPlaceID: Int
+    var endPlaceID: Int
+    var distance: Double
 }
