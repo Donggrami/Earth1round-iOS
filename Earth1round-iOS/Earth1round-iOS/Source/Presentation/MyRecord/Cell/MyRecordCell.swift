@@ -58,7 +58,7 @@ class MyRecordCell: UITableViewCell {
         $0.numberOfLines = 0
     }
     
-    
+
     //MARK - LifeCycle
     func setData(record: MyRecord) {
         yearTitle.text = record.startDate.dateYear()

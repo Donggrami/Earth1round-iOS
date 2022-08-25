@@ -61,6 +61,8 @@
 		FC415511288171980030836E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550E288171980030836E /* CalendarViewController.swift */; };
 		FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */; };
 		FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */; };
+		FC64F8C328AF6D0F00A86483 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */; };
+		FC64F8C628AF6D9800A86483 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */; };
 		FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */; };
 		FC6EB1C52897DA08007946F9 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C42897DA08007946F9 /* NicknameViewController.swift */; };
 		FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */; };
@@ -71,6 +73,13 @@
 		FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */; };
 		FC72672E2885692100BBE712 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672D2885692100BBE712 /* RxCocoa */; };
 		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
+		FC751D4328B7790800A6F4E1 /* CharacterSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4228B7790800A6F4E1 /* CharacterSelectionViewModel.swift */; };
+		FC751D4528B779E600A6F4E1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4428B779E600A6F4E1 /* Character.swift */; };
+		FC751D4728B779FA00A6F4E1 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4628B779FA00A6F4E1 /* CharacterRepository.swift */; };
+		FC751D4928B77A0600A6F4E1 /* CharacterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4828B77A0600A6F4E1 /* CharacterUseCase.swift */; };
+		FC751D4B28B77A2700A6F4E1 /* DefaultCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4A28B77A2700A6F4E1 /* DefaultCharacterRepository.swift */; };
+		FC751D4E28B77A4D00A6F4E1 /* CharacterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4D28B77A4D00A6F4E1 /* CharacterAPI.swift */; };
+		FC751D5028B77A5400A6F4E1 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4F28B77A5400A6F4E1 /* CharacterService.swift */; };
 		FC85F63528AD16E4004D2184 /* DefaultPlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */; };
 		FC85F64028AD16EF004D2184 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63728AD16EF004D2184 /* BaseTargetType.swift */; };
 		FC85F64128AD16EF004D2184 /* MultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63828AD16EF004D2184 /* MultiMoyaProvider.swift */; };
@@ -95,6 +104,7 @@
 		FC9A4D2D28A507E000C41DEC /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2C28A507E000C41DEC /* swiftgen.yml */; };
 		FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
+		FCC43BE828B176D0008AE007 /* Rx+ViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */; };
 		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
 		FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED43288F082F00495CD9 /* LoginViewController.swift */; };
 		FCED3F0728A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED3F0628A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift */; };
@@ -158,6 +168,8 @@
 		FC41550E288171980030836E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
+		FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		FC6EB1C42897DA08007946F9 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +178,13 @@
 		FC6EB1DD289834B1007946F9 /* TermsLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsLiterals.swift; sourceTree = "<group>"; };
 		FC6EB1DF28983F26007946F9 /* UITableView+Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Generic.swift"; sourceTree = "<group>"; };
 		FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		FC751D4228B7790800A6F4E1 /* CharacterSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModel.swift; sourceTree = "<group>"; };
+		FC751D4428B779E600A6F4E1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		FC751D4628B779FA00A6F4E1 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		FC751D4828B77A0600A6F4E1 /* CharacterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterUseCase.swift; path = "Earth1round-iOS/Source/Domain/UseCases/CharacterUseCase.swift"; sourceTree = SOURCE_ROOT; };
+		FC751D4A28B77A2700A6F4E1 /* DefaultCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCharacterRepository.swift; sourceTree = "<group>"; };
+		FC751D4D28B77A4D00A6F4E1 /* CharacterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAPI.swift; sourceTree = "<group>"; };
+		FC751D4F28B77A5400A6F4E1 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPlaceRepository.swift; sourceTree = "<group>"; };
 		FC85F63728AD16EF004D2184 /* BaseTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
 		FC85F63828AD16EF004D2184 /* MultiMoyaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMoyaProvider.swift; sourceTree = "<group>"; };
@@ -190,6 +209,7 @@
 		FC9A4D2C28A507E000C41DEC /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+ViewLifeCycle.swift"; sourceTree = "<group>"; };
 		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FCE0ED43288F082F00495CD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FCED3F0628A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+AddArrangedSubviews.swift"; sourceTree = "<group>"; };
@@ -453,6 +473,7 @@
 				B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */,
 				FC6EB1CB28982F1D007946F9 /* UITextField+addLeftPadding.swift */,
 				FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */,
+				FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */,
 				B02D661628B20ECD00066095 /* Int+withCommas.swift */,
 				B0ECB28828B61BB700ABA64B /* String+dateFormat.swift */,
 				B0ECB28A28B6782500ABA64B /* Double+mileToKilometer.swift */,
@@ -482,7 +503,6 @@
 		FC4154B5287B29DA00300A9E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				B032AB40288BF87B002C5988 /* MyRecordCell.swift */,
 				FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */,
 			);
 			path = Cell;
@@ -495,6 +515,7 @@
 				B0F35E2B28B4A2BD007962AB /* CourseRepository.swift */,
 				B05BE42528B751D200F54CAC /* HomeRepository.swift */,
 				B05BE43228B7623600F54CAC /* MyRecordRepository.swift */,
+				FC751D4628B779FA00A6F4E1 /* CharacterRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -506,6 +527,7 @@
 				B0F35E2928B4A1B4007962AB /* CourseUseCase.swift */,
 				B05BE42328B7518700F54CAC /* HomeUseCase.swift */,
 				B05BE43028B7622800F54CAC /* MyRecordUseCase.swift */,
+				FC751D4828B77A0600A6F4E1 /* CharacterUseCase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -516,6 +538,7 @@
 				B05BE43928B7662100F54CAC /* MyRecord */,
 				B05BE42928B7521F00F54CAC /* Home */,
 				B0F35E3128B4A631007962AB /* CurrentCourse */,
+				FC751D4C28B77A2F00A6F4E1 /* Character */,
 				FC85F63D28AD16EF004D2184 /* Place */,
 				FC85F63628AD16EF004D2184 /* Utils */,
 			);
@@ -529,6 +552,7 @@
 				FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */,
 				B05BE42728B751F200F54CAC /* DefaultHomeRepository.swift */,
 				B05BE43728B7639E00F54CAC /* DefaultMyRecordRepository.swift */,
+				FC751D4A28B77A2700A6F4E1 /* DefaultCharacterRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -542,6 +566,22 @@
 				FC4154A0287B297600300A9E /* LaunchScreen.storyboard */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		FC64F8C128AF6CE800A86483 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FC64F8C428AF6D8900A86483 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FC6EB1C82897DA6B007946F9 /* Login */ = {
@@ -574,7 +614,9 @@
 		FC6EB1D228983094007946F9 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				FC64F8C428AF6D8900A86483 /* ViewModel */,
 				FC6EB1D5289830F8007946F9 /* Viewcontroller */,
+				FC64F8C128AF6CE800A86483 /* Cells */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -582,6 +624,7 @@
 		FC6EB1D3289830AF007946F9 /* CharacterSelection */ = {
 			isa = PBXGroup;
 			children = (
+				FC751D4128B778EA00A6F4E1 /* ViewModel */,
 				FC6EB1D62898310A007946F9 /* ViewController */,
 				FC4154B5287B29DA00300A9E /* Cell */,
 			);
@@ -669,6 +712,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FC751D4128B778EA00A6F4E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC751D4228B7790800A6F4E1 /* CharacterSelectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC751D4C28B77A2F00A6F4E1 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				FC751D4D28B77A4D00A6F4E1 /* CharacterAPI.swift */,
+				FC751D4F28B77A5400A6F4E1 /* CharacterService.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 		FC85F63628AD16EF004D2184 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -708,6 +768,7 @@
 				B05BE42128B750F200F54CAC /* HomeUser.swift */,
 				B05BE43428B7624000F54CAC /* MyRecord.swift */,
 				B016123A28B7B46F0065E2C7 /* CompleteCourse.swift */,
+				FC751D4428B779E600A6F4E1 /* Character.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -900,7 +961,7 @@
 		};
 		FC9A4D3028A507FA00C41DEC /* SwiftGen Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -912,7 +973,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen config run\n";
 		};
@@ -954,6 +1015,7 @@
 				FC85F64F28AD1721004D2184 /* GenericResponse.swift in Sources */,
 				FC85F64428AD16EF004D2184 /* MoyaLoggingPlugin.swift in Sources */,
 				FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */,
+				FC64F8C628AF6D9800A86483 /* CalendarViewModel.swift in Sources */,
 				FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */,
 				FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */,
 				FC415510288171980030836E /* CourseViewController.swift in Sources */,
@@ -963,7 +1025,11 @@
 				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
 				FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */,
 				B05BE42D28B7523300F54CAC /* HomeService.swift in Sources */,
+				FC751D4B28B77A2700A6F4E1 /* DefaultCharacterRepository.swift in Sources */,
+				FC751D4328B7790800A6F4E1 /* CharacterSelectionViewModel.swift in Sources */,
 				FC85F63528AD16E4004D2184 /* DefaultPlaceRepository.swift in Sources */,
+				FC751D4E28B77A4D00A6F4E1 /* CharacterAPI.swift in Sources */,
+				FC751D4528B779E600A6F4E1 /* Character.swift in Sources */,
 				B02D661928B211D800066095 /* MyRecordCell.swift in Sources */,
 				B05BE43128B7622800F54CAC /* MyRecordUseCase.swift in Sources */,
 				B0F35E3328B4A641007962AB /* CurrentCourseAPI.swift in Sources */,
@@ -973,24 +1039,29 @@
 				FC85F64528AD16EF004D2184 /* HTTPMethodURL.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
 				B0F35E3028B4A457007962AB /* CurrentCourseRepository.swift in Sources */,
+				FCC43BE828B176D0008AE007 /* Rx+ViewLifeCycle.swift in Sources */,
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
 				B05BE43828B7639E00F54CAC /* DefaultMyRecordRepository.swift in Sources */,
 				FCED3F0728A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift in Sources */,
 				B016123D28B7B4930065E2C7 /* CompleteCourseAPI.swift in Sources */,
 				FC85F64728AD16EF004D2184 /* PlaceService.swift in Sources */,
+				FC751D5028B77A5400A6F4E1 /* CharacterService.swift in Sources */,
 				FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */,
 				B05BE42028B750A400F54CAC /* HomeViewModel.swift in Sources */,
 				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
 				FC85F64328AD16EF004D2184 /* KeyChainService.swift in Sources */,
 				FC85F65428AD173D004D2184 /* PlaceRepository.swift in Sources */,
+				FC64F8C328AF6D0F00A86483 /* CalendarCollectionViewCell.swift in Sources */,
 				FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */,
 				B05BE42F28B7621900F54CAC /* MyRecordViewModel.swift in Sources */,
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC85F64628AD16EF004D2184 /* PlaceAPI.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
 				B05BE43D28B7663800F54CAC /* MyRecordService.swift in Sources */,
+				FC751D4928B77A0600A6F4E1 /* CharacterUseCase.swift in Sources */,
 				FC85F64028AD16EF004D2184 /* BaseTargetType.swift in Sources */,
 				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
+				FC751D4728B779FA00A6F4E1 /* CharacterRepository.swift in Sources */,
 				FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */,
 				FC85F64228AD16EF004D2184 /* Config.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
@@ -1147,10 +1218,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Earth1round-iOS/Earth1round-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Earth1round-iOS/Global/Support/Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "건강 데이터를 쓸때 필요해요";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "건강 데이터를 받아올 때 사용해요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1181,10 +1255,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Earth1round-iOS/Earth1round-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2C5485ZLQ;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Earth1round-iOS/Global/Support/Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "건강 데이터를 쓸때 필요해요";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "건강 데이터를 받아올 때 사용해요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

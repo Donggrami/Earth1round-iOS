@@ -51,7 +51,7 @@ class HomeViewController: BaseViewController {
     }
     
     var characterView = UIImageView().then {
-        $0.image = Asset.Images.cha_01.image
+        $0.image = Asset.Images.cha01.image
         $0.isUserInteractionEnabled = true
         $0.contentMode = .scaleAspectFit
     }
@@ -283,7 +283,7 @@ class HomeViewController: BaseViewController {
     
     @objc  func goToCalendar(){
         let vc=CalendarViewController()
-        
+        vc.countLabel.text = "\(totalWalk.text?.filter { $0.isNumber } ?? "0")"
         navigationController?.pushViewController(vc, animated: true)
     }
     
