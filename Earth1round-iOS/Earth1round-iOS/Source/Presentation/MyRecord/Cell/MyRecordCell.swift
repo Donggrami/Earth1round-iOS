@@ -20,53 +20,64 @@ class MyRecordCell: UITableViewCell {
         $0.text = "2022"
         $0.font = .erFont(type: .NTRegular16)
         $0.textColor = Asset.Colors.darkGrey.color
+        $0.numberOfLines = 0
     }
     
     private var startDate = UILabel().then {
         $0.text = "May. 01"
         $0.font = .erFont(type: .NTRegular16)
         $0.textColor = Asset.Colors.darkGrey.color
+        $0.numberOfLines = 0
     }
     
     private var fromToText = UILabel().then {
         $0.text = "-"
         $0.font = .erFont(type: .NTRegular16)
         $0.textColor = Asset.Colors.darkGrey.color
+        $0.numberOfLines = 0
     }
     
     private var endDate = UILabel().then {
         $0.text = "May.01"
         $0.font = .erFont(type: .NTRegular16)
         $0.textColor = Asset.Colors.darkGrey.color
+        $0.numberOfLines = 0
     }
     
     private var courseText = UILabel().then {
         $0.text = "코스"
         $0.font = .erFont(type: .NTRegular16)
         $0.textColor = Asset.Colors.darkGrey.color
+        $0.numberOfLines = 0
     }
     
     private var distanceText = UILabel().then {
         $0.text = "거리 Km"
         $0.font = .erFont(type: .NTRegular20)
         $0.textColor = Asset.Colors.pointBlue .color
+        $0.numberOfLines = 0
     }
     
 
     //MARK - LifeCycle
+    func setData(record: MyRecord) {
+        yearTitle.text = record.startDate.dateYear()
+        startDate.text = record.startDate.dateMonthDate()
+        endDate.text = record.endDate.dateMonthDate()
+        
+        courseText.text = "\(record.startPlaceID) - \(record.endPlaceID)"
+        courseText.text = "에펠탑 - 콜로세움"
+        distanceText.text = "\(Int(record.distance.mileToKilometer())) km"
+        
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        [cellTag,yearTitle,startDate,fromToText,endDate,courseText,distanceText].forEach {
+        [yearTitle,startDate,courseText,distanceText,cellTag,fromToText,endDate].forEach {
             contentView.addSubview($0)
         }
-        
-        cellTag.snp.makeConstraints { make in
-            make.leading.top.bottom.equalToSuperview()
-            make.width.equalTo(13)
-        }
-        
+     
         yearTitle.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
             make.leading.equalTo(cellTag.snp.trailing).offset(15)
@@ -77,26 +88,31 @@ class MyRecordCell: UITableViewCell {
             make.top.equalTo(yearTitle.snp.bottom).offset(4)
         }
         
+        courseText.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().offset(-19)
+            make.top.equalTo(startDate.snp.bottom).offset(5)
+        }
+                  
+        distanceText.snp.makeConstraints { make in
+            make.trailing.equalTo(courseText)
+            make.top.equalTo(courseText.snp.bottom).offset(2)
+            make.bottom.equalToSuperview().offset(-19)
+        }
+        
+        cellTag.snp.makeConstraints { make in
+            make.leading.top.bottom.equalToSuperview()
+            make.width.equalTo(13)
+        }
+        
         fromToText.snp.makeConstraints { make in
             make.centerY.equalTo(startDate)
             make.leading.equalTo(startDate.snp.trailing).offset(5)
         }
-       
+
         endDate.snp.makeConstraints{ make in
             make.centerY.equalTo(startDate)
             make.leading.equalTo(fromToText.snp.trailing).offset(5)
         }
-        
-        courseText.snp.makeConstraints { make in
-            make.trailing.equalTo(distanceText)
-            make.bottom.equalTo(distanceText.snp.top).offset(-2)
-        }
-                  
-        distanceText.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().offset(-19)
-            make.bottom.equalToSuperview().offset(-12)
-        }
-        
     }
     
     //MARK - Method
@@ -108,6 +124,7 @@ class MyRecordCell: UITableViewCell {
         
         contentView.layer.cornerRadius = 10
         contentView.clipsToBounds = true
+
     }
     
     required init?(coder: NSCoder) {

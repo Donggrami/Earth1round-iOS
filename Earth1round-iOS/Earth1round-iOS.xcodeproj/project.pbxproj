@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B016123B28B7B46F0065E2C7 /* CompleteCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016123A28B7B46F0065E2C7 /* CompleteCourse.swift */; };
+		B016123D28B7B4930065E2C7 /* CompleteCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016123C28B7B4930065E2C7 /* CompleteCourseAPI.swift */; };
+		B016123F28B7B49D0065E2C7 /* CompleteCourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016123E28B7B49D0065E2C7 /* CompleteCourseService.swift */; };
 		B02D661728B20ECD00066095 /* Int+withCommas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D661628B20ECD00066095 /* Int+withCommas.swift */; };
 		B02D661928B211D800066095 /* MyRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D661828B211D800066095 /* MyRecordCell.swift */; };
 		B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032AB3E288BF643002C5988 /* MyRecordViewController.swift */; };
+		B05BE42028B750A400F54CAC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE41F28B750A400F54CAC /* HomeViewModel.swift */; };
+		B05BE42228B750F200F54CAC /* HomeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE42128B750F200F54CAC /* HomeUser.swift */; };
+		B05BE42428B7518700F54CAC /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE42328B7518700F54CAC /* HomeUseCase.swift */; };
+		B05BE42628B751D200F54CAC /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE42528B751D200F54CAC /* HomeRepository.swift */; };
+		B05BE42828B751F200F54CAC /* DefaultHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE42728B751F200F54CAC /* DefaultHomeRepository.swift */; };
+		B05BE42B28B7522A00F54CAC /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE42A28B7522A00F54CAC /* HomeAPI.swift */; };
+		B05BE42D28B7523300F54CAC /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE42C28B7523300F54CAC /* HomeService.swift */; };
+		B05BE42F28B7621900F54CAC /* MyRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE42E28B7621900F54CAC /* MyRecordViewModel.swift */; };
+		B05BE43128B7622800F54CAC /* MyRecordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE43028B7622800F54CAC /* MyRecordUseCase.swift */; };
+		B05BE43328B7623600F54CAC /* MyRecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE43228B7623600F54CAC /* MyRecordRepository.swift */; };
+		B05BE43528B7624000F54CAC /* MyRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE43428B7624000F54CAC /* MyRecord.swift */; };
+		B05BE43828B7639E00F54CAC /* DefaultMyRecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE43728B7639E00F54CAC /* DefaultMyRecordRepository.swift */; };
+		B05BE43B28B7663000F54CAC /* MyRecordAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE43A28B7663000F54CAC /* MyRecordAPI.swift */; };
+		B05BE43D28B7663800F54CAC /* MyRecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05BE43C28B7663800F54CAC /* MyRecordService.swift */; };
 		B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD540A289E5B7D005384DF /* HealthStore.swift */; };
 		B0C47BEB289D70350098D6C0 /* UILabel+changeTextBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */; };
 		B0C56654289522CA004EF4B6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C56653289522CA004EF4B6 /* HealthKit.framework */; };
 		B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F44287D64820098BB87 /* EarthViewController.swift */; };
 		B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */; };
+		B0ECB28928B61BB700ABA64B /* String+dateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB28828B61BB700ABA64B /* String+dateFormat.swift */; };
+		B0ECB28B28B6782500ABA64B /* Double+mileToKilometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB28A28B6782500ABA64B /* Double+mileToKilometer.swift */; };
+		B0F35E2A28B4A1B4007962AB /* CourseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F35E2928B4A1B4007962AB /* CourseUseCase.swift */; };
+		B0F35E2C28B4A2BD007962AB /* CourseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F35E2B28B4A2BD007962AB /* CourseRepository.swift */; };
+		B0F35E2E28B4A2E8007962AB /* CurrentCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F35E2D28B4A2E8007962AB /* CurrentCourse.swift */; };
+		B0F35E3028B4A457007962AB /* CurrentCourseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F35E2F28B4A457007962AB /* CurrentCourseRepository.swift */; };
+		B0F35E3328B4A641007962AB /* CurrentCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F35E3228B4A641007962AB /* CurrentCourseAPI.swift */; };
+		B0F35E3528B4A64B007962AB /* CurrentCourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F35E3428B4A64B007962AB /* CurrentCourseService.swift */; };
+		B0F35E3A28B4B886007962AB /* EarthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F35E3928B4B886007962AB /* EarthViewModel.swift */; };
 		D3FE608DE500AB3604AAECD9 /* Pods_Earth1round_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E384E6BCF881F15F1AE5FB /* Pods_Earth1round_iOS.framework */; };
 		FC415496287B297400300A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415495287B297400300A9E /* AppDelegate.swift */; };
 		FC415498287B297400300A9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415497287B297400300A9E /* SceneDelegate.swift */; };
@@ -88,15 +114,42 @@
 		0CE9B6BB12DB41CDD8891A43 /* Pods-Earth1round-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earth1round-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Earth1round-iOS/Pods-Earth1round-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		64E384E6BCF881F15F1AE5FB /* Pods_Earth1round_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Earth1round_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E56C009BC4B40A321A5D4C6 /* Pods-Earth1round-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earth1round-iOS.release.xcconfig"; path = "Target Support Files/Pods-Earth1round-iOS/Pods-Earth1round-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B016123A28B7B46F0065E2C7 /* CompleteCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteCourse.swift; sourceTree = "<group>"; };
+		B016123C28B7B4930065E2C7 /* CompleteCourseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteCourseAPI.swift; sourceTree = "<group>"; };
+		B016123E28B7B49D0065E2C7 /* CompleteCourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteCourseService.swift; sourceTree = "<group>"; };
 		B02D661628B20ECD00066095 /* Int+withCommas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+withCommas.swift"; sourceTree = "<group>"; };
 		B02D661828B211D800066095 /* MyRecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecordCell.swift; sourceTree = "<group>"; };
 		B032AB3E288BF643002C5988 /* MyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordViewController.swift; sourceTree = "<group>"; };
+		B032AB40288BF87B002C5988 /* MyRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRecordCell.swift; path = "Earth1round-iOS/Source/Presentation/ViewControllers/MyRecordCell.swift"; sourceTree = SOURCE_ROOT; };
+		B05BE41F28B750A400F54CAC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B05BE42128B750F200F54CAC /* HomeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUser.swift; sourceTree = "<group>"; };
+		B05BE42328B7518700F54CAC /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeUseCase.swift; path = "Earth1round-iOS/Source/Domain/UseCases/HomeUseCase.swift"; sourceTree = SOURCE_ROOT; };
+		B05BE42528B751D200F54CAC /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		B05BE42728B751F200F54CAC /* DefaultHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeRepository.swift; sourceTree = "<group>"; };
+		B05BE42A28B7522A00F54CAC /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		B05BE42C28B7523300F54CAC /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		B05BE42E28B7621900F54CAC /* MyRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordViewModel.swift; sourceTree = "<group>"; };
+		B05BE43028B7622800F54CAC /* MyRecordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRecordUseCase.swift; path = "Earth1round-iOS/Source/Domain/UseCases/MyRecordUseCase.swift"; sourceTree = SOURCE_ROOT; };
+		B05BE43228B7623600F54CAC /* MyRecordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordRepository.swift; sourceTree = "<group>"; };
+		B05BE43428B7624000F54CAC /* MyRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecord.swift; sourceTree = "<group>"; };
+		B05BE43728B7639E00F54CAC /* DefaultMyRecordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMyRecordRepository.swift; sourceTree = "<group>"; };
+		B05BE43A28B7663000F54CAC /* MyRecordAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordAPI.swift; sourceTree = "<group>"; };
+		B05BE43C28B7663800F54CAC /* MyRecordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordService.swift; sourceTree = "<group>"; };
 		B0BD540A289E5B7D005384DF /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+changeTextBold.swift"; sourceTree = "<group>"; };
 		B0C56653289522CA004EF4B6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		B0C56655289524EB004EF4B6 /* Earth1round-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Earth1round-iOS.entitlements"; sourceTree = "<group>"; };
 		B0C71F44287D64820098BB87 /* EarthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthViewController.swift; sourceTree = "<group>"; };
 		B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0ECB28828B61BB700ABA64B /* String+dateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+dateFormat.swift"; sourceTree = "<group>"; };
+		B0ECB28A28B6782500ABA64B /* Double+mileToKilometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+mileToKilometer.swift"; sourceTree = "<group>"; };
+		B0F35E2928B4A1B4007962AB /* CourseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CourseUseCase.swift; path = "Earth1round-iOS/Source/Domain/UseCases/CourseUseCase.swift"; sourceTree = SOURCE_ROOT; };
+		B0F35E2B28B4A2BD007962AB /* CourseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRepository.swift; sourceTree = "<group>"; };
+		B0F35E2D28B4A2E8007962AB /* CurrentCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCourse.swift; sourceTree = "<group>"; };
+		B0F35E2F28B4A457007962AB /* CurrentCourseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCourseRepository.swift; sourceTree = "<group>"; };
+		B0F35E3228B4A641007962AB /* CurrentCourseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCourseAPI.swift; sourceTree = "<group>"; };
+		B0F35E3428B4A64B007962AB /* CurrentCourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCourseService.swift; sourceTree = "<group>"; };
+		B0F35E3928B4B886007962AB /* EarthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthViewModel.swift; sourceTree = "<group>"; };
 		FC415492287B297400300A9E /* Earth1round-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Earth1round-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC415495287B297400300A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC415497287B297400300A9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +245,7 @@
 		B02D661A28B2122200066095 /* MyRecord */ = {
 			isa = PBXGroup;
 			children = (
+				B05BE43628B7638A00F54CAC /* ViewModel */,
 				B02D661C28B2123100066095 /* Cell */,
 				B02D661B28B2122C00066095 /* ViewController */,
 			);
@@ -214,12 +268,89 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		B05BE41D28B7509200F54CAC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B05BE41E28B7509900F54CAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B05BE41F28B750A400F54CAC /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B05BE42928B7521F00F54CAC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B05BE42A28B7522A00F54CAC /* HomeAPI.swift */,
+				B05BE42C28B7523300F54CAC /* HomeService.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B05BE43628B7638A00F54CAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B05BE42E28B7621900F54CAC /* MyRecordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B05BE43928B7662100F54CAC /* MyRecord */ = {
+			isa = PBXGroup;
+			children = (
+				B05BE43A28B7663000F54CAC /* MyRecordAPI.swift */,
+				B05BE43C28B7663800F54CAC /* MyRecordService.swift */,
+			);
+			path = MyRecord;
+			sourceTree = "<group>";
+		};
 		B0BD5409289E5B37005384DF /* Health */ = {
 			isa = PBXGroup;
 			children = (
 				B0BD540A289E5B7D005384DF /* HealthStore.swift */,
 			);
 			path = Health;
+			sourceTree = "<group>";
+		};
+		B0F35E3128B4A631007962AB /* CurrentCourse */ = {
+			isa = PBXGroup;
+			children = (
+				B0F35E3228B4A641007962AB /* CurrentCourseAPI.swift */,
+				B0F35E3428B4A64B007962AB /* CurrentCourseService.swift */,
+				B016123C28B7B4930065E2C7 /* CompleteCourseAPI.swift */,
+				B016123E28B7B49D0065E2C7 /* CompleteCourseService.swift */,
+			);
+			path = CurrentCourse;
+			sourceTree = "<group>";
+		};
+		B0F35E3628B4B69E007962AB /* Earth */ = {
+			isa = PBXGroup;
+			children = (
+				B0F35E3828B4B877007962AB /* ViewController */,
+				B0F35E3728B4B86F007962AB /* ViewModel */,
+			);
+			path = Earth;
+			sourceTree = "<group>";
+		};
+		B0F35E3728B4B86F007962AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B0F35E3928B4B886007962AB /* EarthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B0F35E3828B4B877007962AB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0C71F44287D64820098BB87 /* EarthViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		CEE843E4DB48070742E1556A /* Frameworks */ = {
@@ -285,6 +416,7 @@
 		FC4154AB287B298C00300A9E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B0F35E3628B4B69E007962AB /* Earth */,
 				B02D661A28B2122200066095 /* MyRecord */,
 				FC86898E289E6BB900CEE14C /* Components */,
 				FCC2B39A2885674A00924872 /* Base */,
@@ -295,7 +427,7 @@
 				FC6EB1D3289830AF007946F9 /* CharacterSelection */,
 				FC6EB1D228983094007946F9 /* Calendar */,
 				FC6EB1D4289830E9007946F9 /* Course */,
-				FC4154B2287B29D000300A9E /* ViewControllers */,
+				FC4154B2287B29D000300A9E /* Home */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -343,6 +475,8 @@
 				FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */,
 				FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */,
 				B02D661628B20ECD00066095 /* Int+withCommas.swift */,
+				B0ECB28828B61BB700ABA64B /* String+dateFormat.swift */,
+				B0ECB28A28B6782500ABA64B /* Double+mileToKilometer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -356,13 +490,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		FC4154B2287B29D000300A9E /* ViewControllers */ = {
+		FC4154B2287B29D000300A9E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B0C71F44287D64820098BB87 /* EarthViewController.swift */,
+				B05BE41E28B7509900F54CAC /* ViewModel */,
+				B05BE41D28B7509200F54CAC /* ViewController */,
 				B0C71F4D287DACDA0098BB87 /* HomeViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		FC4154B5287B29DA00300A9E /* Cell */ = {
@@ -377,6 +512,9 @@
 			isa = PBXGroup;
 			children = (
 				FC85F65328AD173C004D2184 /* PlaceRepository.swift */,
+				B0F35E2B28B4A2BD007962AB /* CourseRepository.swift */,
+				B05BE42528B751D200F54CAC /* HomeRepository.swift */,
+				B05BE43228B7623600F54CAC /* MyRecordRepository.swift */,
 				FC751D4628B779FA00A6F4E1 /* CharacterRepository.swift */,
 			);
 			path = Repositories;
@@ -386,6 +524,9 @@
 			isa = PBXGroup;
 			children = (
 				FC85F65128AD1738004D2184 /* PlaceUseCase.swift */,
+				B0F35E2928B4A1B4007962AB /* CourseUseCase.swift */,
+				B05BE42328B7518700F54CAC /* HomeUseCase.swift */,
+				B05BE43028B7622800F54CAC /* MyRecordUseCase.swift */,
 				FC751D4828B77A0600A6F4E1 /* CharacterUseCase.swift */,
 			);
 			path = Usecases;
@@ -394,6 +535,9 @@
 		FC4154BA287B29F900300A9E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B05BE43928B7662100F54CAC /* MyRecord */,
+				B05BE42928B7521F00F54CAC /* Home */,
+				B0F35E3128B4A631007962AB /* CurrentCourse */,
 				FC751D4C28B77A2F00A6F4E1 /* Character */,
 				FC85F63D28AD16EF004D2184 /* Place */,
 				FC85F63628AD16EF004D2184 /* Utils */,
@@ -404,7 +548,10 @@
 		FC4154BB287B29FE00300A9E /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				B0F35E2F28B4A457007962AB /* CurrentCourseRepository.swift */,
 				FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */,
+				B05BE42728B751F200F54CAC /* DefaultHomeRepository.swift */,
+				B05BE43728B7639E00F54CAC /* DefaultMyRecordRepository.swift */,
 				FC751D4A28B77A2700A6F4E1 /* DefaultCharacterRepository.swift */,
 			);
 			path = Repositories;
@@ -617,6 +764,10 @@
 			isa = PBXGroup;
 			children = (
 				FC85F65828AD17E9004D2184 /* Place.swift */,
+				B0F35E2D28B4A2E8007962AB /* CurrentCourse.swift */,
+				B05BE42128B750F200F54CAC /* HomeUser.swift */,
+				B05BE43428B7624000F54CAC /* MyRecord.swift */,
+				B016123A28B7B46F0065E2C7 /* CompleteCourse.swift */,
 				FC751D4428B779E600A6F4E1 /* Character.swift */,
 			);
 			path = Entities;
@@ -833,20 +984,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F35E2E28B4A2E8007962AB /* CurrentCourse.swift in Sources */,
 				B0C71F4E287DACDA0098BB87 /* HomeViewController.swift in Sources */,
+				B0F35E2C28B4A2BD007962AB /* CourseRepository.swift in Sources */,
 				B02D661728B20ECD00066095 /* Int+withCommas.swift in Sources */,
 				FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */,
+				B016123B28B7B46F0065E2C7 /* CompleteCourse.swift in Sources */,
+				B05BE43B28B7663000F54CAC /* MyRecordAPI.swift in Sources */,
+				B05BE42228B750F200F54CAC /* HomeUser.swift in Sources */,
 				FC85F64128AD16EF004D2184 /* MultiMoyaProvider.swift in Sources */,
 				B0C47BEB289D70350098D6C0 /* UILabel+changeTextBold.swift in Sources */,
+				B05BE42828B751F200F54CAC /* DefaultHomeRepository.swift in Sources */,
 				FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */,
+				B0F35E3528B4A64B007962AB /* CurrentCourseService.swift in Sources */,
+				B05BE42B28B7522A00F54CAC /* HomeAPI.swift in Sources */,
+				B0F35E3A28B4B886007962AB /* EarthViewModel.swift in Sources */,
 				FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */,
 				FC41550B2881717E0030836E /* UIVIew+addSubViews.swift in Sources */,
 				FC415503288171630030836E /* Size.swift in Sources */,
+				B0ECB28B28B6782500ABA64B /* Double+mileToKilometer.swift in Sources */,
+				B016123F28B7B49D0065E2C7 /* CompleteCourseService.swift in Sources */,
 				FC415511288171980030836E /* CalendarViewController.swift in Sources */,
 				FC6EB1E028983F26007946F9 /* UITableView+Generic.swift in Sources */,
 				FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */,
+				B05BE43528B7624000F54CAC /* MyRecord.swift in Sources */,
+				B05BE43328B7623600F54CAC /* MyRecordRepository.swift in Sources */,
 				FC85F65228AD1738004D2184 /* PlaceUseCase.swift in Sources */,
 				FC6EB1C52897DA08007946F9 /* NicknameViewController.swift in Sources */,
+				B05BE42628B751D200F54CAC /* HomeRepository.swift in Sources */,
 				FC85F64F28AD1721004D2184 /* GenericResponse.swift in Sources */,
 				FC85F64428AD16EF004D2184 /* MoyaLoggingPlugin.swift in Sources */,
 				FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */,
@@ -854,35 +1019,45 @@
 				FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */,
 				FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */,
 				FC415510288171980030836E /* CourseViewController.swift in Sources */,
+				B0F35E2A28B4A1B4007962AB /* CourseUseCase.swift in Sources */,
 				FC85F65928AD17E9004D2184 /* Place.swift in Sources */,
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
 				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
 				FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */,
+				B05BE42D28B7523300F54CAC /* HomeService.swift in Sources */,
 				FC751D4B28B77A2700A6F4E1 /* DefaultCharacterRepository.swift in Sources */,
 				FC751D4328B7790800A6F4E1 /* CharacterSelectionViewModel.swift in Sources */,
 				FC85F63528AD16E4004D2184 /* DefaultPlaceRepository.swift in Sources */,
 				FC751D4E28B77A4D00A6F4E1 /* CharacterAPI.swift in Sources */,
 				FC751D4528B779E600A6F4E1 /* Character.swift in Sources */,
 				B02D661928B211D800066095 /* MyRecordCell.swift in Sources */,
+				B05BE43128B7622800F54CAC /* MyRecordUseCase.swift in Sources */,
+				B0F35E3328B4A641007962AB /* CurrentCourseAPI.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
 				B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */,
 				FC85F64528AD16EF004D2184 /* HTTPMethodURL.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
+				B0F35E3028B4A457007962AB /* CurrentCourseRepository.swift in Sources */,
 				FCC43BE828B176D0008AE007 /* Rx+ViewLifeCycle.swift in Sources */,
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
+				B05BE43828B7639E00F54CAC /* DefaultMyRecordRepository.swift in Sources */,
 				FCED3F0728A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift in Sources */,
+				B016123D28B7B4930065E2C7 /* CompleteCourseAPI.swift in Sources */,
 				FC85F64728AD16EF004D2184 /* PlaceService.swift in Sources */,
 				FC751D5028B77A5400A6F4E1 /* CharacterService.swift in Sources */,
 				FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */,
+				B05BE42028B750A400F54CAC /* HomeViewModel.swift in Sources */,
 				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
 				FC85F64328AD16EF004D2184 /* KeyChainService.swift in Sources */,
 				FC85F65428AD173D004D2184 /* PlaceRepository.swift in Sources */,
 				FC64F8C328AF6D0F00A86483 /* CalendarCollectionViewCell.swift in Sources */,
 				FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */,
+				B05BE42F28B7621900F54CAC /* MyRecordViewModel.swift in Sources */,
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC85F64628AD16EF004D2184 /* PlaceAPI.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
+				B05BE43D28B7663800F54CAC /* MyRecordService.swift in Sources */,
 				FC751D4928B77A0600A6F4E1 /* CharacterUseCase.swift in Sources */,
 				FC85F64028AD16EF004D2184 /* BaseTargetType.swift in Sources */,
 				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
@@ -891,6 +1066,8 @@
 				FC85F64228AD16EF004D2184 /* Config.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
 				FC85F65028AD1721004D2184 /* CourseRequestModel.swift in Sources */,
+				B0ECB28928B61BB700ABA64B /* String+dateFormat.swift in Sources */,
+				B05BE42428B7518700F54CAC /* HomeUseCase.swift in Sources */,
 				B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
