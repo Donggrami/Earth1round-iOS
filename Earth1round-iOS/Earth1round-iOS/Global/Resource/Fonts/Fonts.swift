@@ -15,6 +15,7 @@ enum TextStyles {
     case NTRegular14
     case NTRegular16
     case NTRegular20
+    case NTRegular30
 }
 
 extension UIFont {
@@ -35,6 +36,8 @@ extension UIFont {
             return UIFont(name: "NotoSansKR-Regular", size: 16)!
         case .NTRegular20:
             return UIFont(name: "NotoSansKR-Regular", size: 20)!
+        case .NTRegular30:
+            return UIFont(name: "NotoSansKR-Regular", size: 30)!
         }
     }
     
