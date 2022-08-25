@@ -9,12 +9,12 @@ import Foundation
 
 import Moya
 
-enum CourseAPI: BaseTargetType {
+enum CreateCourseAPI: BaseTargetType {
     typealias ResultModel = GenericResponse<Int>
     case createCourse(requset: CourseRequestModel)
 }
 
-extension CourseAPI {
+extension CreateCourseAPI {
     var path: String {
         switch self {
         case .createCourse:

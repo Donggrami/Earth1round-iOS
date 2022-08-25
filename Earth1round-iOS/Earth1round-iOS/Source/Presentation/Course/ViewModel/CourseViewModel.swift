@@ -14,7 +14,7 @@ import CoreLocation
 final class CourseViewModel {
     let disposeBag = DisposeBag()
     private let placeUseCase: PlaceUseCase
-    private let courseUseCase: CourseUseCase
+    private let courseUseCase: CreateCourseUseCase
     
     struct Input {
         let viewWillAppear: Observable<Void>
@@ -32,7 +32,7 @@ final class CourseViewModel {
     
     private var distanceRequest = 0.0
     
-    init(placeUseCase: PlaceUseCase, courseUseCase: CourseUseCase) {
+    init(placeUseCase: PlaceUseCase, courseUseCase: CreateCourseUseCase) {
         self.placeUseCase = placeUseCase
         self.courseUseCase = courseUseCase
     }

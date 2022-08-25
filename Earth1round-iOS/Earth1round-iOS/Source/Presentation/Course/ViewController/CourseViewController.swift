@@ -27,7 +27,7 @@ final class CourseViewController: BaseViewController {
     // MARK: - Properites
     
     private let viewModel = CourseViewModel(placeUseCase: DefaultPlaceUseCase(repository: DefaultPlaceRepository()),
-                                            courseUseCase: DefaultCourseUseCase(repository: DefaultCourseRepository()))
+                                            courseUseCase: DefaultCourseUseCase(repository: DefaultCreateCourseRepository()))
     private var places: [Place] = []
     private var courseRequestModel: CourseRequestModel?
     private var startPositon = PublishSubject<Place>()

@@ -9,15 +9,15 @@ import Foundation
 
 import RxSwift
 
-protocol CourseUseCase {
+protocol CreateCourseUseCase {
     func createCourse(request: CourseRequestModel) -> Observable<Int>
 }
 
-final class DefaultCourseUseCase: CourseUseCase {
+final class DefaultCourseUseCase: CreateCourseUseCase {
     
-    private let repository: CourseRepository
+    private let repository: CreateCourseRepository
     
-    init(repository: CourseRepository) {
+    init(repository: CreateCourseRepository) {
         self.repository = repository
     }
 

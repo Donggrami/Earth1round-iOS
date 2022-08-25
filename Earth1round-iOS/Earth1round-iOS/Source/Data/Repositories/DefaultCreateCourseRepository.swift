@@ -10,10 +10,10 @@ import Foundation
 import RxSwift
 import Moya
 
-class DefaultCourseRepository: CourseRepository {
+class DefaultCreateCourseRepository: CreateCourseRepository {
     func createCourse(request: CourseRequestModel) -> Observable<Int> {
         Observable<Int>.create { observer -> Disposable in
-            let requestReference: () = CourseService.shared.createCourse(request: request) { response in
+            let requestReference: () = CreateCourseService.shared.createCourse(request: request) { response in
                 switch response {
                 case .success(let statusCode):
                     if let statusCode = statusCode {

@@ -9,15 +9,15 @@ import Foundation
 
 import Moya
 
-public class CourseService {
+public class CreateCourseService {
     
-    static let shared = CourseService()
+    static let shared = CreateCourseService()
     let provider = MultiMoyaProvider(plugins: [MoyaLoggingPlugin()])
     
     private init() { }
     
     func createCourse(request: CourseRequestModel, completion: @escaping (Result<Int?, Error>) -> Void) {
-        provider.requestNoResultAPI(CourseAPI.createCourse(requset: request)) { response in
+        provider.requestNoResultAPI(CreateCourseAPI.createCourse(requset: request)) { response in
             completion(response)
         }
     }
