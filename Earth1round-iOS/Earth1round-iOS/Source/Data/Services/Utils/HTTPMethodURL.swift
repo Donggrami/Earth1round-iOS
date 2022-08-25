@@ -21,7 +21,7 @@ enum HTTPMethodURL {
     struct POST {
         static let kakaoLogin = "/login/kakao"
         static let reissue = "/re-issue"
-        static let course = "/course" // 코스 저장
+        static let course = "/courses" // 코스 저장
     }
     
     struct PATCH {

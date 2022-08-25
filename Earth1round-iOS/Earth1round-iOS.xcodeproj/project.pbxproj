@@ -61,6 +61,8 @@
 		FC415511288171980030836E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550E288171980030836E /* CalendarViewController.swift */; };
 		FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */; };
 		FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */; };
+		FC6441C528B8122B00AF41D2 /* UIButton+setBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6441C428B8122B00AF41D2 /* UIButton+setBackgroundColor.swift */; };
+		FC6441C728B8217800AF41D2 /* CreateCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6441C628B8217800AF41D2 /* CreateCourseAPI.swift */; };
 		FC64F8C328AF6D0F00A86483 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */; };
 		FC64F8C628AF6D9800A86483 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */; };
 		FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */; };
@@ -103,6 +105,11 @@
 		FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A4D2928A5007C00C41DEC /* Fonts.swift */; };
 		FC9A4D2D28A507E000C41DEC /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2C28A507E000C41DEC /* swiftgen.yml */; };
 		FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */; };
+		FCA2157328B7A39A00E18D89 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2157228B7A39A00E18D89 /* CourseViewModel.swift */; };
+		FCA2157528B7B0C200E18D89 /* CreateCourseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2157428B7B0C200E18D89 /* CreateCourseUseCase.swift */; };
+		FCA2157728B7B0D300E18D89 /* CreateCourseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2157628B7B0D300E18D89 /* CreateCourseRepository.swift */; };
+		FCA2157928B7B0FF00E18D89 /* DefaultCreateCourseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2157828B7B0FF00E18D89 /* DefaultCreateCourseRepository.swift */; };
+		FCA2157E28B7B12200E18D89 /* CreateCourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2157D28B7B12200E18D89 /* CreateCourseService.swift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
 		FCC43BE828B176D0008AE007 /* Rx+ViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */; };
 		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
@@ -167,6 +174,8 @@
 		FC41550E288171980030836E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
+		FC6441C428B8122B00AF41D2 /* UIButton+setBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setBackgroundColor.swift"; sourceTree = "<group>"; };
+		FC6441C628B8217800AF41D2 /* CreateCourseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCourseAPI.swift; sourceTree = "<group>"; };
 		FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +216,11 @@
 		FC9A4D2928A5007C00C41DEC /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FC9A4D2C28A507E000C41DEC /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
+		FCA2157228B7A39A00E18D89 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
+		FCA2157428B7B0C200E18D89 /* CreateCourseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateCourseUseCase.swift; path = "Earth1round-iOS/Source/Domain/UseCases/CreateCourseUseCase.swift"; sourceTree = SOURCE_ROOT; };
+		FCA2157628B7B0D300E18D89 /* CreateCourseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseRepository.swift; sourceTree = "<group>"; };
+		FCA2157828B7B0FF00E18D89 /* DefaultCreateCourseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCreateCourseRepository.swift; sourceTree = "<group>"; };
+		FCA2157D28B7B12200E18D89 /* CreateCourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseService.swift; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+ViewLifeCycle.swift"; sourceTree = "<group>"; };
 		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -474,6 +488,7 @@
 				FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */,
 				FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */,
 				B02D661628B20ECD00066095 /* Int+withCommas.swift */,
+				FC6441C428B8122B00AF41D2 /* UIButton+setBackgroundColor.swift */,
 				B0ECB28828B61BB700ABA64B /* String+dateFormat.swift */,
 				B0ECB28A28B6782500ABA64B /* Double+mileToKilometer.swift */,
 			);
@@ -515,6 +530,7 @@
 				B05BE42528B751D200F54CAC /* HomeRepository.swift */,
 				B05BE43228B7623600F54CAC /* MyRecordRepository.swift */,
 				FC751D4628B779FA00A6F4E1 /* CharacterRepository.swift */,
+				FCA2157628B7B0D300E18D89 /* CreateCourseRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -527,6 +543,7 @@
 				B05BE42328B7518700F54CAC /* HomeUseCase.swift */,
 				B05BE43028B7622800F54CAC /* MyRecordUseCase.swift */,
 				FC751D4828B77A0600A6F4E1 /* CharacterUseCase.swift */,
+				FCA2157428B7B0C200E18D89 /* CreateCourseUseCase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -534,6 +551,7 @@
 		FC4154BA287B29F900300A9E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FCA2157A28B7B10800E18D89 /* CreateCourse */,
 				B05BE43928B7662100F54CAC /* MyRecord */,
 				B05BE42928B7521F00F54CAC /* Home */,
 				B0F35E3128B4A631007962AB /* CurrentCourse */,
@@ -552,6 +570,7 @@
 				B05BE42728B751F200F54CAC /* DefaultHomeRepository.swift */,
 				B05BE43728B7639E00F54CAC /* DefaultMyRecordRepository.swift */,
 				FC751D4A28B77A2700A6F4E1 /* DefaultCharacterRepository.swift */,
+				FCA2157828B7B0FF00E18D89 /* DefaultCreateCourseRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -633,6 +652,7 @@
 		FC6EB1D4289830E9007946F9 /* Course */ = {
 			isa = PBXGroup;
 			children = (
+				FCA2157128B7A34B00E18D89 /* ViewModel */,
 				FC6EB1D728983118007946F9 /* ViewController */,
 			);
 			path = Course;
@@ -801,6 +821,23 @@
 				FC9A4D2928A5007C00C41DEC /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FCA2157128B7A34B00E18D89 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCA2157228B7A39A00E18D89 /* CourseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCA2157A28B7B10800E18D89 /* CreateCourse */ = {
+			isa = PBXGroup;
+			children = (
+				FC6441C628B8217800AF41D2 /* CreateCourseAPI.swift */,
+				FCA2157D28B7B12200E18D89 /* CreateCourseService.swift */,
+			);
+			path = CreateCourse;
 			sourceTree = "<group>";
 		};
 		FCC2B39A2885674A00924872 /* Base */ = {
@@ -993,6 +1030,7 @@
 				B05BE42228B750F200F54CAC /* HomeUser.swift in Sources */,
 				FC85F64128AD16EF004D2184 /* MultiMoyaProvider.swift in Sources */,
 				B0C47BEB289D70350098D6C0 /* UILabel+changeTextBold.swift in Sources */,
+				FCA2157928B7B0FF00E18D89 /* DefaultCreateCourseRepository.swift in Sources */,
 				B05BE42828B751F200F54CAC /* DefaultHomeRepository.swift in Sources */,
 				FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */,
 				B0F35E3528B4A64B007962AB /* CurrentCourseService.swift in Sources */,
@@ -1027,6 +1065,7 @@
 				FC751D4B28B77A2700A6F4E1 /* DefaultCharacterRepository.swift in Sources */,
 				FC751D4328B7790800A6F4E1 /* CharacterSelectionViewModel.swift in Sources */,
 				FC85F63528AD16E4004D2184 /* DefaultPlaceRepository.swift in Sources */,
+				FCA2157728B7B0D300E18D89 /* CreateCourseRepository.swift in Sources */,
 				FC751D4E28B77A4D00A6F4E1 /* CharacterAPI.swift in Sources */,
 				FC751D4528B779E600A6F4E1 /* Character.swift in Sources */,
 				B02D661928B211D800066095 /* MyRecordCell.swift in Sources */,
@@ -1037,6 +1076,7 @@
 				B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */,
 				FC85F64528AD16EF004D2184 /* HTTPMethodURL.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
+				FCA2157E28B7B12200E18D89 /* CreateCourseService.swift in Sources */,
 				B0F35E3028B4A457007962AB /* CurrentCourseRepository.swift in Sources */,
 				FCC43BE828B176D0008AE007 /* Rx+ViewLifeCycle.swift in Sources */,
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
@@ -1056,6 +1096,8 @@
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC85F64628AD16EF004D2184 /* PlaceAPI.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
+				FC6441C728B8217800AF41D2 /* CreateCourseAPI.swift in Sources */,
+				FCA2157528B7B0C200E18D89 /* CreateCourseUseCase.swift in Sources */,
 				B05BE43D28B7663800F54CAC /* MyRecordService.swift in Sources */,
 				FC751D4928B77A0600A6F4E1 /* CharacterUseCase.swift in Sources */,
 				FC85F64028AD16EF004D2184 /* BaseTargetType.swift in Sources */,
@@ -1064,7 +1106,9 @@
 				FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */,
 				FC85F64228AD16EF004D2184 /* Config.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,
+				FCA2157328B7A39A00E18D89 /* CourseViewModel.swift in Sources */,
 				FC85F65028AD1721004D2184 /* CourseRequestModel.swift in Sources */,
+				FC6441C528B8122B00AF41D2 /* UIButton+setBackgroundColor.swift in Sources */,
 				B0ECB28928B61BB700ABA64B /* String+dateFormat.swift in Sources */,
 				B05BE42428B7518700F54CAC /* HomeUseCase.swift in Sources */,
 				B0BD540B289E5B7D005384DF /* HealthStore.swift in Sources */,
