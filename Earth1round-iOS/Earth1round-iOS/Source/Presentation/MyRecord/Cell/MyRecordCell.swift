@@ -54,6 +54,14 @@ class MyRecordCell: UITableViewCell {
     
     
     //MARK - LifeCycle
+    func setData(record: MyRecord) {
+        yearTitle.text = record.startDate.dateYear()
+        startDate.text = record.startDate.dateMonthDate()
+        endDate.text = record.endDate.dateMonthDate()
+        
+        courseText.text = "\(record.startPlaceID) - \(record.endPlaceID)"
+        distanceText.text = "\(record.distance.mileToKilometer()) km"
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

@@ -8,12 +8,12 @@
 import Foundation
 import Moya
 
-enum CourseAPI: BaseTargetType {
-    typealias ResultModel = GenericResponse<Course>
+enum CurrentCourseAPI: BaseTargetType {
+    typealias ResultModel = GenericResponse<CurrentCourse>
     case getCourse
 }
 
-extension CourseAPI {
+extension CurrentCourseAPI {
     var path: String {
         switch self {
         case .getCourse:

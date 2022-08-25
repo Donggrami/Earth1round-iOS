@@ -1,19 +1,19 @@
 //
-//  CurrentCourseRepository.swift
+//  DefaultHomeRepository.swift
 //  Earth1round-iOS
 //
-//  Created by 황유란 on 2022/08/23.
+//  Created by 황유란 on 2022/08/25.
 //
 
 import Foundation
 import RxSwift
 import Moya
 
-class CurrentCourseRepository: CourseRepository {
+class DefaultHomeRepository: HomeRepository {
     
-    func course() -> Observable<CurrentCourse> {
-        let observable = Observable<CurrentCourse>.create { observer -> Disposable in
-            let requestReference: () = CurrentCourseService.shared.getCourse { response in
+    func loadUser() -> Observable<HomeUser> {
+        let observable = Observable<HomeUser>.create { observer -> Disposable in
+            let requestReference: () = HomeService.shared.getUser { response in
                 switch response {
                 case .success(let data):
                     if let data = data,

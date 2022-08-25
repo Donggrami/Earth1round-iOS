@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 
 protocol CourseUseCase {
-    func course() -> Observable<Course>
+    func course() -> Observable<CurrentCourse>
 }
 
 final class CurrentCourseUseCase: CourseUseCase {
@@ -20,7 +20,7 @@ final class CurrentCourseUseCase: CourseUseCase {
         self.repository = repository
     }
     
-    func course() -> Observable<Course> {
+    func course() -> Observable<CurrentCourse> {
         return self.repository.course()
     }
     

@@ -9,5 +9,5 @@ import Foundation
 import RxSwift
 
 protocol CourseRepository {
-    func course() -> Observable<Course>
+    func course() -> Observable<CurrentCourse>
 }

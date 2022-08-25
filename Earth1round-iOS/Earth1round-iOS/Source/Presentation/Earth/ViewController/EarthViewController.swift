@@ -70,12 +70,12 @@ class EarthViewController: BaseViewController {
     }
 
     var dayText = UILabel().then {
-        $0.text = "D + day"
+        $0.text = "D + 32"
         $0.font = .erFont(type: .NTRegular20)
     }
     
     var curCourseText = UILabel().then {
-        $0.text = "현재 선택한 코스가 없습니다"
+        $0.text = "에펠탑부터 콜로세움까지"
         $0.font = .erFont(type: .NTRegular14)
     }
     
@@ -174,19 +174,23 @@ class EarthViewController: BaseViewController {
         
     }
     
-    private func initCourse(course: Course) {
-        print("course1!!!!!!!")
-        print(course)
-        
+    private func initCourse(course: CurrentCourse) {
+
         //D + day
         let today = Date()
         courseStartDate = course.startDate.dateFormat() ?? Date()
-        let diffDay = Int((courseStartDate.timeIntervalSince(today)) / 86400)
+        let diffDay = Int((today.timeIntervalSince(courseStartDate)) / 86400)
         
         //progress
         self.totalDistance = course.distance
        
-        dayText.text = "D + \(diffDay)"
+        if(diffDay == 0 ) {
+            dayText.text = "D + day"
+        }
+        else {
+            dayText.text = "D + \(diffDay)"
+        }
+        
         curCourseText.text = "\(course.startPlaceName)부터 \(course.endPlaceName)까지"
         
         
@@ -245,7 +249,7 @@ class EarthViewController: BaseViewController {
             let curDistance = distance?.mileToKilometer() ?? 0.0
             var distancePercent = (curDistance / (self.totalDistance ?? -1.0))
 
-            if(distancePercent<0) {
+            if(distancePercent < 0.0) {
                 distancePercent = 0.0
             }
             
@@ -388,6 +392,7 @@ class EarthViewController: BaseViewController {
     
     @objc func goHome(){
         let vc=HomeViewController()
+        vc.courseStartDate = self.courseStartDate
         navigationController?.pushViewController(vc, animated: true)
     }
     

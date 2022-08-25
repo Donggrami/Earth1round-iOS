@@ -8,16 +8,16 @@
 import Foundation
 import Moya
 
-public class CourseService {
+public class CurrentCourseService {
     
-    static let shared = CourseService()
+    static let shared = CurrentCourseService()
     let provider = MultiMoyaProvider(plugins: [MoyaLoggingPlugin()])
     
     private init() { }
     
-    func getCourse(completion: @escaping (Result<GenericResponse<Course>?, Error>) -> Void) {
+    func getCourse(completion: @escaping (Result<GenericResponse<CurrentCourse>?, Error>) -> Void) {
         
-        provider.requestDecoded(CourseAPI.getCourse) { response in
+        provider.requestDecoded(CurrentCourseAPI.getCourse) { response in
             completion(response)
         }
     }
