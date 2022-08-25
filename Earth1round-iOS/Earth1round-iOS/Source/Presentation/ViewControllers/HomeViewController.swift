@@ -50,7 +50,7 @@ class HomeViewController: BaseViewController {
     }
     
     var characterView = UIImageView().then {
-        $0.image = Asset.Images.cha_01.image
+        $0.image = Asset.Images.cha01.image
         $0.isUserInteractionEnabled = true
         $0.contentMode = .scaleAspectFit
     }
