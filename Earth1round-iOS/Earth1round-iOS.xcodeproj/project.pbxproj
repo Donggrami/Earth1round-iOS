@@ -47,6 +47,13 @@
 		FC6EB1E428991E47007946F9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */; };
 		FC72672E2885692100BBE712 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672D2885692100BBE712 /* RxCocoa */; };
 		FC7267302885692100BBE712 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC72672F2885692100BBE712 /* RxSwift */; };
+		FC751D4328B7790800A6F4E1 /* CharacterSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4228B7790800A6F4E1 /* CharacterSelectionViewModel.swift */; };
+		FC751D4528B779E600A6F4E1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4428B779E600A6F4E1 /* Character.swift */; };
+		FC751D4728B779FA00A6F4E1 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4628B779FA00A6F4E1 /* CharacterRepository.swift */; };
+		FC751D4928B77A0600A6F4E1 /* CharacterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4828B77A0600A6F4E1 /* CharacterUseCase.swift */; };
+		FC751D4B28B77A2700A6F4E1 /* DefaultCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4A28B77A2700A6F4E1 /* DefaultCharacterRepository.swift */; };
+		FC751D4E28B77A4D00A6F4E1 /* CharacterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4D28B77A4D00A6F4E1 /* CharacterAPI.swift */; };
+		FC751D5028B77A5400A6F4E1 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC751D4F28B77A5400A6F4E1 /* CharacterService.swift */; };
 		FC85F63528AD16E4004D2184 /* DefaultPlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */; };
 		FC85F64028AD16EF004D2184 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63728AD16EF004D2184 /* BaseTargetType.swift */; };
 		FC85F64128AD16EF004D2184 /* MultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85F63828AD16EF004D2184 /* MultiMoyaProvider.swift */; };
@@ -84,7 +91,6 @@
 		B02D661628B20ECD00066095 /* Int+withCommas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+withCommas.swift"; sourceTree = "<group>"; };
 		B02D661828B211D800066095 /* MyRecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecordCell.swift; sourceTree = "<group>"; };
 		B032AB3E288BF643002C5988 /* MyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordViewController.swift; sourceTree = "<group>"; };
-		B032AB40288BF87B002C5988 /* MyRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRecordCell.swift; path = "Earth1round-iOS/Source/Presentation/ViewControllers/MyRecordCell.swift"; sourceTree = SOURCE_ROOT; };
 		B0BD540A289E5B7D005384DF /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+changeTextBold.swift"; sourceTree = "<group>"; };
 		B0C56653289522CA004EF4B6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -119,6 +125,13 @@
 		FC6EB1DD289834B1007946F9 /* TermsLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsLiterals.swift; sourceTree = "<group>"; };
 		FC6EB1DF28983F26007946F9 /* UITableView+Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Generic.swift"; sourceTree = "<group>"; };
 		FC6EB1E328991E47007946F9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		FC751D4228B7790800A6F4E1 /* CharacterSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModel.swift; sourceTree = "<group>"; };
+		FC751D4428B779E600A6F4E1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		FC751D4628B779FA00A6F4E1 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		FC751D4828B77A0600A6F4E1 /* CharacterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterUseCase.swift; path = "Earth1round-iOS/Source/Domain/UseCases/CharacterUseCase.swift"; sourceTree = SOURCE_ROOT; };
+		FC751D4A28B77A2700A6F4E1 /* DefaultCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCharacterRepository.swift; sourceTree = "<group>"; };
+		FC751D4D28B77A4D00A6F4E1 /* CharacterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAPI.swift; sourceTree = "<group>"; };
+		FC751D4F28B77A5400A6F4E1 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPlaceRepository.swift; sourceTree = "<group>"; };
 		FC85F63728AD16EF004D2184 /* BaseTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
 		FC85F63828AD16EF004D2184 /* MultiMoyaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMoyaProvider.swift; sourceTree = "<group>"; };
@@ -355,7 +368,6 @@
 		FC4154B5287B29DA00300A9E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				B032AB40288BF87B002C5988 /* MyRecordCell.swift */,
 				FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */,
 			);
 			path = Cell;
@@ -365,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				FC85F65328AD173C004D2184 /* PlaceRepository.swift */,
+				FC751D4628B779FA00A6F4E1 /* CharacterRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -373,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				FC85F65128AD1738004D2184 /* PlaceUseCase.swift */,
+				FC751D4828B77A0600A6F4E1 /* CharacterUseCase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -380,6 +394,7 @@
 		FC4154BA287B29F900300A9E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FC751D4C28B77A2F00A6F4E1 /* Character */,
 				FC85F63D28AD16EF004D2184 /* Place */,
 				FC85F63628AD16EF004D2184 /* Utils */,
 			);
@@ -390,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				FC85F63428AD16E4004D2184 /* DefaultPlaceRepository.swift */,
+				FC751D4A28B77A2700A6F4E1 /* DefaultCharacterRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -461,6 +477,7 @@
 		FC6EB1D3289830AF007946F9 /* CharacterSelection */ = {
 			isa = PBXGroup;
 			children = (
+				FC751D4128B778EA00A6F4E1 /* ViewModel */,
 				FC6EB1D62898310A007946F9 /* ViewController */,
 				FC4154B5287B29DA00300A9E /* Cell */,
 			);
@@ -548,6 +565,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FC751D4128B778EA00A6F4E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC751D4228B7790800A6F4E1 /* CharacterSelectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC751D4C28B77A2F00A6F4E1 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				FC751D4D28B77A4D00A6F4E1 /* CharacterAPI.swift */,
+				FC751D4F28B77A5400A6F4E1 /* CharacterService.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 		FC85F63628AD16EF004D2184 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +617,7 @@
 			isa = PBXGroup;
 			children = (
 				FC85F65828AD17E9004D2184 /* Place.swift */,
+				FC751D4428B779E600A6F4E1 /* Character.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -775,7 +810,7 @@
 		};
 		FC9A4D3028A507FA00C41DEC /* SwiftGen Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -787,7 +822,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen config run\n";
 		};
@@ -823,7 +858,11 @@
 				FC41550F288171980030836E /* CharacterSelectionViewController.swift in Sources */,
 				FC868991289E6BF100CEE14C /* ERBottomSheet.swift in Sources */,
 				FC9A4D2A28A5007C00C41DEC /* Fonts.swift in Sources */,
+				FC751D4B28B77A2700A6F4E1 /* DefaultCharacterRepository.swift in Sources */,
+				FC751D4328B7790800A6F4E1 /* CharacterSelectionViewModel.swift in Sources */,
 				FC85F63528AD16E4004D2184 /* DefaultPlaceRepository.swift in Sources */,
+				FC751D4E28B77A4D00A6F4E1 /* CharacterAPI.swift in Sources */,
+				FC751D4528B779E600A6F4E1 /* Character.swift in Sources */,
 				B02D661928B211D800066095 /* MyRecordCell.swift in Sources */,
 				FC415496287B297400300A9E /* AppDelegate.swift in Sources */,
 				FC415498287B297400300A9E /* SceneDelegate.swift in Sources */,
@@ -834,6 +873,7 @@
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
 				FCED3F0728A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift in Sources */,
 				FC85F64728AD16EF004D2184 /* PlaceService.swift in Sources */,
+				FC751D5028B77A5400A6F4E1 /* CharacterService.swift in Sources */,
 				FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */,
 				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
 				FC85F64328AD16EF004D2184 /* KeyChainService.swift in Sources */,
@@ -843,8 +883,10 @@
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC85F64628AD16EF004D2184 /* PlaceAPI.swift in Sources */,
 				FC41550A2881717E0030836E /* UICollectionView+Generic.swift in Sources */,
+				FC751D4928B77A0600A6F4E1 /* CharacterUseCase.swift in Sources */,
 				FC85F64028AD16EF004D2184 /* BaseTargetType.swift in Sources */,
 				FC6EB1CE28983002007946F9 /* TermsTableViewCell.swift in Sources */,
+				FC751D4728B779FA00A6F4E1 /* CharacterRepository.swift in Sources */,
 				FC868993289E6C6200CEE14C /* UIView+makeRounded.swift in Sources */,
 				FC85F64228AD16EF004D2184 /* Config.swift in Sources */,
 				B0C71F45287D64820098BB87 /* EarthViewController.swift in Sources */,

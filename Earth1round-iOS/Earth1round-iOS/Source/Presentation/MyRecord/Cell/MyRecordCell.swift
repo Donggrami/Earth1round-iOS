@@ -52,7 +52,7 @@ class MyRecordCell: UITableViewCell {
         $0.textColor = Asset.Colors.pointBlue .color
     }
     
-    
+
     //MARK - LifeCycle
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
