@@ -254,7 +254,7 @@ class HomeViewController: BaseViewController {
     
     @objc  func goToCalendar(){
         let vc=CalendarViewController()
-        
+        vc.countLabel.text = "\(totalWalk.text?.filter { $0.isNumber } ?? "0")"
         navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -17,7 +17,7 @@ extension BaseTargetType {
 
     var baseURL: URL {
         let url = Config.Network.baseURL
-        return URL(string: "https://" + url)!
+        return URL(string: "http://" + url)!
     }
 
     var headers: [String: String]? {
