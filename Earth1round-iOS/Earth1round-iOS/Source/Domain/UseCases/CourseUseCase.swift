@@ -11,6 +11,7 @@ import RxSwift
 protocol CourseUseCase {
     func course() -> Observable<CurrentCourse>
     func complete() -> Observable<CompleteCourse>
+    func getCustomNumber() -> Observable<Character>
 }
 
 final class CurrentCourseUseCase: CourseUseCase {
@@ -29,4 +30,7 @@ final class CurrentCourseUseCase: CourseUseCase {
         return self.repository.complete()
     }
     
+    func getCustomNumber() -> Observable<Character> {
+        return self.repository.getCustomNumber()
+    }
 }

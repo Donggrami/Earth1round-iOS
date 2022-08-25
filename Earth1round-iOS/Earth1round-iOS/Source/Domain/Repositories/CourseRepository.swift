@@ -11,4 +11,5 @@ import RxSwift
 protocol CourseRepository {
     func course() -> Observable<CurrentCourse>
     func complete() -> Observable<CompleteCourse>
+    func getCustomNumber() -> Observable<Character>
 }

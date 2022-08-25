@@ -120,7 +120,6 @@
 		B02D661628B20ECD00066095 /* Int+withCommas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+withCommas.swift"; sourceTree = "<group>"; };
 		B02D661828B211D800066095 /* MyRecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecordCell.swift; sourceTree = "<group>"; };
 		B032AB3E288BF643002C5988 /* MyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecordViewController.swift; sourceTree = "<group>"; };
-		B032AB40288BF87B002C5988 /* MyRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRecordCell.swift; path = "Earth1round-iOS/Source/Presentation/ViewControllers/MyRecordCell.swift"; sourceTree = SOURCE_ROOT; };
 		B05BE41F28B750A400F54CAC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B05BE42128B750F200F54CAC /* HomeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUser.swift; sourceTree = "<group>"; };
 		B05BE42328B7518700F54CAC /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeUseCase.swift; path = "Earth1round-iOS/Source/Domain/UseCases/HomeUseCase.swift"; sourceTree = SOURCE_ROOT; };
@@ -961,7 +960,7 @@
 		};
 		FC9A4D3028A507FA00C41DEC /* SwiftGen Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -973,7 +972,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen config run\n";
 		};
