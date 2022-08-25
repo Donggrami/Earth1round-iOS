@@ -19,10 +19,10 @@ class HealthStore {
         }
     }
     
-    func calculateSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
+    func calculateSteps(startDate: Date, completion: @escaping (HKStatisticsCollection?) -> Void) {
         let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
         
-        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
+//        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
         
         let anchorDate = Calendar(identifier: .iso8601).date(from: Calendar(identifier: .iso8601).dateComponents([.yearForWeekOfYear, .weekOfYear], from: Date()))!
         
@@ -33,6 +33,28 @@ class HealthStore {
         let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
         
         query = HKStatisticsCollectionQuery(quantityType: stepType, quantitySamplePredicate: predicate, options: .cumulativeSum, anchorDate: anchorDate, intervalComponents: daily)
+        
+        query!.initialResultsHandler = { query, statisticsCollection, error in
+            completion(statisticsCollection)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
+    
+    func calculateDistance(startDate: Date, completion: @escaping (HKStatisticsCollection?) -> Void) {
+        let distanceType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
+        
+        let anchorDate = Calendar(identifier: .iso8601).date(from: Calendar(identifier: .iso8601).dateComponents([.yearForWeekOfYear, .weekOfYear], from: Date()))!
+        
+        print(anchorDate)
+        
+        let daily = DateComponents(day: 1)
+        
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
+        
+        query = HKStatisticsCollectionQuery(quantityType: distanceType, quantitySamplePredicate: predicate, options: .cumulativeSum, anchorDate: anchorDate, intervalComponents: daily)
         
         query!.initialResultsHandler = { query, statisticsCollection, error in
             completion(statisticsCollection)

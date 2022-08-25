@@ -11,6 +11,7 @@ import HealthKit
 
 class HomeViewController: BaseViewController {
     
+    //MARK - Views
     var backgroundView = UIImageView().then {
         $0.image = Asset.Images.chaHomeBack.image
     }
@@ -56,7 +57,7 @@ class HomeViewController: BaseViewController {
     }
     
     var characterName = UILabel().then {
-        $0.text = "이름"
+        $0.text = "동그라미"
         $0.font = .erFont(type: .NTRegular20)
     }
 
@@ -76,14 +77,18 @@ class HomeViewController: BaseViewController {
         $0.isUserInteractionEnabled = true
     }
     
-    
+    var courseStartDate: Date?
     var healthStore: HealthStore?
 
+    var viewModel: DefaultHomeViewModel?
     var totalSteps = 0
+    
+    private let characters: [UIImage] = [Asset.Images.cha01.image, Asset.Images.cha02.image, Asset.Images.cha03.image, Asset.Images.cha04.image, Asset.Images.cha05.image, Asset.Images.cha06.image, Asset.Images.cha07.image]
     
     //MARK - LifeCycle
    
     override func viewWillAppear(_ animated: Bool) {
+        
         self.navigationController?.navigationBar.isHidden = true
     }
     
@@ -91,11 +96,9 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         
         initView()
-        
         initConstraint()
-        
+        initViewModel()
         initHealthKit()
-        
         initNavigationHandler()
         
     }
@@ -105,7 +108,83 @@ class HomeViewController: BaseViewController {
     }
     
     //MARK - Methods
+    private func initViewModel() {
+        let repository = DefaultHomeRepository()
+        let useCase = DefaultHomeUseCase(repository: repository)
+        
+        bind(to: DefaultHomeViewModel(homeUseCase: useCase))
+    }
     
+    private func bind(to viewModel: DefaultHomeViewModel) {
+        self.viewModel = viewModel
+        let result = viewModel.load()
+            .subscribe { [weak self] homeUser in
+                self?.initUser(homeUser: homeUser)
+            } onError: { error in
+                print(error)
+            } onCompleted: {
+                print("completed")
+            } onDisposed: {
+                print("disposed")
+            }
+
+        print(result)
+            
+        let output = viewModel.loadCharacter(input: rx.viewWillAppear.map { _ in })
+            
+        output.drive(onNext: { number in
+                self.characterView.image = self.characters[number]
+            }).disposed(by: disposeBag)
+        
+    }
+    
+    private func initUser(homeUser: HomeUser) {
+        let name = homeUser.nickname ?? "동그라미"
+        self.characterName.text = name
+    }
+    
+    private func initHealthKit(){
+        healthStore = HealthStore()
+        
+        if let healthStore = healthStore {
+            healthStore.requestAuthorization { success in
+                print(success)
+                if success {
+                    healthStore.calculateSteps(startDate: self.courseStartDate ?? Date()) { statisticsCollection in
+                        if let statisticsCollection = statisticsCollection {
+                            self.getSteps(statisticsCollection)
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+   
+    private func getSteps(_ statisticsCollection: HKStatisticsCollection) {
+    
+        let endDate = Date()
+        
+        statisticsCollection.enumerateStatistics(from: self.courseStartDate ?? Date(), to: endDate) { statistics, stop in
+            let count = statistics.sumQuantity()?.doubleValue(for: .count())
+            
+            let steps = Int(count ?? 0)
+            
+            self.totalSteps += steps
+
+            DispatchQueue.main.async {
+
+                let formattedString = self.totalSteps.withCommas()
+                self.totalWalk.text = "\(formattedString) 걸음"
+                
+                self.totalWalk.changeTextBold(changeText: formattedString, type: TextStyles.NTBold32)
+            }
+       
+        }
+    }
+    
+    //초기화
     private func initView(){
         view.addSubviews(backgroundView,hamburgerButton, totalWalkBackground, totalWalkText,totalWalk,calendarButton, trophyView,characterView,characterNameBackground,characterName,
         chooseCourseButton,homeButton)
@@ -183,49 +262,6 @@ class HomeViewController: BaseViewController {
         }
     }
     
-    func initHealthKit(){
-        healthStore = HealthStore()
-        
-        if let healthStore = healthStore {
-            healthStore.requestAuthorization { success in
-                print(success)
-                if success {
-                    healthStore.calculateSteps { statisticsCollection in
-                        if let statisticsCollection = statisticsCollection {
-                            self.getSteps(statisticsCollection)
-    
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-   
-    func getSteps(_ statisticsCollection: HKStatisticsCollection) {
-        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
-        
-        let endDate = Date()
-        
-        statisticsCollection.enumerateStatistics(from: startDate, to: endDate) { statistics, stop in
-            let count = statistics.sumQuantity()?.doubleValue(for: .count())
-            
-            let steps = Int(count ?? 0)
-            
-            self.totalSteps += steps
-
-            DispatchQueue.main.async {
-
-                let formattedString = self.totalSteps.withCommas()
-                self.totalWalk.text = "\(formattedString) 걸음"
-                
-                self.totalWalk.changeTextBold(changeText: formattedString, type: TextStyles.NTBold32)
-            }
-       
-        }
-    }
-    
-    
     //MARK - Navigation
     @objc func goToSetting(){
         let vc=SettingViewController()
@@ -271,5 +307,8 @@ class HomeViewController: BaseViewController {
         
         totalWalkBackground.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToCalendar)))
     }
+  
         
 }
+
+

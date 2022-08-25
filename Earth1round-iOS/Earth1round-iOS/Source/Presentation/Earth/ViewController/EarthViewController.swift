@@ -6,11 +6,14 @@
 //
 
 import UIKit
-import SnapKit
 import Then
+import SnapKit
 import HealthKit
+import RxSwift
 
-class EarthViewController: BaseViewController{
+class EarthViewController: BaseViewController {
+
+    //MARK - Views
     //배경 뷰
     var universeBackground = UIImageView().then {
         $0.image = Asset.Images.homeBack01.image
@@ -58,19 +61,21 @@ class EarthViewController: BaseViewController{
     }
     
     var homeMsgBoxText = UILabel().then {
-        $0.text = "걸음이 안 뜬다면 '건강 > 걸음 > 데이터 소스 및 접근'에서 데이터 읽기 허용을 다시하세요."
+        $0.text = "걸음이 안 뜬다면 '설정 > 건강 > 데이터 접근 및 기기'에서 데이터 읽기 허용을 다시하세요."
         $0.font = .erFont(type: .NTRegular12)
+        $0.changeTextColor(changeText: "'설정 > 건강 > 데이터 접근 및 기기'",
+                           type: .NTRegular12, color: Asset.Colors.pointBlue.color.cgColor)
         $0.numberOfLines = 0
         $0.isHidden = true
     }
 
     var dayText = UILabel().then {
-        $0.text = "D + day"
+        $0.text = "D + 32"
         $0.font = .erFont(type: .NTRegular20)
     }
     
     var curCourseText = UILabel().then {
-        $0.text = "현재 선택한 코스"
+        $0.text = "에펠탑부터 콜로세움까지"
         $0.font = .erFont(type: .NTRegular14)
     }
     
@@ -86,7 +91,7 @@ class EarthViewController: BaseViewController{
     var progressBar = UIProgressView().then {
         $0.trackTintColor = Asset.Colors.grey10.color
         $0.progressTintColor = Asset.Colors.mainYellow.color
-        $0.progress = 0.3
+        $0.progress = 0.3 
         $0.layer.cornerRadius = 7.5
         $0.clipsToBounds = true
         $0.layer.sublayers![1].cornerRadius = 7.5
@@ -105,8 +110,15 @@ class EarthViewController: BaseViewController{
         $0.isUserInteractionEnabled = true
     }
     
+    var yesterDate: Date?
+    var courseStartDate: Date = Date()
+    var endDate: Date = Date()
+    var totalDistance: Double?
     var healthStore: HealthStore?
 
+    var viewModel: DefaultEarthViewModel?
+    
+    private let characters: [UIImage] = [Asset.Images.cha01.image, Asset.Images.cha02.image, Asset.Images.cha03.image, Asset.Images.cha04.image, Asset.Images.cha05.image, Asset.Images.cha06.image, Asset.Images.cha07.image]
     
     //MARK - LifeCycle
     
@@ -114,21 +126,14 @@ class EarthViewController: BaseViewController{
         super.viewDidLoad()
  
         initView()
-        initBackground()
-        initInfoViews()
-        initCharacterViews()
-        
-        hamburgerButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goSetting)))
-        
-        homeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goHome)))
-        
-        homeMessage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showInfo)))
+        initModel()
+        initNavigation()
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
         
-        initHealthKit()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -137,25 +142,86 @@ class EarthViewController: BaseViewController{
     
     
     //MARK - Methods
-
-    func initView(){
+    private func initView(){
         view.addSubviews(universeBackground,infoBackground,earthBackground,
                          hamburgerButton,walkText,dayText,
                          curCourseText,progressGage,progressText,progressBar,
                          homeMessage,homeMessageText,homeMsgBox,homeMsgBoxText,
                          characterView,homeButton)
+        initViews()
     }
     
-    func initHealthKit(){
+    private func initModel() {
+        let repository = CurrentCourseRepository()
+        let useCase = CurrentCourseUseCase(repository: repository)
+        
+        bind(to: DefaultEarthViewModel(courseUseCase: useCase))
+    }
+    
+    private func bind(to viewModel: DefaultEarthViewModel) {
+        self.viewModel = viewModel
+        let result = viewModel.load()
+            .subscribe { [weak self] course in
+                self?.initCourse(course: course)
+            } onError: { error in
+                print(error)
+            } onCompleted: {
+                print("completed")
+            } onDisposed: {
+                print("disposed")
+            }
+
+        print(result)
+        
+        let output = viewModel.loadCharacter(input: rx.viewWillAppear.map { _ in })
+            
+        output.drive(onNext: { number in
+                self.characterView.image = self.characters[number]
+            }).disposed(by: disposeBag)
+        
+    }
+    
+    private func initCourse(course: CurrentCourse) {
+
+        //D + day
+        let today = Date()
+        courseStartDate = course.startDate.dateFormat() ?? Date()
+        let diffDay = Int((today.timeIntervalSince(courseStartDate)) / 86400)
+        
+        //progress
+        self.totalDistance = course.distance
+       
+        if(diffDay == 0 ) {
+            dayText.text = "D + day"
+        }
+        else {
+            dayText.text = "D + \(diffDay)"
+        }
+        
+        curCourseText.text = "\(course.startPlaceName)부터 \(course.endPlaceName)까지"
+        
+        
+        initHealthKit()
+    }
+    
+    //걸음 수
+    private func initHealthKit(){
         healthStore = HealthStore()
         
         if let healthStore = healthStore {
             healthStore.requestAuthorization { success in
                 if success {
-                    healthStore.calculateSteps { statisticsCollection in
+                    self.yesterDate = Calendar.current.date(byAdding: .day, value: -1, to: Date())!
+                    healthStore.calculateSteps(startDate: self.yesterDate!) { statisticsCollection in
                         if let statisticsCollection = statisticsCollection {
                             self.getSteps(statisticsCollection)
     
+                        }
+                    }
+                    
+                    healthStore.calculateDistance(startDate: self.yesterDate!) { statisticsCollection in
+                        if let statisticsCollection = statisticsCollection {
+                            self.getDistance(statisticsCollection)
                         }
                     }
                 }
@@ -163,16 +229,12 @@ class EarthViewController: BaseViewController{
         }
     }
     
-    func getSteps(_ statisticsCollection: HKStatisticsCollection) {
-        let startDate = Calendar.current.date(byAdding: .day, value: -1, to: Date())!
+    private func getSteps(_ statisticsCollection: HKStatisticsCollection) {
         
-        let endDate = Date()
-        
-        statisticsCollection.enumerateStatistics(from: startDate, to: endDate) { statistics, stop in
+        statisticsCollection.enumerateStatistics(from: yesterDate!, to: endDate) { statistics, stop in
             let count = statistics.sumQuantity()?.doubleValue(for: .count())
             
             let steps = Int(count ?? 0)
-            
             
             DispatchQueue.main.async {
                 
@@ -182,11 +244,69 @@ class EarthViewController: BaseViewController{
                 
                 self.walkText.changeTextBold(changeText: formattedString, type: TextStyles.NTBold32)
             }
+            
        
         }
     }
+
+    private func getDistance(_ statisticsCollection: HKStatisticsCollection) {
+        statisticsCollection.enumerateStatistics(from: courseStartDate, to: endDate) { statistics, stop in
+            let distance = statistics.sumQuantity()?.doubleValue(for: HKUnit.mile())
+            
+            let curDistance = distance?.mileToKilometer() ?? 0.0
+            var distancePercent = (curDistance / (self.totalDistance ?? -1.0))
+
+            if(distancePercent < 0.0) {
+                distancePercent = 0.0
+            }
+            
+            print("distance")
+            print(distancePercent)
+            //100프로에 도달하면 현재 코스완성 api 호출
+            if(distancePercent >= 1.0) {
+                print("complete!!!")
+                self.viewModel?.complete()
+                    .subscribe { course in
+                        print("course \(course.courseID) completed")
+                    } onError: { error in
+                        print(error)
+                    } onCompleted: {
+                        print("completed")
+                    } onDisposed: {
+                        print("disposed")
+                    }
+            }
+            
+            DispatchQueue.main.async {
+                self.progressBar.progress = Float(distancePercent)
+                self.progressText.text = "\(Int(self.progressBar.progress * 100))%"
+                
+                let mainWidth = Size.screenWidth
+                let position = (Float(mainWidth)-40)*self.progressBar.progress
+                
+                self.progressGage.transform = CGAffineTransform(translationX: CGFloat(position), y: 0)
+                self.progressText.transform = CGAffineTransform(translationX: CGFloat(position), y: 0)
+            }
+            
+        }
+    }
     
-    private func initBackground(){
+    
+    //초기화
+    
+    private func initViews(){
+        initBackground()
+        initInfoViews()
+        initCharacterViews()
+    }
+    
+    private func initNavigation() {
+        hamburgerButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goSetting)))
+        homeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goHome)))
+        homeMessage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showInfo)))
+    }
+    
+    private func initBackground() {
         universeBackground.snp.makeConstraints { make in
             make.top.bottom.leading.trailing.equalToSuperview()
         }
@@ -258,7 +378,7 @@ class EarthViewController: BaseViewController{
         progressBar.snp.makeConstraints { make in
             make.leading.equalTo(hamburgerButton)
             make.trailing.equalToSuperview().offset(-20)
-            make.top.equalTo(dayText.snp.bottom).offset(43)
+            make.top.equalTo(dayText.snp.bottom).offset(50)
             make.height.equalTo(15)
         }
         
@@ -295,8 +415,8 @@ class EarthViewController: BaseViewController{
     }
     
     @objc func goHome(){
-        print("gohome!")
         let vc=HomeViewController()
+        vc.courseStartDate = self.courseStartDate
         navigationController?.pushViewController(vc, animated: true)
     }
     
