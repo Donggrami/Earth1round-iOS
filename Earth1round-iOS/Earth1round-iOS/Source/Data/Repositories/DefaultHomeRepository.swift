@@ -29,4 +29,20 @@ class DefaultHomeRepository: HomeRepository {
         return observable
     }
     
+    func getCustomNumber() -> Observable<Character> {
+        let observable = Observable<Character>.create { observer -> Disposable in
+            let requestReference: () = CharacterService.shared.getCustomNumber { response in
+                switch response {
+                case .success(let data):
+                    if let data = data, let result = data.result {
+                            observer.onNext(result)
+                    }
+                case .failure(let err):
+                    print(err)
+                }
+            }
+            return Disposables.create(with: { requestReference })
+        }
+        return observable
+    }
 }

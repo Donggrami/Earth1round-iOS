@@ -10,6 +10,7 @@ import RxSwift
 
 protocol HomeUseCase {
     func loadUser() -> Observable<HomeUser>
+    func getCustomNumber() -> Observable<Character>
 }
 
 final class DefaultHomeUseCase: HomeUseCase {
@@ -24,4 +25,7 @@ final class DefaultHomeUseCase: HomeUseCase {
         return self.repository.loadUser()
     }
     
+    func getCustomNumber() -> Observable<Character> {
+        return self.repository.getCustomNumber()
+    }
 }

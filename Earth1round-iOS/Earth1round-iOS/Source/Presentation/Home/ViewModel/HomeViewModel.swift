@@ -7,9 +7,11 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 protocol HomeViewModel {
     func load() -> Observable<HomeUser>
+    func loadCharacter(input: Observable<Void>) -> Driver<Int>
 }
 
 
@@ -24,5 +26,13 @@ final class DefaultHomeViewModel: HomeViewModel {
         return self.useCase.loadUser()
     }
     
-
+    func loadCharacter(input: Observable<Void>) -> Driver<Int> {
+        let customNumber = input
+            .flatMap {
+                self.useCase.getCustomNumber()
+            }.map { $0.customNum }
+            .asDriver(onErrorJustReturn: 1)
+        
+        return customNumber
+    }
 }

@@ -10,4 +10,5 @@ import RxSwift
 
 protocol HomeRepository {
     func loadUser() -> Observable<HomeUser>
+    func getCustomNumber() -> Observable<Character>
 }

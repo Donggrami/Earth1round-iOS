@@ -83,6 +83,8 @@ class HomeViewController: BaseViewController {
     var viewModel: DefaultHomeViewModel?
     var totalSteps = 0
     
+    private let characters: [UIImage] = [Asset.Images.cha01.image, Asset.Images.cha02.image, Asset.Images.cha03.image, Asset.Images.cha04.image, Asset.Images.cha05.image, Asset.Images.cha06.image, Asset.Images.cha07.image]
+    
     //MARK - LifeCycle
    
     override func viewWillAppear(_ animated: Bool) {
@@ -128,6 +130,11 @@ class HomeViewController: BaseViewController {
 
         print(result)
             
+        let output = viewModel.loadCharacter(input: rx.viewWillAppear.map { _ in })
+            
+        output.drive(onNext: { number in
+                self.characterView.image = self.characters[number]
+            }).disposed(by: disposeBag)
         
     }
     
