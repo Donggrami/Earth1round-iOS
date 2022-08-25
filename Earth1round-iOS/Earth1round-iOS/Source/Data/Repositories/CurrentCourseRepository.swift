@@ -29,4 +29,22 @@ class CurrentCourseRepository: CourseRepository {
         return observable
     }
     
+    func complete() -> Observable<CompleteCourse> {
+        let observable = Observable<CompleteCourse>.create { observer -> Disposable in
+            let requestReference: () = CompleteCourseService.shared.complete { response in
+                switch response {
+                case .success(let data):
+                    if let data = data,
+                       let result = data.result {
+                        observer.onNext(result)
+                    }
+                case .failure(let err):
+                    print(err)
+                }
+            }
+            return Disposables.create(with: { requestReference })
+        }
+        return observable
+    }
+    
 }

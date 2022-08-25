@@ -84,14 +84,14 @@ class EarthViewController: BaseViewController {
     }
     
     var progressText = UILabel().then {
-        $0.text = "0%"
+        $0.text = "30%"
         $0.font = .erFont(type: .NTRegular12)
     }
     
     var progressBar = UIProgressView().then {
         $0.trackTintColor = Asset.Colors.grey10.color
         $0.progressTintColor = Asset.Colors.mainYellow.color
-        $0.progress = 0.0
+        $0.progress = 0.3 
         $0.layer.cornerRadius = 7.5
         $0.clipsToBounds = true
         $0.layer.sublayers![1].cornerRadius = 7.5
@@ -253,9 +253,26 @@ class EarthViewController: BaseViewController {
                 distancePercent = 0.0
             }
             
+            print("distance")
+            print(distancePercent)
+            //100프로에 도달하면 현재 코스완성 api 호출
+            if(distancePercent >= 1.0) {
+                print("complete!!!")
+                self.viewModel?.complete()
+                    .subscribe { course in
+                        print("course \(course.courseID) completed")
+                    } onError: { error in
+                        print(error)
+                    } onCompleted: {
+                        print("completed")
+                    } onDisposed: {
+                        print("disposed")
+                    }
+            }
+            
             DispatchQueue.main.async {
                 self.progressBar.progress = Float(distancePercent)
-                self.progressText.text = "\(Int(distancePercent * 100))%"
+                self.progressText.text = "\(Int(self.progressBar.progress * 100))%"
                 
                 let mainWidth = Size.screenWidth
                 let position = (Float(mainWidth)-40)*self.progressBar.progress

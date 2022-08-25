@@ -10,6 +10,7 @@ import RxSwift
 
 protocol EarthViewModel {
     func load() -> Observable<CurrentCourse>
+    func complete() -> Observable<CompleteCourse>
 }
 
 
@@ -22,6 +23,10 @@ final class DefaultEarthViewModel: EarthViewModel {
         
     func load() -> Observable<CurrentCourse>{
         return self.useCase.course()
+    }
+    
+    func complete() -> Observable<CompleteCourse> {
+        return self.useCase.complete()
     }
     
 

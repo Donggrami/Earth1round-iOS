@@ -100,9 +100,8 @@ extension MyRecordViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(126)
+        return 150
     }
-    
     
 }
 

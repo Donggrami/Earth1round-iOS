@@ -21,7 +21,7 @@ extension String {
     func dateYear() -> String {
         let formattedDate = self.dateFormat() ?? Date()
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: Locale.current.identifier)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.timeZone = TimeZone(identifier: "UTC")
         formatter.dateFormat = "yyyy"
     
@@ -33,7 +33,7 @@ extension String {
     func dateMonthDate() -> String {
         let formattedDate = self.dateFormat() ?? Date()
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: Locale.current.identifier)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.timeZone = TimeZone(identifier: "UTC")
         formatter.dateFormat = "MMMM. dd"
     

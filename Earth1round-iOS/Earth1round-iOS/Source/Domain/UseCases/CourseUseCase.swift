@@ -10,6 +10,7 @@ import RxSwift
 
 protocol CourseUseCase {
     func course() -> Observable<CurrentCourse>
+    func complete() -> Observable<CompleteCourse>
 }
 
 final class CurrentCourseUseCase: CourseUseCase {
@@ -22,6 +23,10 @@ final class CurrentCourseUseCase: CourseUseCase {
     
     func course() -> Observable<CurrentCourse> {
         return self.repository.course()
+    }
+    
+    func complete() -> Observable<CompleteCourse> {
+        return self.repository.complete()
     }
     
 }

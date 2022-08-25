@@ -9,7 +9,7 @@ import Foundation
 
 struct MyRecord: Codable {
     let courseID: Int
-    let userID: String
+    let userID: Int
     let startPlaceID: Int
     let endPlaceID: Int
     let distance: Double
