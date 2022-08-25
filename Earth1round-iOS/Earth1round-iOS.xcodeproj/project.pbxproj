@@ -36,6 +36,8 @@
 		FC415511288171980030836E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41550E288171980030836E /* CalendarViewController.swift */; };
 		FC415513288171AA0030836E /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */; };
 		FC4155152883D17E0030836E /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */; };
+		FC64F8C328AF6D0F00A86483 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */; };
+		FC64F8C628AF6D9800A86483 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */; };
 		FC6EB1C32897D9EF007946F9 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */; };
 		FC6EB1C52897DA08007946F9 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C42897DA08007946F9 /* NicknameViewController.swift */; };
 		FC6EB1C72897DA28007946F9 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */; };
@@ -70,6 +72,7 @@
 		FC9A4D2D28A507E000C41DEC /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FC9A4D2C28A507E000C41DEC /* swiftgen.yml */; };
 		FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */; };
 		FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B39B2885676400924872 /* BaseViewController.swift */; };
+		FCC43BE828B176D0008AE007 /* Rx+ViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */; };
 		FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */; };
 		FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0ED43288F082F00495CD9 /* LoginViewController.swift */; };
 		FCED3F0728A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED3F0628A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift */; };
@@ -107,6 +110,8 @@
 		FC41550E288171980030836E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FC415512288171AA0030836E /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC4155142883D17D0030836E /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
+		FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		FC6EB1C22897D9EF007946F9 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		FC6EB1C42897DA08007946F9 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		FC6EB1C62897DA28007946F9 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +144,7 @@
 		FC9A4D2C28A507E000C41DEC /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FC9A4D2E28A507EB00C41DEC /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		FCC2B39B2885676400924872 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+ViewLifeCycle.swift"; sourceTree = "<group>"; };
 		FCE0ED40288F07EE00495CD9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FCE0ED43288F082F00495CD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FCED3F0628A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+AddArrangedSubviews.swift"; sourceTree = "<group>"; };
@@ -297,6 +303,7 @@
 				B0C47BEA289D70350098D6C0 /* UILabel+changeTextBold.swift */,
 				FC6EB1CB28982F1D007946F9 /* UITextField+addLeftPadding.swift */,
 				FC868992289E6C6200CEE14C /* UIView+makeRounded.swift */,
+				FCC43BE728B176D0008AE007 /* Rx+ViewLifeCycle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -375,6 +382,22 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		FC64F8C128AF6CE800A86483 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FC64F8C228AF6D0F00A86483 /* CalendarCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FC64F8C428AF6D8900A86483 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC64F8C528AF6D9800A86483 /* CalendarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FC6EB1C82897DA6B007946F9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,7 +428,9 @@
 		FC6EB1D228983094007946F9 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				FC64F8C428AF6D8900A86483 /* ViewModel */,
 				FC6EB1D5289830F8007946F9 /* Viewcontroller */,
+				FC64F8C128AF6CE800A86483 /* Cells */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -766,6 +791,7 @@
 				FC85F64F28AD1721004D2184 /* GenericResponse.swift in Sources */,
 				FC85F64428AD16EF004D2184 /* MoyaLoggingPlugin.swift in Sources */,
 				FCE0ED41288F07EE00495CD9 /* SettingViewController.swift in Sources */,
+				FC64F8C628AF6D9800A86483 /* CalendarViewModel.swift in Sources */,
 				FCC2B39C2885676400924872 /* BaseViewController.swift in Sources */,
 				FC4155092881717E0030836E /* UINavigationController+Extensions.swift in Sources */,
 				FC415510288171980030836E /* CourseViewController.swift in Sources */,
@@ -782,6 +808,7 @@
 				B032AB3F288BF643002C5988 /* MyRecordViewController.swift in Sources */,
 				FC85F64528AD16EF004D2184 /* HTTPMethodURL.swift in Sources */,
 				FC4155082881717E0030836E /* NSObject+ClassName.swift in Sources */,
+				FCC43BE828B176D0008AE007 /* Rx+ViewLifeCycle.swift in Sources */,
 				FCE0ED44288F082F00495CD9 /* LoginViewController.swift in Sources */,
 				FCED3F0728A17F78004B27AA /* UIStackView+AddArrangedSubviews.swift in Sources */,
 				FC85F64728AD16EF004D2184 /* PlaceService.swift in Sources */,
@@ -789,6 +816,7 @@
 				FC6EB1CC28982F1D007946F9 /* UITextField+addLeftPadding.swift in Sources */,
 				FC85F64328AD16EF004D2184 /* KeyChainService.swift in Sources */,
 				FC85F65428AD173D004D2184 /* PlaceRepository.swift in Sources */,
+				FC64F8C328AF6D0F00A86483 /* CalendarCollectionViewCell.swift in Sources */,
 				FC9A4D2F28A507EB00C41DEC /* Assets+Generated.swift in Sources */,
 				FC6EB1DE289834B1007946F9 /* TermsLiterals.swift in Sources */,
 				FC85F64628AD16EF004D2184 /* PlaceAPI.swift in Sources */,
@@ -949,10 +977,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Earth1round-iOS/Earth1round-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Earth1round-iOS/Global/Support/Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "건강 데이터를 쓸때 필요해요";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "건강 데이터를 받아올 때 사용해요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -983,10 +1014,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Earth1round-iOS/Earth1round-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2C5485ZLQ;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Earth1round-iOS/Global/Support/Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "건강 데이터를 쓸때 필요해요";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "건강 데이터를 받아올 때 사용해요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
